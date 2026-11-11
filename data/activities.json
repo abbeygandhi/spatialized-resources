@@ -1,1527 +1,3784 @@
-[
- {
-  "id": "skyscrapers",
-  "title": "Skyscrapers",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students construct 3D towers using pictures of front and side views.",
-  "skills": [
-   "Mental Rotation",
-   "Orientation",
-   "Perspective Taking"
-  ],
-  "objectives": "Construct three-dimensional towers using provided pictures of the front and side views of the towers.",
-  "materials": [
-   "Snap cubes or other stackable objects",
-   "Grid paper or printed grid",
-   "Writing utensil"
-  ],
-  "link": "https://docs.google.com/document/d/1kAKkUY0MDonZUXCLOLEqKRv6GArNcJ_F/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 5 · Strand D: Forces Acting on Structures",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-5",
-    "strength": "supporting"
+{
+ "version": 2,
+ "updated": "2026-11-11",
+ "expectations": {
+  "s4C2.3": {
+   "subj": "sci",
+   "grade": 4,
+   "course": "",
+   "code": "C2.3",
+   "en": "describe properties of light, including that light travels in a straight path and can be absorbed, reflected, or refracted",
+   "fr": "décrire les propriétés de la lumière, notamment qu'elle se propage en ligne droite et peut être absorbée, réfléchie ou réfractée",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-4"
+  },
+  "s4C2.5": {
+   "subj": "sci",
+   "grade": 4,
+   "course": "",
+   "code": "C2.5",
+   "en": "explain how vibrations cause sound waves",
+   "fr": "expliquer comment les vibrations produisent des ondes sonores",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-4"
+  },
+  "s4C2.8": {
+   "subj": "sci",
+   "grade": 4,
+   "course": "",
+   "code": "C2.8",
+   "en": "identify sensory organs and devices that make use of the properties of light and sound",
+   "fr": "identifier des organes sensoriels et des dispositifs qui utilisent les propriétés de la lumière et du son",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-4"
+  },
+  "s6C2.6": {
+   "subj": "sci",
+   "grade": 6,
+   "course": "",
+   "code": "C2.6",
+   "en": "explain the functions of the components of a simple electrical circuit",
+   "fr": "expliquer la fonction des composants d'un circuit électrique simple",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+  },
+  "s6C2.7": {
+   "subj": "sci",
+   "grade": 6,
+   "course": "",
+   "code": "C2.7",
+   "en": "distinguish between series and parallel circuits, and identify common uses of each type of circuit",
+   "fr": "distinguer les circuits en série des circuits en parallèle et nommer des usages courants de chacun",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+  },
+  "s6D2.2": {
+   "subj": "sci",
+   "grade": 6,
+   "course": "",
+   "code": "D2.2",
+   "en": "describe the relationships between the four forces of flight – lift, weight, thrust, and drag",
+   "fr": "décrire les relations entre les quatre forces du vol : portance, poids, poussée et traînée",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+  },
+  "s6E2.1": {
+   "subj": "sci",
+   "grade": 6,
+   "course": "",
+   "code": "E2.1",
+   "en": "identify components of the solar system, including the Sun, Earth and other planets, natural satellites, comets, asteroids, and meteoroids",
+   "fr": "identifier les composantes du système solaire, dont le Soleil, la Terre et les autres planètes, les satellites naturels, les comètes, les astéroïdes et les météoroïdes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+  },
+  "s6E2.3": {
+   "subj": "sci",
+   "grade": 6,
+   "course": "",
+   "code": "E2.3",
+   "en": "describe the relationship between the force of gravity and the weight of a body",
+   "fr": "décrire la relation entre la force gravitationnelle et le poids d'un corps",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+  },
+  "s6E2.5": {
+   "subj": "sci",
+   "grade": 6,
+   "course": "",
+   "code": "E2.5",
+   "en": "describe various effects of the relative positions and motions of Earth, the Moon, and the Sun",
+   "fr": "décrire divers effets des positions et des mouvements relatifs de la Terre, de la Lune et du Soleil",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+  },
+  "s7B1.3": {
+   "subj": "sci",
+   "grade": 7,
+   "course": "",
+   "code": "B1.3",
+   "en": "analyse how diverse First Nations, Métis, and Inuit practices and perspectives contribute to…",
+   "fr": "analyser comment diverses pratiques et perspectives des Premières Nations, des Métis et des Inuit contribuent à…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+  },
+  "s7B2.1": {
+   "subj": "sci",
+   "grade": 7,
+   "course": "",
+   "code": "B2.1",
+   "en": "explain that an ecosystem is a network of interactions among living organisms and their environment",
+   "fr": "expliquer qu'un écosystème est un réseau d'interactions entre les organismes vivants et leur environnement",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+  },
+  "s7B2.4": {
+   "subj": "sci",
+   "grade": 7,
+   "course": "",
+   "code": "B2.4",
+   "en": "describe the transfer of energy in a food chain, and explain the effects of altering any part of the chain",
+   "fr": "décrire le transfert d'énergie dans une chaîne alimentaire et expliquer les effets d'un changement dans la chaîne",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+  },
+  "s7B2.5": {
+   "subj": "sci",
+   "grade": 7,
+   "course": "",
+   "code": "B2.5",
+   "en": "describe how matter is cycled within the environment, and explain how the cycling of matter promotes sustainability",
+   "fr": "décrire le cycle de la matière dans l'environnement et expliquer comment il favorise la durabilité",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+  },
+  "s7B2.8": {
+   "subj": "sci",
+   "grade": 7,
+   "course": "",
+   "code": "B2.8",
+   "en": "describe how different approaches to agriculture and to harvesting food from the natural environment…",
+   "fr": "décrire comment différentes approches de l'agriculture et de la récolte d'aliments dans le milieu naturel…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+  },
+  "s7E2.5": {
+   "subj": "sci",
+   "grade": 7,
+   "course": "",
+   "code": "E2.5",
+   "en": "explain how heat is transmitted in liquids and gases through convection, and describe natural processes affected by convection",
+   "fr": "expliquer comment la chaleur se transmet par convection dans les liquides et les gaz, et décrire des processus naturels touchés par la convection",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+  },
+  "s58A1.2": {
+   "subj": "sci",
+   "grade": 0,
+   "course": "",
+   "code": "A1.2",
+   "en": "use a scientific experimentation process and associated skills to conduct investigations (Gr 1–8)",
+   "fr": "utiliser un processus d'expérimentation scientifique et les habiletés connexes pour mener des recherches (1re à 8e année)",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-5"
+  },
+  "s58A3.3": {
+   "subj": "sci",
+   "grade": 0,
+   "course": "",
+   "code": "A3.3",
+   "en": "analyse contributions to science and technology from various communities (Gr 1–8)",
+   "fr": "analyser des contributions aux sciences et à la technologie provenant de diverses communautés (1re à 8e année)",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-5"
+  },
+  "s9A1.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "A1.2",
+   "en": "apply a scientific experimentation process and associated skills to conduct investigations",
+   "fr": "appliquer un processus d'expérimentation scientifique et les habiletés connexes pour mener des recherches",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9A2.5": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "A2.5",
+   "en": "analyse contributions to science by people from various communities, including communities in Canada",
+   "fr": "analyser des contributions aux sciences de personnes issues de diverses communautés, y compris au Canada",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9B1.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B1.3",
+   "en": "investigate and explain how sustainable practices used by various communities, including First Nations, Métis, and Inuit communities, …",
+   "fr": "examiner et expliquer comment les pratiques durables de diverses communautés, dont les Premières Nations, les Métis et les Inuit…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9B2.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.2",
+   "en": "explain how naturally occurring phenomena, including the cycling of matter and the flow of energy, contribute to…",
+   "fr": "expliquer comment des phénomènes naturels, dont le cycle de la matière et le flux d'énergie, contribuent à…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9B2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.3",
+   "en": "compare and contrast the processes of cellular respiration and photosynthesis with respect to the flow of energy…",
+   "fr": "comparer la respiration cellulaire et la photosynthèse quant au flux d'énergie…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9B2.5": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.5",
+   "en": "explain the effects of various human activities on the dynamic equilibrium of ecosystems",
+   "fr": "expliquer les effets de diverses activités humaines sur l'équilibre dynamique des écosystèmes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9B2.6": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.6",
+   "en": "identify and use various indicators of climate change to describe the impacts of climate change on local and…",
+   "fr": "identifier et utiliser divers indicateurs du changement climatique pour décrire ses effets…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9C2.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "C2.2",
+   "en": "research the role of experimental evidence in the development of various atomic models, and compare and contrast those models",
+   "fr": "étudier le rôle des preuves expérimentales dans l'élaboration de divers modèles atomiques, et comparer ces modèles",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9C2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "C2.3",
+   "en": "identify the location, relative mass, and charge of subatomic particles within an atom, using the Bohr-Rutherford model",
+   "fr": "identifier l'emplacement, la masse relative et la charge des particules subatomiques à l'aide du modèle de Bohr-Rutherford",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9C2.7": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "C2.7",
+   "en": "describe the relationship between the structure of simple compounds and their chemical formulas",
+   "fr": "décrire la relation entre la structure de composés simples et leur formule chimique",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9D2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "D2.3",
+   "en": "identify the components of a direct current (DC) circuit and explain their functions, and identify electrical…",
+   "fr": "identifier les composants d'un circuit à courant continu et expliquer leur fonction…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9D2.6": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "D2.6",
+   "en": "construct series and parallel circuits to compare electric current, potential difference, and resistance in both types of circuits",
+   "fr": "construire des circuits en série et en parallèle pour comparer le courant, la différence de potentiel et la résistance",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9E1.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E1.2",
+   "en": "evaluate how space observation and exploration technologies contribute to our understanding of climate change…",
+   "fr": "évaluer comment les technologies d'observation et d'exploration spatiales contribuent à notre compréhension du changement climatique…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9E2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.3",
+   "en": "summarize observational evidence used to support theories about the origin and evolution of the universe",
+   "fr": "résumer les preuves observationnelles qui appuient les théories sur l'origine et l'évolution de l'Univers",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9E2.4": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.4",
+   "en": "describe major components of the solar system and the universe and compare their characteristics",
+   "fr": "décrire les principales composantes du système solaire et de l'Univers et comparer leurs caractéristiques",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9E2.5": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.5",
+   "en": "quantify distances in the solar system and the universe by applying an understanding of relative distances…",
+   "fr": "quantifier des distances dans le système solaire et l'Univers en utilisant les distances relatives…",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s9E2.6": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.6",
+   "en": "conduct investigations to explain the causes of various astronomical phenomena that can be observed from Earth",
+   "fr": "mener des recherches pour expliquer les causes de divers phénomènes astronomiques observables depuis la Terre",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
+  },
+  "s10C2.6": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "C2.6",
+   "en": "plan and conduct an inquiry to classify some common substances as acidic, basic, or neutral",
+   "fr": "planifier et mener une enquête pour classer des substances courantes comme acides, basiques ou neutres",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10C3.7": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "C3.7",
+   "en": "describe how the pH scale is used to classify solutions as acidic, basic, or neutral",
+   "fr": "décrire comment l'échelle de pH sert à classer les solutions comme acides, basiques ou neutres",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10D2.7": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D2.7",
+   "en": "investigate the influence of ocean currents on local and global heat transfer and precipitation patterns",
+   "fr": "étudier l'influence des courants océaniques sur le transfert de chaleur et les régimes de précipitations",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10D3.2": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D3.2",
+   "en": "describe and explain heat transfer in the hydrosphere and atmosphere and its effects on air and water currents",
+   "fr": "décrire et expliquer le transfert de chaleur dans l'hydrosphère et l'atmosphère et ses effets sur les courants d'air et d'eau",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10D3.5": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D3.5",
+   "en": "describe the principal sources and sinks, both natural and anthropogenic, of greenhouse gases",
+   "fr": "décrire les principales sources et les principaux puits, naturels et anthropiques, de gaz à effet de serre",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10D3.6": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D3.6",
+   "en": "describe how different carbon and nitrogen compounds trap heat in the atmosphere and hydrosphere",
+   "fr": "décrire comment divers composés de carbone et d'azote retiennent la chaleur dans l'atmosphère et l'hydrosphère",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10E2.2": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "E2.2",
+   "en": "use an inquiry process to investigate the laws of reflection, using plane and curved mirrors, and draw ray diagrams",
+   "fr": "utiliser un processus d'enquête pour étudier les lois de la réflexion avec des miroirs plans et courbes, et tracer des diagrammes de rayons",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10E2.4": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "E2.4",
+   "en": "use an inquiry process to investigate the refraction of light as it passes through media of different refractive indices",
+   "fr": "utiliser un processus d'enquête pour étudier la réfraction de la lumière dans des milieux d'indices de réfraction différents",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "s10E3.5": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "E3.5",
+   "en": "describe the characteristics and positions of images formed by converging lenses, using ray diagrams",
+   "fr": "décrire, à l'aide de diagrammes de rayons, les caractéristiques et la position des images formées par des lentilles convergentes",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
+  },
+  "m5B1.4": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "B1.4",
+   "en": "compare and order fractions from halves to twelfths, including improper fractions and mixed numbers, in various contexts",
+   "fr": "comparer et ordonner des fractions des demis aux douzièmes, y compris des fractions impropres et des nombres fractionnaires",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5C1.2": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "C1.2",
+   "en": "create and translate growing and shrinking patterns using various representations, including tables of values and graphs",
+   "fr": "créer et traduire des suites croissantes et décroissantes au moyen de diverses représentations, dont des tables de valeurs et des graphiques",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5E1.1": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.1",
+   "en": "identify geometric properties of triangles, and construct different types of triangles when given side or angle measurements",
+   "fr": "identifier les propriétés géométriques des triangles et construire différents types de triangles à partir de mesures de côtés ou d'angles",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5E1.2": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.2",
+   "en": "construct three-dimensional objects when given their top, front, and side views",
+   "fr": "construire des objets à trois dimensions à partir de leurs vues de dessus, de face et de côté",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5E1.4": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.4",
+   "en": "plot and read coordinates in the first quadrant of a Cartesian plane using various scales, and describe the translations that move a point from one coordinate to another",
+   "fr": "situer et lire des coordonnées dans le premier quadrant d'un plan cartésien et décrire les translations qui déplacent un point",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5E1.5": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.5",
+   "en": "describe and perform translations, reflections, and rotations up to 180° on a grid, and predict the results of these transformations",
+   "fr": "décrire et effectuer des translations, des réflexions et des rotations jusqu'à 180° sur une grille, et prédire le résultat",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5E2.5": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E2.5",
+   "en": "use the area relationships among rectangles, parallelograms, and triangles to develop the formulas for the area of a parallelogram and a triangle",
+   "fr": "utiliser les relations d'aire entre rectangles, parallélogrammes et triangles pour établir les formules d'aire du parallélogramme et du triangle",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m5E2.6": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E2.6",
+   "en": "show that two-dimensional shapes with the same area can have different perimeters, and solve related problems",
+   "fr": "démontrer que des figures planes de même aire peuvent avoir des périmètres différents, et résoudre des problèmes connexes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m6E1.1": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E1.1",
+   "en": "create lists of geometric properties of various types of quadrilaterals, including the properties of the diagonals, rotational symmetry, and line symmetry",
+   "fr": "dresser la liste des propriétés de divers quadrilatères, dont les diagonales, la symétrie de rotation et la symétrie axiale",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m6E1.2": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E1.2",
+   "en": "draw top, front, and side views, as well as perspective views, of objects and physical spaces, using appropriate scales",
+   "fr": "dessiner les vues de dessus, de face et de côté ainsi que des vues en perspective d'objets et d'espaces, à l'échelle",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m6E1.3": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E1.3",
+   "en": "plot and read coordinates in all four quadrants of a Cartesian plane, and describe the translations that move a point",
+   "fr": "situer et lire des coordonnées dans les quatre quadrants d'un plan cartésien et décrire les translations qui déplacent un point",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m6E1.4": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E1.4",
+   "en": "describe and perform combinations of translations, reflections, and rotations up to 360° on a grid, and predict the results",
+   "fr": "décrire et effectuer des combinaisons de translations, de réflexions et de rotations jusqu'à 360° sur une grille, et prédire le résultat",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m6E2.5": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E2.5",
+   "en": "create and use nets to demonstrate the relationship between the faces of prisms and pyramids and their surface areas",
+   "fr": "créer et utiliser des développements pour montrer la relation entre les faces des prismes et des pyramides et leur aire totale",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m7E1.1": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "E1.1",
+   "en": "describe and classify cylinders, pyramids, and prisms according to their geometric properties, including plane and rotational symmetry",
+   "fr": "décrire et classer des cylindres, des pyramides et des prismes selon leurs propriétés, y compris la symétrie plane et de rotation",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m7E1.2": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "E1.2",
+   "en": "make objects and models using appropriate scales, given their top, front, and side views or their perspective views",
+   "fr": "fabriquer des objets et des maquettes à l'échelle à partir de leurs vues de dessus, de face et de côté ou en perspective",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m7E2.3": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "E2.3",
+   "en": "use the relationships between the radius, diameter, and circumference of a circle to explain the formula for circumference and solve related problems",
+   "fr": "utiliser les relations entre le rayon, le diamètre et la circonférence d'un cercle pour expliquer la formule de la circonférence",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m7D1.6": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "D1.6",
+   "en": "analyse different sets of data presented in various ways by asking and answering questions, challenging preconceived notions, and drawing conclusions",
+   "fr": "analyser divers ensembles de données en posant des questions et en y répondant, en remettant en question des idées préconçues et en tirant des conclusions",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m8E1.3": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E1.3",
+   "en": "use scale drawings to calculate actual lengths and areas, and reproduce scale drawings at different ratios",
+   "fr": "utiliser des dessins à l'échelle pour calculer des longueurs et des aires réelles, et reproduire des dessins à différentes échelles",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m8E1.4": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E1.4",
+   "en": "describe and perform translations, reflections, rotations, and dilations on a Cartesian plane, and predict the results",
+   "fr": "décrire et effectuer des translations, des réflexions, des rotations et des homothéties dans un plan cartésien, et prédire le résultat",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m8E2.4": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E2.4",
+   "en": "describe the Pythagorean relationship using various geometric models, and apply the theorem to solve problems",
+   "fr": "décrire la relation de Pythagore au moyen de modèles géométriques et appliquer le théorème pour résoudre des problèmes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m8D1.6": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "D1.6",
+   "en": "analyse different sets of data presented in various ways, including scatter plots and misleading graphs, and draw conclusions",
+   "fr": "analyser divers ensembles de données, y compris des diagrammes de dispersion et des graphiques trompeurs, et tirer des conclusions",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+  },
+  "m9B3.5": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "B3.5",
+   "en": "pose and solve problems involving rates, percentages, and proportions in various contexts",
+   "fr": "poser et résoudre des problèmes comportant des taux, des pourcentages et des proportions",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9C3.1": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "C3.1",
+   "en": "compare the shapes of graphs of linear and non-linear relations to describe their rates of change and make predictions",
+   "fr": "comparer la forme des graphiques de relations linéaires et non linéaires pour décrire leur taux de variation et faire des prédictions",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9C3.2": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "C3.2",
+   "en": "represent linear relations using concrete materials, tables of values, graphs, and equations, and connect the representations",
+   "fr": "représenter des relations linéaires par du matériel concret, des tables de valeurs, des graphiques et des équations, et relier ces représentations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9C4.3": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "C4.3",
+   "en": "translate, reflect, and rotate lines defined by y = ax, and determine the effect of these transformations",
+   "fr": "effectuer des translations, des réflexions et des rotations de droites définies par y = ax, et déterminer l'effet de ces transformations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9E1.2": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.2",
+   "en": "create and analyse designs involving geometric relationships and circle and triangle properties, using various tools",
+   "fr": "créer et analyser des motifs faisant appel à des relations géométriques et aux propriétés des cercles et des triangles",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9E1.4": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.4",
+   "en": "show how changing one or more dimensions of a two-dimensional shape and a three-dimensional object affects perimeter, area, surface area, and volume",
+   "fr": "montrer comment la modification de dimensions d'une figure plane ou d'un solide influe sur le périmètre, l'aire, l'aire totale et le volume",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9E1.5": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.5",
+   "en": "solve problems involving the side-length relationship for right triangles in real-life situations, including problems that involve composite shapes",
+   "fr": "résoudre des problèmes liés à la relation entre les côtés des triangles rectangles, y compris avec des figures composées",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m9E1.6": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.6",
+   "en": "solve problems involving the volume of prisms, pyramids, cylinders, and cones",
+   "fr": "résoudre des problèmes liés au volume de prismes, de pyramides, de cylindres et de cônes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
+  },
+  "m10Trig": {
+   "subj": "math",
+   "grade": 10,
+   "course": "MPM2D",
+   "code": "Trigonometry 2",
+   "en": "solve problems involving right triangles, using the primary trigonometric ratios and the Pythagorean theorem",
+   "fr": "résoudre des problèmes portant sur des triangles rectangles à l'aide des rapports trigonométriques de base et du théorème de Pythagore",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics"
+  }
+ },
+ "processes": {
+  "sci": {
+   "research": {
+    "en": "Scientific research process",
+    "fr": "Processus de recherche scientifique",
+    "ref": "A1.1"
    },
-   {
-    "label": "Gr 7 · Strand D: Form and Function",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "cube-challenge",
-  "title": "Cube Challenge",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students compose unique 3D structures using six cubes and work collaboratively to compare them.",
-  "skills": [
-   "Mental Rotation",
-   "Visualization",
-   "Perspective Taking",
-   "Spatial Language"
-  ],
-  "objectives": "Compose unique 3D structures using only six cubes; work collaboratively using spatial language; use physical and mental rotation to confirm structures are unique.",
-  "materials": [
-   "Snap cubes"
-  ],
-  "link": "https://docs.google.com/document/d/1PSMPLSPqxScStLI5o0B38Zx7gVuqAacS/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 5–8 · Strand A1: STEM Investigation & Communication Skills",
-    "url": null,
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "mandalas",
-  "title": "Mandalas",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students identify spatial properties in mandalas and create their own mandala using specified criteria.",
-  "skills": [
-   "Mental Rotation",
-   "Visualization",
-   "Spatial Language"
-  ],
-  "objectives": "Identify spatial (transformational and symmetrical) properties used in mandalas; create a mandala using specified criteria.",
-  "materials": [
-   "Printed complete and incomplete mandalas",
-   "Mandala templates"
-  ],
-  "link": "https://docs.google.com/document/d/1Tm5yTUA_JyYwZA6r2Xcg-hECFlW6-HGZ/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 5–8 Math · Strand C: Algebra"
-  ],
-  "concepts": []
- },
- {
-  "id": "building-structures-and-creating-views",
-  "title": "Building Structures and Creating Views",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students build 3D structures from different views and draw top, front, and side views of a structure.",
-  "skills": [
-   "Orientation",
-   "Visualization",
-   "Perspective Taking"
-  ],
-  "objectives": "Construct 3D structures using pictures of a structure from three different views (top, front, and side); draw three different views of a 3D structure.",
-  "materials": [
-   "Snap cubes or other stackable objects",
-   "Paper",
-   "Writing utensil"
-  ],
-  "link": "https://docs.google.com/document/d/1kAKkUY0MDonZUXCLOLEqKRv6GArNcJ_F/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 7 · Strand D: Form and Function",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "supporting"
+   "experiment": {
+    "en": "Scientific experimentation process",
+    "fr": "Processus d'expérimentation scientifique",
+    "ref": "A1.2"
    },
-   {
-    "label": "Gr 5 · Strand D: Forces Acting on Structures",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-5",
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "the-paper-folding-skeptic",
-  "title": "The Paper Folding Skeptic",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students fold paper into specific shapes and justify that their shape has a particular area.",
-  "skills": [
-   "Mental Rotation",
-   "Visualization",
-   "Spatial Language"
-  ],
-  "objectives": "Fold paper into specific shapes and convince a partner that the shape has a specific area.",
-  "materials": [
-   "Paper"
-  ],
-  "link": "https://docs.google.com/document/d/1Xc6JiXbqaEZ_6XPC4PLZqq6QxlWvfb57/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "playing-with-knots",
-  "title": "Playing with Knots",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students investigate the properties of mathematical knots and explore knot theory while developing mental rotation and orientation skills.",
-  "skills": [
-   "Mental Rotation",
-   "Orientation"
-  ],
-  "objectives": "Investigate properties of mathematical knots and explore knot theory while developing mental rotation and orientation skills.",
-  "materials": [
-   "String"
-  ],
-  "link": "https://docs.google.com/document/d/1Xc6JiXbqaEZ_6XPC4PLZqq6QxlWvfb57/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "copy-my-flag",
-  "title": "Copy my Flag",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students draw a unique flag, then describe it using spatial language so a partner can recreate it.",
-  "skills": [
-   "Perspective Taking",
-   "Visualization",
-   "Spatial Language"
-  ],
-  "objectives": "Draw a unique flag, then stand back-to-back with a partner and describe the flag using spatial language so the partner can attempt to draw it from the description.",
-  "materials": [
-   "Paper",
-   "Pencils or markers"
-  ],
-  "link": "https://drive.google.com/file/d/1IlJPeU38edMvwynrfd3n0IADD-8maN2b/view",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 5–8 · Strand A1: STEM Investigation & Communication Skills",
-    "url": null,
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "matchstick-puzzles",
-  "title": "Matchstick Puzzles",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students move, remove, or add matchsticks or toothpicks to modify an existing shape under various puzzle conditions.",
-  "skills": [
-   "Mental Rotation",
-   "Visualization"
-  ],
-  "objectives": "Move, remove, or add matchsticks or toothpicks to modify an existing shape in some way; solve puzzles of varying difficulty.",
-  "materials": [
-   "Matchsticks or toothpicks"
-  ],
-  "link": "https://docs.google.com/document/d/1ljzjgkNvbB6FqhXkrMcAJK2-DMwkPUfh/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand C: Algebra",
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "pentomino-battleship",
-  "title": "Pentomino Battleship",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students place pentomino squares on a grid while partners use spatial language to determine their locations.",
-  "skills": [
-   "Visualization",
-   "Spatial Language",
-   "Perspective Taking"
-  ],
-  "objectives": "Place pentomino squares on a grid while a partner uses spatial language and reasoning to determine their locations in a battleship-style game.",
-  "materials": [
-   "Pentomino squares",
-   "Printed grids"
-  ],
-  "link": "https://docs.google.com/document/d/1GqjJPPSH0iG50uXAZvtQrX6fNOH1RI6s/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "mondrian-art-puzzles",
-  "title": "Mondrian Art Puzzles",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students cover a 7x7 grid under specific rules, aiming to minimize their score while following the constraints.",
-  "skills": [
-   "Mental Rotation",
-   "Orientation",
-   "Spatial Language",
-   "Visualization"
-  ],
-  "objectives": "Cover a 7x7 grid under several sets of rules (e.g., using only rectangles of different dimensions); aim to minimize score while following the rules.",
-  "materials": [
-   "Printed activity sheets",
-   "Markers or pencil crayons"
-  ],
-  "link": "https://docs.google.com/document/d/1-CX9rn_h6oDIf8XwZ9WJ2JH7TSIFdj7B/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "rectangles",
-  "title": "Rectangles",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students roll dice to determine the dimensions of rectangles and draw them on a grid.",
-  "skills": [
-   "Perspective Taking",
-   "Visualization",
-   "Orientation"
-  ],
-  "objectives": "Roll dice to determine the size of rectangles to draw on a grid.",
-  "materials": [
-   "Grid paper or premade 18x18 game sheets",
-   "Markers or pencil crayons"
-  ],
-  "link": "https://docs.google.com/document/d/1aZdGD8SnThVHuy8HGmyuZO2Ld6BRbgIe/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand B: Number",
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "cube-nets",
-  "title": "Cube Nets",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students determine which net pieces combine to form a cube by visualising how faces connect and fold.",
-  "skills": [
-   "Perspective Taking",
-   "Mental Rotation",
-   "Orientation"
-  ],
-  "objectives": "Identify which pairs of net pieces combine to form each 3D solid by visualising how faces connect and fold.",
-  "materials": [
-   "Printed and cut cube nets"
-  ],
-  "link": "https://docs.google.com/document/d/1-CX9rn_h6oDIf8XwZ9WJ2JH7TSIFdj7B/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 7 · Strand D: Form and Function",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "creating-a-paper-drum",
-  "title": "Creating a Paper Drum",
-  "grades": [
-   8
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students plan, design, and create a paper drum by measuring, drawing schematics, and making decisions connected to Indigenous cultural practices.",
-  "skills": [
-   "Mental Rotation",
-   "Spatial Language",
-   "Schematizing"
-  ],
-  "objectives": "Before cutting out or making each part of the drum (ring, hide, strings) students must measure, plan, draw schemas of, and discuss their problem-solving",
-  "materials": [
-   "Paper",
-   "scissors",
-   "pencils/markers",
-   "rulers",
-   "yarn",
-   "hole punch",
-   "thin cardboard",
-   "tape or stapler"
-  ],
-  "link": "https://indigenous.mathnetwork.educ.ubc.ca/drum-making-part-2/",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 5–8 · Strand A3: Applications, Connections & Contributions",
-    "url": null,
-    "strength": "supporting"
+   "design": {
+    "en": "Engineering design process",
+    "fr": "Processus de design en ingénierie",
+    "ref": "A1.3"
    },
-   {
-    "label": "Gr 4 · Strand C: Light and Sound",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-4",
-    "strength": "supporting"
+   "communicate": {
+    "en": "Communicating findings",
+    "fr": "Communication des résultats",
+    "ref": "A1.5 (Gr 1–8)"
    }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "geometry-for-combatting-food-insecurity",
-  "title": "Geometry for Combatting Food Insecurity",
-  "grades": [
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students use diagrams and digital tools to determine the best location for a new supermarket to address a food‑desert problem.",
-  "skills": [
-   "Mental Rotation",
-   "Schematizing"
-  ],
-  "objectives": "Work through a Desmos lesson plan to apply trigonometric ratios and angle reasoning in a real‑world context.",
-  "materials": [
-   "Computers(a group can work together)",
-   "student handouts"
-  ],
-  "link": "https://sites.google.com/view/mtc4socialjustice/mtc4sj-book/hungry-for-change",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 10 MPM2D · Trigonometry"
-  ],
-  "concepts": []
- },
- {
-  "id": "linear-equation-marbleslide",
-  "title": "Linear Equation “Marbleslide”",
-  "grades": [
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students transform linear equations to guide marbles through stars, exploring how algebraic changes affect graphical representations.",
-  "skills": [
-   "Multiple Representations",
-   "Visuospatial Manipulation"
-  ],
-  "objectives": "Analyze relationships between equations and their graphical transformations.",
-  "materials": [
-   "Computers (Desmos)"
-  ],
-  "link": "https://classroom.amplify.com/activity/566b31734e38e1e21a10aac8?collections=651ca31cf69ee59aa9e3818a%2C632c77b104648305feffcfda",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 9 MTH1W · Strand C: Algebra (linear relations)"
-  ],
-  "concepts": []
- },
- {
-  "id": "exploring-squares-and-triangles",
-  "title": "Exploring Squares and Triangles",
-  "grades": [
-   8,
-   9,
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students explore relationships between squares and right triangles to develop understanding of the Pythagorean theorem.",
-  "skills": [
-   "Mental Rotation",
-   "Visuospatial Manipulation"
-  ],
-  "objectives": "Develop and apply the Pythagorean theorem through exploration.",
-  "materials": [
-   "Dot paper or geoboards",
-   "blackline masters",
-   "scissors"
-  ],
-  "link": "",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense (Pythagorean relationship, Gr 8)",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "pi-in-the-sky-challenge-frozen-ocean",
-  "title": "Pi in the Sky Challenge – Frozen Ocean",
-  "grades": [
-   8
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students use π to calculate the volume of Europa’s ocean while learning about space exploration and planetary science.",
-  "skills": [
-   "Mental Rotation",
-   "Multiple Representations"
-  ],
-  "objectives": "Students complete the visual mathematics problem to determine the likely volume of Europa’s ocean",
-  "materials": [
-   "Computers",
-   "student handouts"
-  ],
-  "link": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/frozen-formula-a-pi-in-the-sky-math-challenge/",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand E: The Study of the Universe",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+  },
+  "math": {
+   "problem": {
+    "en": "Problem solving",
+    "fr": "Résolution de problèmes"
    },
-   {
-    "label": "Gr 6 · Strand E: Space",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "supporting"
+   "reasoning": {
+    "en": "Reasoning and proving",
+    "fr": "Raisonnement et preuve"
+   },
+   "reflecting": {
+    "en": "Reflecting",
+    "fr": "Réflexion"
+   },
+   "connecting": {
+    "en": "Connecting",
+    "fr": "Établissement de liens"
+   },
+   "communicating": {
+    "en": "Communicating",
+    "fr": "Communication"
+   },
+   "representing": {
+    "en": "Representing",
+    "fr": "Représentation"
+   },
+   "tools": {
+    "en": "Selecting tools and strategies",
+    "fr": "Sélection d'outils et de stratégies"
    }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense (circles, volume)",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": [
-   "Solar system, movement of celestial body, types of celestial objects",
-   "Remote sensing, telescopes, RADARSTAT satellites, etc."
-  ]
+  }
  },
- {
-  "id": "the-nature-of-science-puzzle",
-  "title": "The Nature of Science Puzzle",
-  "grades": [
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students complete spatial puzzles to explore how scientific understanding evolves through investigation and revision.",
-  "skills": [
-   "Mental Rotation"
-  ],
-  "objectives": "Students complete two puzzles (one that does not include the “X” square; one that does).",
-  "materials": [
-   "Printed and cut‑out puzzle pieces"
-  ],
-  "link": "https://www.scienceteacherprogram.org/genscience/Choi04.html",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand A: STEM Investigation Skills & Careers",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+ "activities": [
+  {
+   "id": "skyscrapers",
+   "title": {
+    "en": "Skyscrapers",
+    "fr": "Gratte-ciel"
    },
-   {
-    "label": "Gr 5–8 · Strand A1: STEM Investigation & Communication Skills",
-    "url": null,
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": []
- },
- {
-  "id": "when-do-lunar-eclipses-happen",
-  "title": "When Do Lunar Eclipses Happen?",
-  "grades": [
-   7
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students build and use a physical model to explore why lunar eclipses occur less frequently than expected.",
-  "skills": [
-   "Mental Rotation",
-   "Multiple Representations",
-   "Visualization",
-   "Perspective Taking",
-   "Orientation"
-  ],
-  "objectives": "Explain lunar eclipses using physical and conceptual models.",
-  "materials": [
-   "Paper plates",
-   "pencil/marker",
-   "scissors",
-   "small ball",
-   "optional tracing object"
-  ],
-  "link": "https://www.jpl.nasa.gov/edu/resources/project/when-do-lunar-eclipses-happen-2/",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 6 · Strand E: Space",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "direct"
+   "summary": {
+    "en": "Students construct 3D towers using pictures of front and side views.",
+    "fr": "Les élèves construisent des tours en 3D à partir d'images de leurs vues de face et de côté."
    },
-   {
-    "label": "Gr 9 SNC1W · Strand E: The Study of the Universe",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Correct use of equipment and tools",
-   "Solar system, movement of celestial body, types of celestial objects"
-  ]
- },
- {
-  "id": "expanding-universe",
-  "title": "Expanding Universe",
-  "grades": [
-   8,
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students use a balloon model to investigate how distances between galaxies change as the universe expands.",
-  "skills": [
-   "Multiple Representations"
-  ],
-  "objectives": "Explore relationships between distance, speed, and redshift.",
-  "materials": [
-   "Balloon",
-   "sticky dots",
-   "ruler",
-   "string",
-   "stopwatch",
-   "student worksheet"
-  ],
-  "link": "https://www.schoolsobservatory.org/things-to-do/create-expanding-universe",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand E: The Study of the Universe",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "objectives": {
+    "en": "Construct three-dimensional towers using provided pictures of the front and side views of the towers.",
+    "fr": "Construire des tours à trois dimensions à partir d'images de leurs vues de face et de côté."
    },
-   {
-    "label": "Gr 6 · Strand E: Space",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand D: Data"
-  ],
-  "concepts": [
-   "Correct use of equipment and tools",
-   "Solar system, movement of celestial body, types of celestial objects",
-   "Earth and the solar system"
-  ]
- },
- {
-  "id": "solar-system-scale-model",
-  "title": "Solar System Scale Model",
-  "grades": [
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students calculate scaled distances and sizes to construct a physical model of the solar system.",
-  "skills": [
-   "Mental Rotation",
-   "Multiple Representations"
-  ],
-  "objectives": "Model movement and scale of celestial bodies.",
-  "materials": [
-   "Paper",
-   "scissors",
-   "glue",
-   "printer or toilet paper rolls"
-  ],
-  "link": "https://drive.google.com/drive/folders/13jMHNcZSTpvwIGOe7gqd76OOk9pleCBX",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 6 · Strand E: Space",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "direct"
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Orientation",
+    "Perspective Taking"
+   ],
+   "materials": {
+    "en": [
+     "10 snap cubes per student, in 4 colours (yellow = 1 unit tall, green = 2, blue = 3, pink/red = 4)",
+     "Printed game boards (4 × 4 and 5 × 5 grids; Appendix B)",
+     "Warm-up slide deck (Appendix A), projected in edit mode",
+     "Optional: virtual game board (Appendix C)"
+    ],
+    "fr": [
+     "10 cubes emboîtables par élève, en 4 couleurs (jaune = 1 unité, vert = 2, bleu = 3, rose/rouge = 4)",
+     "Plateaux de jeu imprimés (grilles 4 × 4 et 5 × 5; annexe B)",
+     "Diaporama d'échauffement (annexe A), projeté en mode édition",
+     "Facultatif : plateau virtuel (annexe C)"
+    ]
    },
-   {
-    "label": "Gr 9 SNC1W · Strand E: The Study of the Universe",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand B: Number (scale, ratio)"
-  ],
-  "concepts": []
- },
- {
-  "id": "atomic-theory-schematic-note-taking",
-  "title": "Atomic Theory (Schematic Note‑Taking)",
-  "grades": [
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students explore the development of atomic theory using schematic note‑taking and visual representations.",
-  "skills": [
-   "Multiple Representations",
-   "Schematizing"
-  ],
-  "objectives": "Communicate scientific ideas through models and diagrams.",
-  "materials": [
-   "Student handout",
-   "optional paper bags and assorted objects"
-  ],
-  "link": "https://drive.google.com/drive/folders/1V2PpO2RtVZFV7akh8cnk1uAJ6lVW1djr?usp=share_link",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand C: Atoms, Elements & Compounds",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
-   }
-  ],
-  "math": [],
-  "concepts": []
- },
- {
-  "id": "electrical-circuit-diagrams",
-  "title": "Electrical Circuit Diagrams",
-  "grades": [
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students learn to represent electrical circuits using schematic diagrams and hands‑on wiring challenges.",
-  "skills": [
-   "Mental Rotation",
-   "Multiple Representations",
-   "Schematizing"
-  ],
-  "objectives": "Interpret and construct electrical circuit diagrams.",
-  "materials": [
-   "Wires",
-   "lightbulbs",
-   "batteries"
-  ],
-  "link": "https://drive.google.com/drive/folders/1mSSIv9YQ8_pK9eLC6NFVPX8EdWgJeuHZ",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand D: The Study of Electricity",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "prep": {
+    "en": "Sort cubes by colour so each height has one colour. Students work in pairs.",
+    "fr": "Trier les cubes par couleur (une couleur par hauteur). Travail en dyades."
    },
-   {
-    "label": "Gr 6 · Strand C: Electrical Phenomena",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "direct"
-   }
-  ],
-  "math": [],
-  "concepts": []
- },
- {
-  "id": "trig-river",
-  "title": "Trig River",
-  "grades": [
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students apply right‑angle trigonometry to estimate and calculate the width of a simulated river.",
-  "skills": [
-   "Visuospatial Manipulation"
-  ],
-  "objectives": "Solve trigonometric problems in a physical context.",
-  "materials": [
-   "Worksheet",
-   "protractor",
-   "string",
-   "ruler or tape measure"
-  ],
-  "link": "https://www.teachengineering.org/activities/view/cub_navigation_lesson03_activity2",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 10 MPM2D · Trigonometry"
-  ],
-  "concepts": []
- },
- {
-  "id": "discovering-pi-through-circles",
-  "title": "Discovering Pi Through Circles",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students investigate the relationship between a circle’s circumference and diameter by measuring, estimating, and comparing multiple circles.",
-  "skills": [
-   "Multiple Representations",
-   "Schematizing"
-  ],
-  "objectives": "Develop an understanding of π as a constant ratio relating circumference and diameter.",
-  "materials": [
-   "Paper",
-   "string",
-   "ruler",
-   "pencils or markers",
-   "scissors"
-  ],
-  "link": "",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense (circumference)",
-   "Gr 9 MTH1W · Strand E: Geometry & Measurement"
-  ],
-  "concepts": []
- },
- {
-  "id": "sewing-machines",
-  "title": "Sewing Machines",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students apply mental rotation and orientation skills to predict the output of combined “sewing machines” based on given fabric inputs and transformation rules.",
-  "skills": [
-   "Mental Rotation",
-   "Orientation"
-  ],
-  "objectives": "Determine an output from a sewing machine based on given input cloth patterns and manipulation instructions that each machine follows.",
-  "materials": [
-   "Print outs or projections"
-  ],
-  "link": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2024BCCContest5_6.html",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 5–8 · Strand A2: Coding",
-    "url": null,
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand E: Spatial Sense (transformations)",
-   "Gr 5–8 Math · Strand C: Algebra (coding)"
-  ],
-  "concepts": []
- },
- {
-  "id": "radioactive-decay-model",
-  "title": "Radioactive Decay Model",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students explore the idea of half-life by using visual representations.",
-  "skills": [
-   "Spatial Language",
-   "Visualization"
-  ],
-  "objectives": "Throw one hundred coins, remove all those that come up tails in a pile to create a hands-on model for radioactive decay. The piles graphically show the meaning of the term “half-life.”",
-  "materials": [
-   "Coins or double sided counters"
-  ],
-  "link": "https://www.exploratorium.edu/snacks/radioactive-decay-model",
-  "subject": "Math + Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand C: Atoms, Elements & Compounds",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand D: Data"
-  ],
-  "concepts": []
- },
- {
-  "id": "shadow-sketching",
-  "title": "Shadow Sketching",
-  "grades": [
-   6,
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students sketch the changing shadow of an object over time to explore how the position of the sun (or Earth’s rotation) affects shadow direction, length, and shape.",
-  "skills": [
-   "Orientation",
-   "Multiple Representations",
-   "Visualization"
-  ],
-  "objectives": "Observe and record changing shadows of a stick/object to explain how Earth’s rotation affects the apparent movement of the sun.",
-  "materials": [
-   "Paper",
-   "pencil or chalk",
-   "small object (e.g., toy or block)",
-   "sunny outdoor space",
-   "clock or timer"
-  ],
-  "link": "https://www.scientificamerican.com/article/rad-shadow-sketch/",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 6 · Strand E: Space",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "direct"
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1kAKkUY0MDonZUXCLOLEqKRv6GArNcJ_F/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.2",
+    "m6E1.2",
+    "m7E1.2"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "problem",
+     "reasoning",
+     "representing"
+    ]
    },
-   {
-    "label": "Gr 9 SNC1W · Strand E: The Study of the Universe",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": []
- },
- {
-  "id": "exploring-light-with-optics-design-challenge-laser-maze",
-  "title": "Exploring Light with Optics (Design Challenge: Laser Maze)",
-  "grades": [
-   6
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Part of a comprehensive unit plan designed the Perimeter Institute, this activity (p.52-60) invites students use their knowledge of reflection and refraction to build and solve laser mazes. While originally designed for Grade 10 students, this activity can adapted for use in younger grades using reflection only.",
-  "skills": [
-   "Perspective Taking",
-   "Visualization",
-   "Mental Rotation",
-   "Visuospatial Manipulation"
-  ],
-  "objectives": "Design Challenge - Students will understand and apply behaviour and properties of light, sound and olfactory receptors",
-  "materials": [
-   "paper and pencils",
-   "laser pointer",
-   "mirror squares (or tin foil)",
-   "binder clips",
-   "modelling clay",
-   "shallow cardboard box",
-   "tape",
-   "protractor"
-  ],
-  "link": "https://resources.perimeterinstitute.ca/products/exploring-light-with-optics",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 4 · Strand C: Light and Sound",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-4",
-    "strength": "direct"
+   "adaptedFrom": "The Robertson Program, OISE",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "cube-challenge",
+   "title": {
+    "en": "Cube Challenge",
+    "fr": "Défi des cubes"
    },
-   {
-    "label": "Gr 10 SNC2D · Physics: Light & Geometric Optics",
-    "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf",
-    "strength": "direct"
-   }
-  ],
-  "math": [],
-  "concepts": []
- },
- {
-  "id": "exploring-light-with-optics-activity-stations-activity-1-how",
-  "title": "Exploring Light with Optics (Activity Stations: Activity 1 - How Do We See?)",
-  "grades": [
-   6
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Part of a comprehensive unit plan designed the Perimeter Institute, this hands-on station activity (p.13 -23), students investigate several optical principles that underlie how our eyes work by exploring six topics: how the eye uses a converging lens, how the eye sees objects at varying distances (accommodation), how the pupils work, how peripheral vision works, how to locate the eye’s blind spot, and why we have two eyes. These quick activities at different stations are supported by station cards and a student activity sheet.",
-  "skills": [
-   "Visualization",
-   "Schematizing",
-   "Multiple Representations",
-   "Mental Rotation"
-  ],
-  "objectives": "Use optics concepts to model and understand key aspects of human vision",
-  "materials": [
-   "Varied. Stations 1-3 require advanced preparation and specialized lab equipment that may not be available at all schools. Stations 4-6 require less preparation and readily available materials (e.g., pen, paper, meter stick, tape, whiteboard). On their own, stations 4-6 will still provide self-contained, high-quality learning experiences."
-  ],
-  "link": "https://resources.perimeterinstitute.ca/products/exploring-light-with-optics",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 4 · Strand C: Light and Sound",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-4",
-    "strength": "direct"
+   "summary": {
+    "en": "Students compose unique 3D structures using six cubes and work collaboratively to compare them.",
+    "fr": "Les élèves composent des structures 3D uniques avec six cubes et les comparent en équipe."
    },
-   {
-    "label": "Gr 10 SNC2D · Physics: Light & Geometric Optics",
-    "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf",
-    "strength": "direct"
+   "objectives": {
+    "en": "Compose unique 3D structures using only six cubes; work collaboratively using spatial language; use physical and mental rotation to confirm structures are unique.",
+    "fr": "Composer des structures 3D uniques avec des cubes; collaborer en utilisant le langage spatial; utiliser la rotation physique et mentale pour vérifier que les structures sont différentes."
    },
-   {
-    "label": "Gr 5 · Strand B: Human Organ Systems",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-5",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Correct use of equipment and tools",
-   "Behaviour and properties of light, sound and olfactory receptors",
-   "Interactions among sense organs, nerves and the brain enabling organisms to predict, analyze, and respond to changes in their environment"
-  ]
- },
- {
-  "id": "using-empirical-data-in-the-classroom-raptor-migration",
-  "title": "Using Empirical Data in the Classroom: Raptor Migration",
-  "grades": [
-   7,
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Why do birds migrate? How do seasonal changes in primary productivity influence the behaviors of higher order consumers like raptors? Students will use visualizations to explore the connectedness of organisms within and across ecosystems in this teacher-guided activity. Note: this activity is related to/can be used with Photosynthesis Seen from Space Activity.",
-  "skills": [
-   "Visualization",
-   "Multiple Representations"
-  ],
-  "objectives": "Students will\n\n- Analyze real scientific data from a short visualization clip to form logical hypotheses about what drives the migration patterns of raptors.\n-  Explore how seasonal changes in primary productivity influence the behaviors of higher order consumers.",
-  "materials": [
-   "Student handout (downloadable link in lesson plan)",
-   "Computers and/or projectors with internet access for video viewing"
-  ],
-  "link": "https://www.calacademy.org/educators/lesson-plans/using-empirical-data-in-the-classroom-raptor-migrations",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 7 · Strand B: Interactions in the Environment",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "direct"
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Visualization",
+    "Perspective Taking",
+    "Spatial Language"
+   ],
+   "materials": {
+    "en": [
+     "Snap cubes sorted by colour: about 30 per pair (one colour per pair)",
+     "A mat or tray per group for each set of unique structures",
+     "Optional: class chart to record structures",
+     "Optional: answer key for the 29 five-cube structures (in lesson plan)"
+    ],
+    "fr": [
+     "Cubes emboîtables triés par couleur : environ 30 par dyade (une couleur par dyade)",
+     "Un napperon ou plateau par groupe",
+     "Facultatif : tableau de classe pour noter les structures",
+     "Facultatif : corrigé des 29 structures à cinq cubes (dans le plan de leçon)"
+    ]
    },
-   {
-    "label": "Gr 9 SNC1W · Strand B: Sustainable Ecosystems & Climate Change",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand D: Data"
-  ],
-  "concepts": [
-   "Qualitative and quantitative analysis",
-   "Earth and Nutrient Cycles",
-   "Climate science basics, climate resilience",
-   "Ecosystems",
-   "Conservation and stewardship"
-  ]
- },
- {
-  "id": "photosynthesis-seen-from-space",
-  "title": "Photosynthesis Seen from Space",
-  "grades": [
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Observations inspire scientific questions and drive discoveries. In this activity, students will watch a visualization of empirical scientific data to explore seasonal changes in primary productivity on the earth. Note: this activity is related to/can be used with Raptor Migration activity.",
-  "skills": [
-   "Visualization",
-   "Multiple Representations"
-  ],
-  "objectives": "Students will be able to \n- Relate changes in primary productivity in terrestrial and aquatic ecosystems to seasonal changes in sunlight.\n- Observe empirical scientific data and formulate hypotheses to describe patterns in the data.",
-  "materials": [
-   "Computer and projector",
-   "(Optional for extension activity: posters and pens, computers for groups of students for research)"
-  ],
-  "link": "https://www.calacademy.org/educators/lesson-plans/photosynthesis-seen-from-space",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand B: Sustainable Ecosystems & Climate Change",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "prep": {
+    "en": "Start in pairs (3 cubes), then groups of 4–5 (4 and 5 cubes). There are 2, 8 and 29 unique structures.",
+    "fr": "Commencer en dyades (3 cubes), puis en groupes de 4 à 5 (4 et 5 cubes). Il y a 2, 8 et 29 structures uniques."
    },
-   {
-    "label": "Gr 7 · Strand B: Interactions in the Environment",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Qualitative and quantitative analysis",
-   "Climate science basics, climate resilience",
-   "Global climate systems, local and global impacts",
-   "Energy flow in organisms",
-   "Conservation and stewardship",
-   "Ecosystems"
-  ]
- },
- {
-  "id": "carbon-cycle-role-play",
-  "title": "Carbon Cycle Role-Play",
-  "grades": [
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "In this embodied demonstration/role-play, students will model the carbon cycle with and without human interaction. This activity also contains an extension assessment where students interpret their learning by creating diagrams of how carbon flows between the biosphere, hydrosphere, atmosphere and lithosphere. Use the provided materials to tell the story of how human activity can contribute to global climate change.",
-  "skills": [
-   "Multiple Representations",
-   "Schematizing"
-  ],
-  "objectives": "Students will be able to:\n- recognize that there is a finite amount of carbon on earth.\n- model how carbon moves around in the environment, from one place to another.\n- identify how humans influence the carbon cycle.",
-  "materials": [
-   "14-28 of a small, lightweight object to represent carbon (e.g. ping pong balls, pieces of coloured paper)",
-   "Carbon Cycle Role-Play Cards (note that these \"cards\" are the descriptions in the role-play summary table)",
-   "Chalk, if needed for drawing regions",
-   "Large area for student circulation (cafeteria, school yard)"
-  ],
-  "link": "https://www.calacademy.org/educators/lesson-plans/carbon-cycle-role-play",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand B: Sustainable Ecosystems & Climate Change",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1PSMPLSPqxScStLI5o0B38Zx7gVuqAacS/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    },
+    {
+     "en": "Video example",
+     "fr": "Exemple vidéo",
+     "url": "https://youtu.be/nC7tQKd2ZhQ",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.2",
+    "m5E1.5",
+    "m6E1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "communicating",
+     "representing"
+    ]
    },
-   {
-    "label": "Gr 10 SNC2D · Earth & Space: Climate Change",
-    "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf",
-    "strength": "direct"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Energy flow in organisms",
-   "Earth and human activity",
-   "Conservation and stewardship"
-  ]
- },
- {
-  "id": "photosynthesis-activity-with-lego",
-  "title": "Photosynthesis Activity with LEGO",
-  "grades": [
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Designed by MIT's Edgerton Center, this activity invites students to model the photosynthesis reaction with LEGO bricks by building the products from the reactants. Student start with carbon dioxide and water molecules and use them to create glucose and oxygen. Students can show how plants use glucose by modeling cellular respiration, and building starch and cellulose. In addition to a comprehensive activity, this resource also provides a full teacher guide and accompanying lesson.",
-  "skills": [
-   "Mental Rotation",
-   "Visualization",
-   "Multiple Representations",
-   "Schematizing",
-   "Visuospatial Manipulation"
-  ],
-  "objectives": "- Students will develop an understanding of the photosynthesis reaction by modelling it with legos, building the products (glucose and oxygen) from the reactants (carbon dioxide and water). Students can model cellular respiration and build starch and cellulose to show how plants use glucose.",
-  "materials": [
-   "Legos (1 set per group): 36 red bricks (2x4), 12 black bricks (2x4), 24 white bricks (1x2)",
-   "instructional mats (e.g., \"Making glucose molecules\")",
-   "student worksheet"
-  ],
-  "link": "https://edgerton.mit.edu/molecule-sets/photosynthesis",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand B: Sustainable Ecosystems & Climate Change",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "adaptedFrom": "The Robertson Program, OISE",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "mandalas",
+   "title": {
+    "en": "Mandalas",
+    "fr": "Mandalas"
    },
-   {
-    "label": "Gr 9 SNC1W · Strand C: Atoms, Elements & Compounds",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "supporting"
+   "summary": {
+    "en": "Students identify spatial properties in mandalas and create their own mandala using specified criteria.",
+    "fr": "Les élèves repèrent les propriétés spatiales des mandalas et créent leur propre mandala selon des critères précis."
    },
-   {
-    "label": "Gr 8 · Strand B: Cells",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-8",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Correct use of equipment and tools",
-   "Biochemical reactions",
-   "Structure and function of molecules and organisms",
-   "Organization of matter",
-   "Ecosystems"
-  ]
- },
- {
-  "id": "understanding-ocean-acidification-and-biomagnification-with-",
-  "title": "Understanding Ocean Acidification and Biomagnification with LEGO",
-  "grades": [
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Designed by MIT's Edgerton Center, this lesson introduces teachers and students to using legos for molecular modelling and then takes them through a lesson for modelling ocean acidification. Several short activities explain what the pH numbers mean, make predictions for our ocean’s pH in the future, and provide suggestions for what students can do to slow down ocean acidification. This activity also contains complementary teacher preparation, tips, resources and slides.",
-  "skills": [
-   "Mental Rotation",
-   "Visualization",
-   "Multiple Representations",
-   "Visuospatial Manipulation",
-   "Schematizing"
-  ],
-  "objectives": "- students model, using LEGO bricks, how increasing levels of carbon dioxide in the air can alter chemical reactions in the ocean water.\n- students can also extend those models to learn more about pH and mercury biomagnification in food webs.",
-  "materials": [
-   "Legos (1 set per group): 36 red bricks (2x4), 12 black bricks (2x4), 24 white bricks (1x2), 2 green bricks (2x4)",
-   "instructional mats",
-   "teacher Google Slides"
-  ],
-  "link": "https://edgerton.mit.edu/molecule-sets/understanding-oceans",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 10 SNC2D · Chemistry: Chemical Reactions (acids & bases)",
-    "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf",
-    "strength": "direct"
+   "objectives": {
+    "en": "Identify spatial (transformational and symmetrical) properties used in mandalas; create a mandala using specified criteria.",
+    "fr": "Repérer les propriétés spatiales (transformations et symétries) des mandalas; créer un mandala selon des critères précis."
    },
-   {
-    "label": "Gr 9 SNC1W · Strand B: Sustainable Ecosystems & Climate Change",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Visualization",
+    "Spatial Language"
+   ],
+   "materials": {
+    "en": [
+     "Background information on mandalas (Appendix A)",
+     "2 sample mandalas per class: 1 complete, 1 incomplete (Appendix B)",
+     "Pattern worksheet, 1 per student (Appendix C)",
+     "Circle cut-out divided into 4 quadrants, 1 per student (Appendix D)",
+     "1 die per student or pair",
+     "Pencil, eraser, pencil crayons, calculator"
+    ],
+    "fr": [
+     "Information sur les mandalas (annexe A)",
+     "2 mandalas modèles : 1 complet, 1 incomplet (annexe B)",
+     "Fiche de suite, 1 par élève (annexe C)",
+     "Cercle découpé en 4 quadrants, 1 par élève (annexe D)",
+     "1 dé par élève ou par dyade",
+     "Crayon, gomme, crayons de couleur, calculatrice"
+    ]
    },
-   {
-    "label": "Gr 10 SNC2D · Earth & Space: Climate Change",
-    "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf",
-    "strength": "direct"
+   "prep": {
+    "en": "Print Appendices C and D for each student. Whole-class discussion, then individual work.",
+    "fr": "Imprimer les annexes C et D pour chaque élève. Discussion en groupe-classe, puis travail individuel."
    },
-   {
-    "label": "Gr 9 SNC1W · Strand C: Atoms, Elements & Compounds",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Correct use of equipment and tools",
-   "Ecosystems",
-   "Earth and the solar system",
-   "Structure and properties of matter",
-   "Biochemical reactions",
-   "Structure and function of molecules and organisms",
-   "Earth and human activity",
-   "Conservation and stewardship"
-  ]
- },
- {
-  "id": "hexafraction",
-  "title": "HexaFraction",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students take turns drawing fraction cards and using pattern blocks to represent those fractions on hexagons. The student who claims the most hexagons wins.",
-  "skills": [
-   "Spatial Language",
-   "Visualization",
-   "Mental Rotation"
-  ],
-  "objectives": "Students use pattern blocks to represent and compose fractions, developing understanding of equivalence and part–whole relationships.",
-  "materials": [
-   "Pattern Blocks",
-   "Game Board - see Lesson Plan link"
-  ],
-  "link": "https://www.oise.utoronto.ca/robertson/lesson-plans/hexa-fraction",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand B: Number (fractions)",
-   "Gr 5–8 Math · Strand E: Spatial Sense"
-  ],
-  "concepts": []
- },
- {
-  "id": "mini-assignment-crack-the-circuit",
-  "title": "Mini Assignment Crack the Circuit",
-  "grades": [
-   10
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Crack the Circuit is an interactive puzzle game developed by Universe and More. It invites students to explore the relationship between electrical circuits and their diagrams. The Project Spatialize team has designed a short classroom resource (with an assessment option) to accompany the game.",
-  "skills": [
-   "Schematizing",
-   "Multiple Representations"
-  ],
-  "objectives": "students will be able to: \n- use schematic elements of circuit diagrams\n- draw circuit diagrams from partially visible electrical circuits",
-  "materials": [
-   "computers (https://universeandmore.com/crack-the-circuit)",
-   "student handouts"
-  ],
-  "link": "https://drive.google.com/drive/folders/1hRlNkE_G0VEGI-UvGeKBLarW6rj2srvW?usp=share_link",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 9 SNC1W · Strand D: The Study of Electricity",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1Tm5yTUA_JyYwZA6r2Xcg-hECFlW6-HGZ/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5C1.2",
+    "m6E1.1",
+    "m6E1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "representing",
+     "connecting",
+     "reflecting"
+    ]
    },
-   {
-    "label": "Gr 6 · Strand C: Electrical Phenomena",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Electric circuits"
-  ]
- },
- {
-  "id": "modeling-weather-patterns-and-the-coriolis-effect",
-  "title": "Modeling Weather Patterns and the Coriolis Effect",
-  "grades": [
-   7
-  ],
-  "type": "Curriculum Specific",
-  "summary": "In this activity, students will learn how pressure differences cause air to move from high pressure to low pressure areas, and how the Coriolis effect deflects wind in a predictable pattern.",
-  "skills": [
-   "Mental Rotation",
-   "Perspective Taking",
-   "Visualization",
-   "Visuospatial Manipulation",
-   "Schematizing",
-   "Multiple Representations",
-   "Spatial Language",
-   "Orientation"
-  ],
-  "objectives": "",
-  "materials": [
-   "Balloon",
-   "Globe",
-   "Markers, pens or pencils",
-   "Student worksheet",
-   "Student worksheet answer key"
-  ],
-  "link": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/modeling-weather-patterns-and-the-coriolis-effect/",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 10 SNC2D · Earth & Space: Climate Change",
-    "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf",
-    "strength": "direct"
+   "adaptedFrom": "The Robertson Program, OISE",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "building-structures-and-creating-views",
+   "title": {
+    "en": "Building Structures and Creating Views",
+    "fr": "Construire des structures et dessiner des vues"
    },
-   {
-    "label": "Gr 7 · Strand E: Heat in the Environment",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": [
-   "Correct use of equipment and tools",
-   "Qualitative and quantitative analysis",
-   "Weather systems and climate",
-   "Weather patterns",
-   "Space travel"
-  ]
- },
- {
-  "id": "experimenting-with-gravity",
-  "title": "Experimenting with Gravity",
-  "grades": [
-   8
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students will conduct experiments to understand gravity’s effect on falling objects. They will hypothesize about factors influencing fall time, drop objects simultaneously, record results, and discuss observations. As part of the hands-on inquiry outlined in the lesson, students should be encouraged draw schematic representations of their experimental observations.",
-  "skills": [
-   "Multiple Representations",
-   "Spatial Language",
-   "Schematizing"
-  ],
-  "objectives": "- Demonstrate an understanding of forces and how they lead to movement and changes in movement.",
-  "materials": [
-   "A variety of four objects of similar shape, but different in mass (e.g., tennis balls, golf balls, ping-pong balls, Styrofoam balls",
-   "Two sheets of paper per group",
-   "A phone or camera able to record slow-motion videos"
-  ],
-  "link": "https://www.oise.utoronto.ca/robertson/lesson-plans/experimenting-gravity",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 5–8 · Strand A1: STEM Investigation & Communication Skills",
-    "url": null,
-    "strength": "direct"
+   "summary": {
+    "en": "Students build 3D structures from different views and draw top, front, and side views of a structure.",
+    "fr": "Les élèves construisent des structures 3D à partir de vues et dessinent les vues de dessus, de face et de côté d'une structure."
    },
-   {
-    "label": "Gr 6 · Strand D: Flight (forces, incl. gravity)",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6",
-    "strength": "supporting"
-   }
-  ],
-  "math": [],
-  "concepts": []
- },
- {
-  "id": "using-maps-and-investigating-catch-rates-to-understand-lobst",
-  "title": "Using maps and investigating catch rates to understand lobster abundance in Nova Scotia waters",
-  "grades": [
-   7,
-   9
-  ],
-  "type": "Curriculum Specific",
-  "summary": "Students will explore the interaction between lobsters and fishers in Nova Scotia using maps to examine lobster abundance and the spatial distribution of Mi’kmaq communities. They will learn about Catch-per-unit-effort (CPUE) as a measure of lobster abundance and investigate the factors contributing to lobster populations in different areas. The lesson will also highlight the importance of Indigenous knowledge in fisheries management.",
-  "skills": [
-   "Multiple Representations",
-   "Orientation"
-  ],
-  "objectives": "- students will apply both mathematics and science to investigate lobster abundance in relation to fishing practices",
-  "materials": [
-   "Student lesson",
-   "Map of fisheries that border Nova Scotia (Appendix A)",
-   "Map of First Nations in Nova Scotia (Appendix B)",
-   "Map of annual spatial patterns of lobster (Appendix C)",
-   "Map of eggs, ovigerous (egg-bearing) lobsters, and adult lobsters (Appendix D)",
-   "Table to record number of lobsters per fishing area (Appendix E)"
-  ],
-  "link": "https://www.oise.utoronto.ca/robertson/lesson-plans/using-maps-and-investigating-catch-rates-understand-lobster-abundance-nova",
-  "subject": "Science",
-  "sci": [
-   {
-    "label": "Gr 7 · Strand B: Interactions in the Environment",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7",
-    "strength": "direct"
+   "objectives": {
+    "en": "Construct 3D structures using pictures of a structure from three different views (top, front, and side); draw three different views of a 3D structure.",
+    "fr": "Construire des structures 3D à partir d'images de trois vues (dessus, face, côté); dessiner trois vues d'une structure 3D."
    },
-   {
-    "label": "Gr 9 SNC1W · Strand B: Sustainable Ecosystems & Climate Change",
-    "url": "https://www.dcp.edu.gov.on.ca/en/curriculum",
-    "strength": "direct"
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Orientation",
+    "Visualization",
+    "Perspective Taking"
+   ],
+   "materials": {
+    "en": [
+     "Snap cubes: about 10–15 per student",
+     "Isometric or square dot paper",
+     "Pencil and ruler"
+    ],
+    "fr": [
+     "Cubes emboîtables : environ 10 à 15 par élève",
+     "Papier à points isométrique ou quadrillé",
+     "Crayon et règle"
+    ]
    },
-   {
-    "label": "Gr 5–8 · Strand A3: Applications, Connections & Contributions",
-    "url": null,
-    "strength": "supporting"
-   }
-  ],
-  "math": [
-   "Gr 5–8 Math · Strand D: Data"
-  ],
-  "concepts": [
-   "Impact analysis across spatial and temporal scales, impact of geographic locale on weather, impact of weather on land and infrastructure",
-   "Ecosystems",
-   "Biodiversity and humans",
-   "Earth and human activity",
-   "Conservation and stewardship"
-  ]
- },
- {
-  "id": "fractions-wits-wagers",
-  "title": "Fractions Wits & Wagers",
-  "grades": [
-   5,
-   6,
-   7,
-   8,
-   9,
-   10
-  ],
-  "type": "For all grades (General)",
-  "summary": "Students estimate the position of fractions on a number line by placing arrows, then wager on the arrow they believe is closest to the correct answer.",
-  "skills": [
-   "Visualization",
-   "Spatial Language"
-  ],
-  "objectives": "Students estimate and compare fractions on a number line, developing understanding of fraction magnitude, ordinality, and relative size.",
-  "materials": [
-   "A metre-long number line starting at 0 and ending at 1",
-   "A metre stick – mark where fractions lie",
-   "Coloured arrow sticky notes (or something similar)",
-   "Coloured game pieces",
-   "Fraction cards (available with lesson plan)"
-  ],
-  "link": "https://www.oise.utoronto.ca/robertson/lesson-plans/fraction-wits-and-wagers",
-  "subject": "Math",
-  "sci": [],
-  "math": [
-   "Gr 5–8 Math · Strand B: Number (fractions)"
-  ],
-  "concepts": []
- }
-]
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.2",
+    "m6E1.2",
+    "m7E1.2"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "representing",
+     "tools",
+     "communicating"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": "Lesson link pointed to the Skyscrapers doc. Add the correct link."
+  },
+  {
+   "id": "the-paper-folding-skeptic",
+   "title": {
+    "en": "The Paper Folding Skeptic",
+    "fr": "Pliage et sceptique"
+   },
+   "summary": {
+    "en": "Students fold paper into specific shapes and justify that their shape has a particular area.",
+    "fr": "Les élèves plient du papier pour obtenir des figures précises et justifient l'aire de leur figure."
+   },
+   "objectives": {
+    "en": "Fold paper into specific shapes and convince a partner that the shape has a specific area.",
+    "fr": "Plier du papier pour obtenir des figures précises et convaincre un partenaire que la figure a une aire donnée."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Visualization",
+    "Spatial Language"
+   ],
+   "materials": {
+    "en": [
+     "Square paper: about 6 sheets per student",
+     "Handout with the 5 folding challenges (in lesson plan)",
+     "Scissors, markers, ruler"
+    ],
+    "fr": [
+     "Papier carré : environ 6 feuilles par élève",
+     "Fiche des 5 défis de pliage (dans le plan de leçon)",
+     "Ciseaux, marqueurs, règle"
+    ]
+   },
+   "prep": {
+    "en": "Pairs take turns as 'convincer' and 'skeptic'. Switch roles after each question.",
+    "fr": "En dyades, les élèves alternent les rôles de « convaincant » et de « sceptique » à chaque question."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1Xc6JiXbqaEZ_6XPC4PLZqq6QxlWvfb57/edit?usp=share_link&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    },
+    {
+     "en": "Original task (YouCubed)",
+     "fr": "Tâche originale (YouCubed)",
+     "url": "https://www.youcubed.org/tasks/paper-folding/",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E2.5",
+    "m5E2.6",
+    "m9E1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "communicating",
+     "representing"
+    ]
+   },
+   "adaptedFrom": "YouCubed, Stanford University",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "playing-with-knots",
+   "title": {
+    "en": "Playing with Knots",
+    "fr": "Jouer avec les nœuds"
+   },
+   "summary": {
+    "en": "Students investigate the properties of mathematical knots and explore knot theory while developing mental rotation and orientation skills.",
+    "fr": "Les élèves étudient les propriétés des nœuds mathématiques et explorent la théorie des nœuds tout en développant la rotation mentale et l'orientation."
+   },
+   "objectives": {
+    "en": "Investigate properties of mathematical knots and explore knot theory while developing mental rotation and orientation skills.",
+    "fr": "Étudier les propriétés des nœuds mathématiques et explorer la théorie des nœuds tout en développant la rotation mentale et l'orientation."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "String or rope: about 1 m per student",
+     "Paper and pencil to sketch knot diagrams"
+    ],
+    "fr": [
+     "Ficelle ou corde : environ 1 m par élève",
+     "Papier et crayon pour dessiner les diagrammes de nœuds"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m6E1.4",
+    "m8E1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "representing",
+     "reasoning",
+     "reflecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": "Lesson link pointed to the Paper Folding doc. Add the correct link."
+  },
+  {
+   "id": "copy-my-flag",
+   "title": {
+    "en": "Copy my Flag",
+    "fr": "Copie mon drapeau"
+   },
+   "summary": {
+    "en": "Students draw a unique flag, then describe it using spatial language so a partner can recreate it.",
+    "fr": "Les élèves dessinent un drapeau unique, puis le décrivent en langage spatial pour qu'un partenaire le reproduise."
+   },
+   "objectives": {
+    "en": "Draw a unique flag, then stand back-to-back with a partner and describe the flag using spatial language so the partner can attempt to draw it from the description.",
+    "fr": "Dessiner un drapeau unique, puis, dos à dos, le décrire en langage spatial pour que le partenaire le dessine."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Perspective Taking",
+    "Visualization",
+    "Spatial Language"
+   ],
+   "materials": {
+    "en": [
+     "Paper: 2 sheets per student",
+     "Pencils or markers (same set of colours for each partner)"
+    ],
+    "fr": [
+     "Papier : 2 feuilles par élève",
+     "Crayons ou marqueurs (même ensemble de couleurs pour chaque partenaire)"
+    ]
+   },
+   "prep": {
+    "en": "Seat partners back-to-back or use a barrier.",
+    "fr": "Placer les partenaires dos à dos ou utiliser un écran."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://drive.google.com/file/d/1IlJPeU38edMvwynrfd3n0IADD-8maN2b/view",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.1",
+    "m6E1.1"
+   ],
+   "processes": {
+    "sci": [
+     "communicate"
+    ],
+    "math": [
+     "communicating",
+     "representing"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "matchstick-puzzles",
+   "title": {
+    "en": "Matchstick Puzzles",
+    "fr": "Casse-têtes d'allumettes"
+   },
+   "summary": {
+    "en": "Students move, remove, or add matchsticks or toothpicks to modify an existing shape under various puzzle conditions.",
+    "fr": "Les élèves déplacent, retirent ou ajoutent des allumettes ou des cure-dents pour modifier une figure selon diverses conditions."
+   },
+   "objectives": {
+    "en": "Move, remove, or add matchsticks or toothpicks to modify an existing shape in some way; solve puzzles of varying difficulty.",
+    "fr": "Déplacer, retirer ou ajouter des allumettes ou des cure-dents pour modifier une figure; résoudre des casse-têtes de difficulté variée."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Visualization"
+   ],
+   "materials": {
+    "en": [
+     "Toothpicks or flat craft sticks: about 25 per student",
+     "Printed puzzle cards"
+    ],
+    "fr": [
+     "Cure-dents ou bâtonnets plats : environ 25 par élève",
+     "Cartes de casse-têtes imprimées"
+    ]
+   },
+   "prep": {
+    "en": "Toothpicks are safer than matchsticks.",
+    "fr": "Les cure-dents sont plus sécuritaires que les allumettes."
+   },
+   "links": [],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.1",
+    "m6E1.1"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "problem",
+     "reasoning",
+     "reflecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": "Google Doc returns 'file not found'. Check sharing or replace the link."
+  },
+  {
+   "id": "pentomino-battleship",
+   "title": {
+    "en": "Pentomino Battleship",
+    "fr": "Bataille navale des pentaminos"
+   },
+   "summary": {
+    "en": "Students place pentomino squares on a grid while partners use spatial language to determine their locations.",
+    "fr": "Les élèves placent des pentaminos sur une grille et leurs partenaires utilisent le langage spatial pour les localiser."
+   },
+   "objectives": {
+    "en": "Place pentomino squares on a grid while a partner uses spatial language and reasoning to determine their locations in a battleship-style game.",
+    "fr": "Placer des pentaminos sur une grille pendant qu'un partenaire utilise le langage et le raisonnement spatiaux pour les localiser, comme à la bataille navale."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Visualization",
+    "Spatial Language",
+    "Perspective Taking"
+   ],
+   "materials": {
+    "en": [
+     "1 pentomino set per pair (Player 1)",
+     "About 40 square tiles in 2 colours (Player 2)",
+     "1 printed letter-number game board per player (Appendix)",
+     "A barrier, such as a binder or file folder"
+    ],
+    "fr": [
+     "1 jeu de pentaminos par dyade (joueur 1)",
+     "Environ 40 tuiles carrées de 2 couleurs (joueur 2)",
+     "1 plateau lettres-chiffres imprimé par joueur (annexe)",
+     "Un écran (cartable ou chemise)"
+    ]
+   },
+   "prep": {
+    "en": "Play Part 1 (copying placements) before Part 2 (battleship) if students are new to coordinates.",
+    "fr": "Faire la partie 1 (reproduire les placements) avant la partie 2 (bataille navale) si les élèves découvrent les coordonnées."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1GqjJPPSH0iG50uXAZvtQrX6fNOH1RI6s/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.4",
+    "m6E1.3",
+    "m6E1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "communicating",
+     "reasoning",
+     "problem"
+    ]
+   },
+   "adaptedFrom": "The Robertson Program, OISE",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "mondrian-art-puzzles",
+   "title": {
+    "en": "Mondrian Art Puzzles",
+    "fr": "Casse-têtes Mondrian"
+   },
+   "summary": {
+    "en": "Students cover a 7x7 grid under specific rules, aiming to minimize their score while following the constraints.",
+    "fr": "Les élèves recouvrent une grille de 7 × 7 selon des règles précises en cherchant à obtenir le plus petit score."
+   },
+   "objectives": {
+    "en": "Cover a 7x7 grid under several sets of rules (e.g., using only rectangles of different dimensions); aim to minimize score while following the rules.",
+    "fr": "Recouvrir une grille de 7 × 7 selon plusieurs ensembles de règles (p. ex., seulement des rectangles de dimensions différentes) en visant le plus petit score."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Orientation",
+    "Spatial Language",
+    "Visualization"
+   ],
+   "materials": {
+    "en": [
+     "Printed 7 × 7 grid activity sheets: 3–4 per student",
+     "Markers or pencil crayons",
+     "Ruler"
+    ],
+    "fr": [
+     "Fiches de grilles 7 × 7 imprimées : 3 ou 4 par élève",
+     "Marqueurs ou crayons de couleur",
+     "Règle"
+    ]
+   },
+   "prep": {
+    "en": "Score = largest rectangle area minus smallest rectangle area; no two rectangles may be congruent.",
+    "fr": "Score = aire du plus grand rectangle moins aire du plus petit; aucun rectangle ne peut être congru à un autre."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1-CX9rn_h6oDIf8XwZ9WJ2JH7TSIFdj7B/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E2.6",
+    "m5E2.5"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "problem",
+     "reasoning",
+     "reflecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "rectangles",
+   "title": {
+    "en": "Rectangles",
+    "fr": "Rectangles"
+   },
+   "summary": {
+    "en": "Students roll dice to determine the dimensions of rectangles and draw them on a grid.",
+    "fr": "Les élèves lancent des dés pour déterminer les dimensions de rectangles et les dessinent sur une grille."
+   },
+   "objectives": {
+    "en": "Roll dice to determine the size of rectangles to draw on a grid.",
+    "fr": "Lancer des dés pour déterminer la taille des rectangles à dessiner sur une grille."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Perspective Taking",
+    "Visualization",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "2 dice per team",
+     "18 × 18 grid game sheets (or grid paper): 1 per team",
+     "Markers or pencil crayons in 2 colours"
+    ],
+    "fr": [
+     "2 dés par équipe",
+     "Feuilles de jeu quadrillées 18 × 18 (ou papier quadrillé) : 1 par équipe",
+     "Marqueurs ou crayons de couleur de 2 couleurs"
+    ]
+   },
+   "prep": {
+    "en": "Teams may join rectangles only at corners. Three strikes and a team is out.",
+    "fr": "Les rectangles d'une équipe ne peuvent se toucher que par les coins. Trois prises et l'équipe est éliminée."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1aZdGD8SnThVHuy8HGmyuZO2Ld6BRbgIe/edit?usp=sharing&ouid=104240608524013757471&rtpof=true&sd=true",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E2.6",
+    "m5E2.5"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "problem",
+     "tools",
+     "reasoning"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "cube-nets",
+   "title": {
+    "en": "Cube Nets",
+    "fr": "Développements du cube"
+   },
+   "summary": {
+    "en": "Students determine which net pieces combine to form a cube by visualising how faces connect and fold.",
+    "fr": "Les élèves déterminent quelles pièces de développement forment un cube en visualisant comment les faces se rejoignent et se plient."
+   },
+   "objectives": {
+    "en": "Identify which pairs of net pieces combine to form each 3D solid by visualising how faces connect and fold.",
+    "fr": "Déterminer quelles paires de pièces de développement forment chaque solide en visualisant comment les faces se rejoignent et se plient."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Perspective Taking",
+    "Mental Rotation",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "Printed and pre-cut cube net pieces: 1 set per pair",
+     "Tape, to check predictions by folding"
+    ],
+    "fr": [
+     "Pièces de développements de cubes imprimées et découpées : 1 jeu par dyade",
+     "Ruban adhésif pour vérifier les prédictions en pliant"
+    ]
+   },
+   "prep": {
+    "en": "Cut out net pieces in advance.",
+    "fr": "Découper les pièces à l'avance."
+   },
+   "links": [],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m6E2.5",
+    "m7E1.1"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "representing",
+     "reflecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": "Lesson link pointed to the Mondrian Art Puzzles doc. Add the correct link."
+  },
+  {
+   "id": "creating-a-paper-drum",
+   "title": {
+    "en": "Creating a Paper Drum",
+    "fr": "Fabriquer un tambour en papier"
+   },
+   "summary": {
+    "en": "Students plan, design, and create a paper drum by measuring, drawing schematics, and making decisions connected to Indigenous cultural practices.",
+    "fr": "Les élèves planifient, conçoivent et fabriquent un tambour en papier en mesurant, en dessinant des schémas et en prenant des décisions liées aux pratiques culturelles autochtones."
+   },
+   "objectives": {
+    "en": "Before cutting out or making each part of the drum (ring, hide, strings) students must measure, plan, draw schemas of, and discuss their problem-solving",
+    "fr": "Avant de fabriquer chaque partie du tambour (anneau, peau, cordes), mesurer, planifier, schématiser et discuter de sa démarche."
+   },
+   "grades": [
+    8
+   ],
+   "type": "specific",
+   "subject": "both",
+   "skills": [
+    "Mental Rotation",
+    "Spatial Language",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "Thin cardboard (for the ring) and paper (for the hide)",
+     "Scissors, rulers, pencils, markers",
+     "Yarn and a hole punch",
+     "Tape or a stapler"
+    ],
+    "fr": [
+     "Carton mince (anneau) et papier (peau)",
+     "Ciseaux, règles, crayons, marqueurs",
+     "Laine et perforatrice",
+     "Ruban adhésif ou agrafeuse"
+    ]
+   },
+   "prep": {
+    "en": "Review Part 1 of the drum-making series first for cultural context.",
+    "fr": "Consulter d'abord la partie 1 de la série pour le contexte culturel."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://indigenous.mathnetwork.educ.ubc.ca/drum-making-part-2/",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m7E2.3",
+    "s4C2.5",
+    "s58A3.3"
+   ],
+   "processes": {
+    "sci": [
+     "design"
+    ],
+    "math": [
+     "representing",
+     "connecting",
+     "tools"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "geometry-for-combatting-food-insecurity",
+   "title": {
+    "en": "Geometry for Combatting Food Insecurity",
+    "fr": "La géométrie contre l'insécurité alimentaire"
+   },
+   "summary": {
+    "en": "Students use diagrams and digital tools to determine the best location for a new supermarket to address a food‑desert problem.",
+    "fr": "Les élèves utilisent des schémas et des outils numériques pour trouver le meilleur emplacement d'un nouveau supermarché dans un désert alimentaire."
+   },
+   "objectives": {
+    "en": "Work through a Desmos lesson plan to apply trigonometric ratios and angle reasoning in a real‑world context.",
+    "fr": "Suivre une leçon Desmos pour appliquer les rapports trigonométriques et le raisonnement sur les angles dans un contexte réel."
+   },
+   "grades": [
+    10
+   ],
+   "type": "specific",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "Computers or tablets with internet (1 per group of 2–3)",
+     "Student handouts (in lesson)"
+    ],
+    "fr": [
+     "Ordinateurs ou tablettes avec Internet (1 par groupe de 2 ou 3)",
+     "Fiches de l'élève (dans la leçon)"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://sites.google.com/view/mtc4socialjustice/mtc4sj-book/hungry-for-change",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m10Trig",
+    "m9E1.2"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "connecting",
+     "problem",
+     "tools"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "linear-equation-marbleslide",
+   "title": {
+    "en": "Linear Equation “Marbleslide”",
+    "fr": "« Marbleslides » : équations linéaires"
+   },
+   "summary": {
+    "en": "Students transform linear equations to guide marbles through stars, exploring how algebraic changes affect graphical representations.",
+    "fr": "Les élèves transforment des équations linéaires pour guider des billes vers des étoiles et explorent l'effet des changements algébriques sur les graphiques."
+   },
+   "objectives": {
+    "en": "Analyze relationships between equations and their graphical transformations.",
+    "fr": "Analyser les relations entre les équations et les transformations de leurs graphiques."
+   },
+   "grades": [
+    10
+   ],
+   "type": "specific",
+   "subject": "math",
+   "skills": [
+    "Multiple Representations",
+    "Visuospatial Manipulation"
+   ],
+   "materials": {
+    "en": [
+     "Computers or tablets with Desmos Classroom (1 per student or pair)",
+     "Teacher account to create a class code"
+    ],
+    "fr": [
+     "Ordinateurs ou tablettes avec Desmos Classroom (1 par élève ou dyade)",
+     "Compte enseignant pour créer un code de classe"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://classroom.amplify.com/activity/566b31734e38e1e21a10aac8?collections=651ca31cf69ee59aa9e3818a%2C632c77b104648305feffcfda",
+     "lang": "en"
+    },
+    {
+     "en": "French version (Desmos)",
+     "fr": "Version française (Desmos)",
+     "url": "https://teacher.desmos.com/activitybuilder/custom/5e7d3e9b4e16160b72120511?lang=fr",
+     "lang": "fr"
+    }
+   ],
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "expectations": [
+    "m9C4.3",
+    "m9C3.2"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "representing",
+     "reasoning",
+     "reflecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "exploring-squares-and-triangles",
+   "title": {
+    "en": "Exploring Squares and Triangles",
+    "fr": "Explorer les carrés et les triangles"
+   },
+   "summary": {
+    "en": "Students explore relationships between squares and right triangles to develop understanding of the Pythagorean theorem.",
+    "fr": "Les élèves explorent les relations entre les carrés et les triangles rectangles pour comprendre le théorème de Pythagore."
+   },
+   "objectives": {
+    "en": "Develop and apply the Pythagorean theorem through exploration.",
+    "fr": "Découvrir et appliquer le théorème de Pythagore par l'exploration."
+   },
+   "grades": [
+    8,
+    9,
+    10
+   ],
+   "type": "specific",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Visuospatial Manipulation"
+   ],
+   "materials": {
+    "en": [
+     "Dot paper or geoboards with elastics (1 per student)",
+     "Blackline masters",
+     "Scissors"
+    ],
+    "fr": [
+     "Papier à points ou géoplans avec élastiques (1 par élève)",
+     "Gabarits à reproduire",
+     "Ciseaux"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m8E2.4",
+    "m9E1.5"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "representing",
+     "connecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": "Link is an internal SharePoint path that the public can't open. Add a public link."
+  },
+  {
+   "id": "pi-in-the-sky-challenge-frozen-ocean",
+   "title": {
+    "en": "Pi in the Sky Challenge – Frozen Ocean",
+    "fr": "Défi « Pi in the Sky » : l'océan gelé"
+   },
+   "summary": {
+    "en": "Students use π to calculate the volume of Europa’s ocean while learning about space exploration and planetary science.",
+    "fr": "Les élèves utilisent π pour calculer le volume de l'océan d'Europe tout en découvrant l'exploration spatiale."
+   },
+   "objectives": {
+    "en": "Students complete the visual mathematics problem to determine the likely volume of Europa’s ocean",
+    "fr": "Résoudre le problème illustré pour déterminer le volume probable de l'océan d'Europe."
+   },
+   "grades": [
+    8
+   ],
+   "type": "specific",
+   "subject": "both",
+   "skills": [
+    "Mental Rotation",
+    "Multiple Representations"
+   ],
+   "materials": {
+    "en": [
+     "Frozen Formula worksheet, 1 per student (PDF)",
+     "Calculators",
+     "Optional: projector for the illustrated problem"
+    ],
+    "fr": [
+     "Fiche « Frozen Formula », 1 par élève (PDF)",
+     "Calculatrices",
+     "Facultatif : projecteur pour le problème illustré"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/frozen-formula-a-pi-in-the-sky-math-challenge/",
+     "lang": "en"
+    },
+    {
+     "en": "Student worksheet (PDF)",
+     "fr": "Fiche de l'élève (PDF, anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/pdfs/piday2015_europa_handout.pdf",
+     "lang": "en"
+    },
+    {
+     "en": "Answer key (PDF)",
+     "fr": "Corrigé (PDF, anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/pdfs/piday2015_answers.pdf",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s9E2.4",
+    "s6E2.1",
+    "m7E2.3",
+    "m9E1.6"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "problem",
+     "connecting",
+     "tools"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Solar system, movement of celestial body, types of celestial objects",
+    "Remote sensing, telescopes, RADARSTAT satellites, etc."
+   ],
+   "issue": ""
+  },
+  {
+   "id": "the-nature-of-science-puzzle",
+   "title": {
+    "en": "The Nature of Science Puzzle",
+    "fr": "Le casse-tête de la nature des sciences"
+   },
+   "summary": {
+    "en": "Students complete spatial puzzles to explore how scientific understanding evolves through investigation and revision.",
+    "fr": "Les élèves résolvent des casse-têtes spatiaux pour comprendre comment les connaissances scientifiques évoluent par l'investigation et la révision."
+   },
+   "objectives": {
+    "en": "Students complete two puzzles (one that does not include the “X” square; one that does).",
+    "fr": "Résoudre deux casse-têtes (l'un sans la pièce « X », l'autre avec)."
+   },
+   "grades": [
+    9
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Mental Rotation"
+   ],
+   "materials": {
+    "en": [
+     "Printed and cut puzzle pieces: 1 set per group of 3–4",
+     "Envelopes to hold each set"
+    ],
+    "fr": [
+     "Pièces de casse-tête imprimées et découpées : 1 jeu par groupe de 3 ou 4",
+     "Enveloppes pour chaque jeu"
+    ]
+   },
+   "prep": {
+    "en": "Hand out the 'X' piece only for the second puzzle.",
+    "fr": "Ne remettre la pièce « X » que pour le second casse-tête."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.scienceteacherprogram.org/genscience/Choi04.html",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s9A1.2",
+    "s9C2.2"
+   ],
+   "processes": {
+    "sci": [
+     "experiment",
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "when-do-lunar-eclipses-happen",
+   "title": {
+    "en": "When Do Lunar Eclipses Happen?",
+    "fr": "Quand les éclipses de Lune se produisent-elles?"
+   },
+   "summary": {
+    "en": "Students build and use a physical model to explore why lunar eclipses occur less frequently than expected.",
+    "fr": "Les élèves construisent un modèle pour comprendre pourquoi les éclipses de Lune sont moins fréquentes qu'on le croit."
+   },
+   "objectives": {
+    "en": "Explain lunar eclipses using physical and conceptual models.",
+    "fr": "Expliquer les éclipses de Lune à l'aide de modèles physiques et conceptuels."
+   },
+   "grades": [
+    7
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Mental Rotation",
+    "Multiple Representations",
+    "Visualization",
+    "Perspective Taking",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "1 paper plate per student (thick plates work best)",
+     "Small ball, 3–5 cm, to represent the Sun",
+     "Scissors",
+     "Pencil or marker",
+     "Optional: round object (8–13 cm) to trace"
+    ],
+    "fr": [
+     "1 assiette en carton par élève (épaisse de préférence)",
+     "Petite balle de 3 à 5 cm pour le Soleil",
+     "Ciseaux",
+     "Crayon ou marqueur",
+     "Facultatif : objet rond de 8 à 13 cm à tracer"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/resources/project/when-do-lunar-eclipses-happen-2/",
+     "lang": "en"
+    },
+    {
+     "en": "Teacher guide (JPL)",
+     "fr": "Guide de l'enseignant (JPL, anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/teach/activity/when-do-lunar-eclipses-happen/",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s6E2.5",
+    "s9E2.6"
+   ],
+   "processes": {
+    "sci": [
+     "experiment"
+    ],
+    "math": [
+     "representing"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Correct use of equipment and tools",
+    "Solar system, movement of celestial body, types of celestial objects"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "expanding-universe",
+   "title": {
+    "en": "Expanding Universe",
+    "fr": "L'Univers en expansion"
+   },
+   "summary": {
+    "en": "Students use a balloon model to investigate how distances between galaxies change as the universe expands.",
+    "fr": "Les élèves utilisent un ballon comme modèle pour étudier comment les distances entre les galaxies changent à mesure que l'Univers s'étend."
+   },
+   "objectives": {
+    "en": "Explore relationships between distance, speed, and redshift.",
+    "fr": "Explorer les relations entre la distance, la vitesse et le décalage vers le rouge."
+   },
+   "grades": [
+    8,
+    9
+   ],
+   "type": "specific",
+   "subject": "both",
+   "skills": [
+    "Multiple Representations"
+   ],
+   "materials": {
+    "en": [
+     "1 balloon per group",
+     "6–8 sticky dots per group (galaxies)",
+     "Ruler and string (to measure along the curved surface)",
+     "Stopwatch",
+     "Student worksheet"
+    ],
+    "fr": [
+     "1 ballon par groupe",
+     "6 à 8 pastilles autocollantes par groupe (galaxies)",
+     "Règle et ficelle (pour mesurer sur la surface courbe)",
+     "Chronomètre",
+     "Fiche de l'élève"
+    ]
+   },
+   "prep": {
+    "en": "Partly inflate balloons before class so dots can be placed.",
+    "fr": "Gonfler partiellement les ballons avant le cours pour y coller les pastilles."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.schoolsobservatory.org/things-to-do/create-expanding-universe",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s9E2.3",
+    "s9E2.5",
+    "m8D1.6"
+   ],
+   "processes": {
+    "sci": [
+     "experiment"
+    ],
+    "math": [
+     "representing",
+     "connecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Correct use of equipment and tools",
+    "Solar system, movement of celestial body, types of celestial objects",
+    "Earth and the solar system"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "solar-system-scale-model",
+   "title": {
+    "en": "Solar System Scale Model",
+    "fr": "Modèle réduit du système solaire"
+   },
+   "summary": {
+    "en": "Students calculate scaled distances and sizes to construct a physical model of the solar system.",
+    "fr": "Les élèves calculent des distances et des tailles à l'échelle pour construire un modèle physique du système solaire."
+   },
+   "objectives": {
+    "en": "Model movement and scale of celestial bodies.",
+    "fr": "Modéliser le mouvement et l'échelle des corps célestes."
+   },
+   "grades": [
+    9
+   ],
+   "type": "specific",
+   "subject": "both",
+   "skills": [
+    "Mental Rotation",
+    "Multiple Representations"
+   ],
+   "materials": {
+    "en": [
+     "Scale-model worksheet with data table, 1 per student",
+     "Roll of paper (e.g., toilet paper or adding-machine roll), about 10 m per group",
+     "Paper, scissors, glue, markers",
+     "Calculator"
+    ],
+    "fr": [
+     "Fiche du modèle avec tableau de données, 1 par élève",
+     "Rouleau de papier (p. ex., papier hygiénique), environ 10 m par groupe",
+     "Papier, ciseaux, colle, marqueurs",
+     "Calculatrice"
+    ]
+   },
+   "prep": {
+    "en": "Includes an optional assessment rubric.",
+    "fr": "Comprend une grille d'évaluation facultative."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://drive.google.com/drive/folders/13jMHNcZSTpvwIGOe7gqd76OOk9pleCBX",
+     "lang": "en"
+    },
+    {
+     "en": "Student worksheet (English)",
+     "fr": "Fiche de l'élève (anglais)",
+     "url": "https://docs.google.com/document/d/1-2v_8NRF-EwFWVp316m1y1nRb63vtmg2YivQxUVizyQ/edit",
+     "lang": "en"
+    },
+    {
+     "en": "Student worksheet (French)",
+     "fr": "Fiche de l'élève (français)",
+     "url": "https://docs.google.com/document/d/1cYm82a0B1Mf-2qgbmLhFJu2wese_qyxspsL129BB4CI/edit",
+     "lang": "fr"
+    }
+   ],
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "expectations": [
+    "s6E2.1",
+    "s9E2.4",
+    "s9E2.5",
+    "m8E1.3",
+    "m9B3.5"
+   ],
+   "processes": {
+    "sci": [
+     "communicate"
+    ],
+    "math": [
+     "representing",
+     "tools",
+     "problem"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "atomic-theory-schematic-note-taking",
+   "title": {
+    "en": "Atomic Theory (Schematic Note‑Taking)",
+    "fr": "Théorie atomique (prise de notes schématique)"
+   },
+   "summary": {
+    "en": "Students explore the development of atomic theory using schematic note‑taking and visual representations.",
+    "fr": "Les élèves explorent l'évolution de la théorie atomique à l'aide de notes schématiques et de représentations visuelles."
+   },
+   "objectives": {
+    "en": "Communicate scientific ideas through models and diagrams.",
+    "fr": "Communiquer des idées scientifiques au moyen de modèles et de schémas."
+   },
+   "grades": [
+    10
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Multiple Representations",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "Student note handout, 1 per student",
+     "Paper bags (about 6) sealed with assorted mystery objects, for the opening activity",
+     "Projector for the TED-Ed video",
+     "Optional: devices for the PhET Rutherford Scattering simulation"
+    ],
+    "fr": [
+     "Fiche de notes de l'élève, 1 par élève",
+     "Sacs en papier (environ 6) scellés contenant des objets mystères, pour l'activité d'ouverture",
+     "Projecteur pour la vidéo TED-Ed",
+     "Facultatif : appareils pour la simulation PhET « Diffusion de Rutherford »"
+    ]
+   },
+   "prep": {
+    "en": "One 75-minute class. Don't reveal the bag contents: that's the point.",
+    "fr": "Un cours de 75 minutes. Ne pas révéler le contenu des sacs : c'est le but."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://drive.google.com/drive/folders/1V2PpO2RtVZFV7akh8cnk1uAJ6lVW1djr?usp=share_link",
+     "lang": "en"
+    },
+    {
+     "en": "Lesson outline",
+     "fr": "Déroulement de la leçon (anglais)",
+     "url": "https://docs.google.com/document/d/1kfApzKswoi1Sg2UCPl9vDfL89sOsQM4KKtBcWT5BOes/edit",
+     "lang": "en"
+    },
+    {
+     "en": "Student note (English)",
+     "fr": "Note de l'élève (anglais)",
+     "url": "https://docs.google.com/document/d/1wSoi8_UXgE8b9QU7XAU6zJe4bokbPaBMzPMbJty1DXQ/edit",
+     "lang": "en"
+    },
+    {
+     "en": "Teacher note (English)",
+     "fr": "Note de l'enseignant (anglais)",
+     "url": "https://docs.google.com/document/d/1V3-9SPgUJNeEqH3gqrt7lFiM2TuzI7F89oE0oOwyGOU/edit",
+     "lang": "en"
+    },
+    {
+     "en": "Student note (French)",
+     "fr": "Note de l'élève (français)",
+     "url": "https://docs.google.com/document/d/1eKT5eObVTuSPjSKnd0JfLyyOqAGIOQwAzPtA71Chbzg/edit",
+     "lang": "fr"
+    },
+    {
+     "en": "Teacher note (French)",
+     "fr": "Note de l'enseignant (français)",
+     "url": "https://docs.google.com/document/d/1T0KeZWezKl1p04_OvUqcNV3Rj2UJyUrLvDNTR6Fv48s/edit",
+     "lang": "fr"
+    }
+   ],
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "expectations": [
+    "s9C2.2",
+    "s9C2.3"
+   ],
+   "processes": {
+    "sci": [
+     "research",
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "electrical-circuit-diagrams",
+   "title": {
+    "en": "Electrical Circuit Diagrams",
+    "fr": "Schémas de circuits électriques"
+   },
+   "summary": {
+    "en": "Students learn to represent electrical circuits using schematic diagrams and hands‑on wiring challenges.",
+    "fr": "Les élèves apprennent à représenter des circuits électriques par des schémas et relèvent des défis de câblage."
+   },
+   "objectives": {
+    "en": "Interpret and construct electrical circuit diagrams.",
+    "fr": "Interpréter et construire des schémas de circuits électriques."
+   },
+   "grades": [
+    10
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Mental Rotation",
+    "Multiple Representations",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "Per group of 3–4: 4–6 insulated wires with alligator clips, 2–3 small bulbs in holders, 1–2 batteries (AA or D) in holders",
+     "Optional: switch",
+     "Circuit diagram handouts"
+    ],
+    "fr": [
+     "Par groupe de 3 ou 4 : 4 à 6 fils isolés avec pinces crocodiles, 2 ou 3 petites ampoules sur douilles, 1 ou 2 piles (AA ou D) sur support",
+     "Facultatif : interrupteur",
+     "Fiches de schémas de circuits"
+    ]
+   },
+   "prep": {
+    "en": "Test bulbs and batteries before class.",
+    "fr": "Vérifier les ampoules et les piles avant le cours."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://drive.google.com/drive/folders/1mSSIv9YQ8_pK9eLC6NFVPX8EdWgJeuHZ",
+     "lang": "en"
+    },
+    {
+     "en": "English resources (folder)",
+     "fr": "Ressources en anglais (dossier)",
+     "url": "https://drive.google.com/drive/folders/1TVra4Vj57jvGIyKbeIRDeFk-H6Ogvtc3",
+     "lang": "en"
+    },
+    {
+     "en": "French resources (folder)",
+     "fr": "Ressources en français (dossier)",
+     "url": "https://drive.google.com/drive/folders/1QeN1qS0IAH2LJuPkwRKjjNp3o8HIvSVb",
+     "lang": "fr"
+    }
+   ],
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "expectations": [
+    "s9D2.3",
+    "s9D2.6",
+    "s6C2.6",
+    "s6C2.7"
+   ],
+   "processes": {
+    "sci": [
+     "experiment",
+     "design"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "trig-river",
+   "title": {
+    "en": "Trig River",
+    "fr": "La rivière trigonométrique"
+   },
+   "summary": {
+    "en": "Students apply right‑angle trigonometry to estimate and calculate the width of a simulated river.",
+    "fr": "Les élèves appliquent la trigonométrie du triangle rectangle pour estimer et calculer la largeur d'une rivière simulée."
+   },
+   "objectives": {
+    "en": "Solve trigonometric problems in a physical context.",
+    "fr": "Résoudre des problèmes de trigonométrie dans un contexte physique."
+   },
+   "grades": [
+    10
+   ],
+   "type": "specific",
+   "subject": "math",
+   "skills": [
+    "Visuospatial Manipulation"
+   ],
+   "materials": {
+    "en": [
+     "Trig River worksheet, 1 per student",
+     "Protractor, or the printable paper half-protractor, 1 per pair",
+     "Tape measure (at least 5 m) and masking tape",
+     "A 'river' 2–5 m wide: two parallel lines (sidewalk, field lines, or rows of desks)"
+    ],
+    "fr": [
+     "Fiche « Trig River », 1 par élève",
+     "Rapporteur ou demi-rapporteur en papier imprimable, 1 par dyade",
+     "Ruban à mesurer (au moins 5 m) et ruban-cache",
+     "Une « rivière » de 2 à 5 m : deux lignes parallèles (trottoir, lignes de terrain ou rangées de pupitres)"
+    ]
+   },
+   "prep": {
+    "en": "Mark the bank with tape every ½ m before class.",
+    "fr": "Marquer la rive avec du ruban tous les ½ m avant le cours."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.teachengineering.org/activities/view/cub_navigation_lesson03_activity2",
+     "lang": "en"
+    },
+    {
+     "en": "Materials list and printables",
+     "fr": "Liste du matériel et documents (anglais)",
+     "url": "https://teachengineering.org/activities/viewmaterials/cub_navigation_lesson03_activity2",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m10Trig",
+    "m9E1.5"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "problem",
+     "tools",
+     "connecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "discovering-pi-through-circles",
+   "title": {
+    "en": "Discovering Pi Through Circles",
+    "fr": "Découvrir π avec des cercles"
+   },
+   "summary": {
+    "en": "Students investigate the relationship between a circle’s circumference and diameter by measuring, estimating, and comparing multiple circles.",
+    "fr": "Les élèves étudient la relation entre la circonférence et le diamètre d'un cercle en mesurant et en comparant plusieurs cercles."
+   },
+   "objectives": {
+    "en": "Develop an understanding of π as a constant ratio relating circumference and diameter.",
+    "fr": "Comprendre π comme rapport constant entre la circonférence et le diamètre."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Multiple Representations",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "5–6 round objects per group (lids, cans, plates)",
+     "String: about 1 m per group",
+     "Ruler or tape measure",
+     "Recording table, pencils, scissors"
+    ],
+    "fr": [
+     "5 ou 6 objets ronds par groupe (couvercles, boîtes, assiettes)",
+     "Ficelle : environ 1 m par groupe",
+     "Règle ou ruban à mesurer",
+     "Tableau de données, crayons, ciseaux"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m7E2.3"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "representing",
+     "tools"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": "No lesson plan link yet."
+  },
+  {
+   "id": "sewing-machines",
+   "title": {
+    "en": "Sewing Machines",
+    "fr": "Machines à coudre"
+   },
+   "summary": {
+    "en": "Students apply mental rotation and orientation skills to predict the output of combined “sewing machines” based on given fabric inputs and transformation rules.",
+    "fr": "Les élèves utilisent la rotation mentale et l'orientation pour prédire le tissu produit par des « machines à coudre » combinées."
+   },
+   "objectives": {
+    "en": "Determine an output from a sewing machine based on given input cloth patterns and manipulation instructions that each machine follows.",
+    "fr": "Déterminer le résultat d'une machine à coudre à partir des motifs de tissu d'entrée et des règles de manipulation de chaque machine."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "Printouts or projection of the 2024 Beaver Computing Challenge (Grade 5–6) problem",
+     "Optional: paper squares to physically rotate and flip"
+    ],
+    "fr": [
+     "Impression ou projection du problème du Beaver Computing Challenge 2024 (5e–6e année)",
+     "Facultatif : carrés de papier à tourner et à retourner"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2025/2024BCCContest5_6.html",
+     "lang": "en"
+    },
+    {
+     "en": "Contest PDF (question 10)",
+     "fr": "PDF du concours, question 10 (anglais)",
+     "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024BCCContest5_6.pdf",
+     "lang": "en"
+    },
+    {
+     "en": "Solutions PDF",
+     "fr": "Solutions (PDF, anglais)",
+     "url": "https://cemc.uwaterloo.ca/sites/default/files/documents/2024/2024BCCContestSolutions5_6.pdf",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5E1.5",
+    "m6E1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "problem",
+     "reflecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "radioactive-decay-model",
+   "title": {
+    "en": "Radioactive Decay Model",
+    "fr": "Modèle de désintégration radioactive"
+   },
+   "summary": {
+    "en": "Students explore the idea of half-life by using visual representations.",
+    "fr": "Les élèves explorent la notion de demi-vie à l'aide de représentations visuelles."
+   },
+   "objectives": {
+    "en": "Throw one hundred coins, remove all those that come up tails in a pile to create a hands-on model for radioactive decay. The piles graphically show the meaning of the term “half-life.”",
+    "fr": "Lancer 100 pièces de monnaie, retirer celles qui tombent sur pile et les empiler : les piles montrent visuellement la notion de demi-vie."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Spatial Language",
+    "Visualization"
+   ],
+   "materials": {
+    "en": [
+     "100 coins or two-sided counters per group",
+     "Cup or resealable bag to shake them in",
+     "Graph paper or a graphing tool"
+    ],
+    "fr": [
+     "100 pièces de monnaie ou jetons bicolores par groupe",
+     "Gobelet ou sac refermable pour les mélanger",
+     "Papier quadrillé ou outil de graphique"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.exploratorium.edu/snacks/radioactive-decay-model",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m9C3.1",
+    "m8D1.6"
+   ],
+   "processes": {
+    "sci": [
+     "experiment"
+    ],
+    "math": [
+     "representing",
+     "reasoning"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "shadow-sketching",
+   "title": {
+    "en": "Shadow Sketching",
+    "fr": "Croquis d'ombres"
+   },
+   "summary": {
+    "en": "Students sketch the changing shadow of an object over time to explore how the position of the sun (or Earth’s rotation) affects shadow direction, length, and shape.",
+    "fr": "Les élèves dessinent l'ombre changeante d'un objet au fil du temps pour comprendre comment la position du Soleil influe sur la direction, la longueur et la forme des ombres."
+   },
+   "objectives": {
+    "en": "Observe and record changing shadows of a stick/object to explain how Earth’s rotation affects the apparent movement of the sun.",
+    "fr": "Observer et noter les changements de l'ombre d'un objet pour expliquer comment la rotation de la Terre influe sur le mouvement apparent du Soleil."
+   },
+   "grades": [
+    6,
+    9
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Orientation",
+    "Multiple Representations",
+    "Visualization"
+   ],
+   "materials": {
+    "en": [
+     "Large paper or a paved surface for chalk",
+     "Pencil or chalk",
+     "A small object (toy figure or block) or a stick",
+     "Clock or timer",
+     "A sunny outdoor spot available for several hours"
+    ],
+    "fr": [
+     "Grande feuille ou surface pavée pour la craie",
+     "Crayon ou craie",
+     "Petit objet (figurine ou bloc) ou bâton",
+     "Horloge ou minuterie",
+     "Endroit ensoleillé disponible pendant plusieurs heures"
+    ]
+   },
+   "prep": {
+    "en": "Trace the shadow at least once an hour; mark the object's position so it doesn't move.",
+    "fr": "Tracer l'ombre au moins une fois par heure; marquer la position de l'objet pour qu'il ne bouge pas."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.scientificamerican.com/article/rad-shadow-sketch/",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s6E2.5",
+    "s9E2.6"
+   ],
+   "processes": {
+    "sci": [
+     "experiment"
+    ],
+    "math": [
+     "representing"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "exploring-light-with-optics-design-challenge-laser-maze",
+   "title": {
+    "en": "Exploring Light with Optics (Design Challenge: Laser Maze)",
+    "fr": "Explorer la lumière avec l'optique (défi de conception : labyrinthe laser)"
+   },
+   "summary": {
+    "en": "Part of a comprehensive unit plan designed the Perimeter Institute, this activity (p.52-60) invites students use their knowledge of reflection and refraction to build and solve laser mazes. While originally designed for Grade 10 students, this activity can adapted for use in younger grades using reflection only.",
+    "fr": "Tiré d'une unité du Perimeter Institute (p. 52–60), cette activité invite les élèves à utiliser la réflexion et la réfraction pour construire et résoudre des labyrinthes laser. Conçue pour la 10e année, elle peut être adaptée aux plus jeunes en utilisant seulement la réflexion."
+   },
+   "objectives": {
+    "en": "Design Challenge - Students will understand and apply behaviour and properties of light, sound and olfactory receptors",
+    "fr": "Défi de conception : comprendre et appliquer le comportement et les propriétés de la lumière."
+   },
+   "grades": [
+    6
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Perspective Taking",
+    "Visualization",
+    "Mental Rotation",
+    "Visuospatial Manipulation"
+   ],
+   "materials": {
+    "en": [
+     "Per group: 1 laser pointer (Class 2, under 1 mW)",
+     "4–6 mirror squares (or foil on cardboard)",
+     "Binder clips and modelling clay to stand mirrors upright",
+     "Shallow cardboard box",
+     "Tape, protractor, paper and pencils"
+    ],
+    "fr": [
+     "Par groupe : 1 pointeur laser (classe 2, moins de 1 mW)",
+     "4 à 6 miroirs carrés (ou papier d'aluminium sur carton)",
+     "Pinces à reliure et pâte à modeler pour maintenir les miroirs",
+     "Boîte de carton peu profonde",
+     "Ruban adhésif, rapporteur, papier et crayons"
+    ]
+   },
+   "prep": {
+    "en": "Review laser safety: never point at eyes or reflective surfaces near faces.",
+    "fr": "Revoir la sécurité laser : ne jamais viser les yeux ni des surfaces réfléchissantes près du visage."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://resources.perimeterinstitute.ca/products/exploring-light-with-optics",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s4C2.3",
+    "s10E2.2",
+    "s10E2.4"
+   ],
+   "processes": {
+    "sci": [
+     "design",
+     "experiment"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "exploring-light-with-optics-activity-stations-activity-1-how",
+   "title": {
+    "en": "Exploring Light with Optics (Activity Stations: Activity 1 - How Do We See?)",
+    "fr": "Explorer la lumière avec l'optique (stations : Comment voyons-nous?)"
+   },
+   "summary": {
+    "en": "Part of a comprehensive unit plan designed the Perimeter Institute, this hands-on station activity (p.13 -23), students investigate several optical principles that underlie how our eyes work by exploring six topics: how the eye uses a converging lens, how the eye sees objects at varying distances (accommodation), how the pupils work, how peripheral vision works, how to locate the eye’s blind spot, and why we have two eyes. These quick activities at different stations are supported by station cards and a student activity sheet.",
+    "fr": "Tirée d'une unité du Perimeter Institute (p. 13–23), cette activité en stations permet d'étudier les principes optiques de la vision : lentille convergente, accommodation, pupille, vision périphérique, tache aveugle et vision binoculaire."
+   },
+   "objectives": {
+    "en": "Use optics concepts to model and understand key aspects of human vision",
+    "fr": "Utiliser des concepts d'optique pour modéliser et comprendre des aspects clés de la vision humaine."
+   },
+   "grades": [
+    6
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Visualization",
+    "Schematizing",
+    "Multiple Representations",
+    "Mental Rotation"
+   ],
+   "materials": {
+    "en": [
+     "Stations 1–3: lenses, light sources and lab equipment (see unit; needs advance preparation)",
+     "Stations 4–6: pen, paper, metre stick, tape, whiteboard",
+     "Station cards and student activity sheet (in unit)"
+    ],
+    "fr": [
+     "Stations 1 à 3 : lentilles, sources lumineuses et matériel de laboratoire (voir l'unité; préparation requise)",
+     "Stations 4 à 6 : stylo, papier, règle d'un mètre, ruban adhésif, tableau blanc",
+     "Cartes de station et fiche de l'élève (dans l'unité)"
+    ]
+   },
+   "prep": {
+    "en": "Stations 4–6 work on their own if lab equipment isn't available.",
+    "fr": "Les stations 4 à 6 fonctionnent seules si le matériel de laboratoire n'est pas disponible."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://resources.perimeterinstitute.ca/products/exploring-light-with-optics",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s4C2.8",
+    "s4C2.3",
+    "s10E3.5"
+   ],
+   "processes": {
+    "sci": [
+     "experiment",
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Correct use of equipment and tools",
+    "Behaviour and properties of light, sound and olfactory receptors",
+    "Interactions among sense organs, nerves and the brain enabling organisms to predict, analyze, and respond to changes in their environment"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "using-empirical-data-in-the-classroom-raptor-migration",
+   "title": {
+    "en": "Using Empirical Data in the Classroom: Raptor Migration",
+    "fr": "Données empiriques en classe : la migration des rapaces"
+   },
+   "summary": {
+    "en": "Why do birds migrate? How do seasonal changes in primary productivity influence the behaviors of higher order consumers like raptors? Students will use visualizations to explore the connectedness of organisms within and across ecosystems in this teacher-guided activity. Note: this activity is related to/can be used with Photosynthesis Seen from Space Activity.",
+    "fr": "Pourquoi les oiseaux migrent-ils? Les élèves utilisent des visualisations pour explorer les liens entre organismes dans les écosystèmes et entre eux."
+   },
+   "objectives": {
+    "en": "Students will - Analyze real scientific data from a short visualization clip to form logical hypotheses about what drives the migration patterns of raptors. - Explore how seasonal changes in primary productivity influence the behaviors of higher order consumers.",
+    "fr": "Analyser de vraies données scientifiques pour formuler des hypothèses sur la migration des rapaces; explorer l'effet des changements saisonniers de productivité primaire sur les consommateurs."
+   },
+   "grades": [
+    7,
+    9
+   ],
+   "type": "specific",
+   "subject": "both",
+   "skills": [
+    "Visualization",
+    "Multiple Representations"
+   ],
+   "materials": {
+    "en": [
+     "Student handout, 1 per student (PDF)",
+     "Computer and projector with internet, for the visualization clip"
+    ],
+    "fr": [
+     "Fiche de l'élève, 1 par élève (PDF)",
+     "Ordinateur et projecteur avec Internet pour la visualisation"
+    ]
+   },
+   "prep": {
+    "en": "Pairs well with Photosynthesis Seen from Space.",
+    "fr": "Se jumelle bien avec « La photosynthèse vue de l'espace »."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.calacademy.org/educators/lesson-plans/using-empirical-data-in-the-classroom-raptor-migrations",
+     "lang": "en"
+    },
+    {
+     "en": "Lesson plan (PDF)",
+     "fr": "Plan de leçon (PDF, anglais)",
+     "url": "https://blog.calacademy.org/sites/default/files/assets/docs/pdf/habearthclassroom_raptormigration_lessonplan.pdf",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s7B2.1",
+    "s7B2.4",
+    "s9B2.2",
+    "m7D1.6"
+   ],
+   "processes": {
+    "sci": [
+     "research"
+    ],
+    "math": [
+     "representing",
+     "connecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Qualitative and quantitative analysis",
+    "Earth and Nutrient Cycles",
+    "Climate science basics, climate resilience",
+    "Ecosystems",
+    "Conservation and stewardship"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "photosynthesis-seen-from-space",
+   "title": {
+    "en": "Photosynthesis Seen from Space",
+    "fr": "La photosynthèse vue de l'espace"
+   },
+   "summary": {
+    "en": "Observations inspire scientific questions and drive discoveries. In this activity, students will watch a visualization of empirical scientific data to explore seasonal changes in primary productivity on the earth. Note: this activity is related to/can be used with Raptor Migration activity.",
+    "fr": "Les élèves regardent une visualisation de données scientifiques réelles pour explorer les variations saisonnières de la productivité primaire sur Terre."
+   },
+   "objectives": {
+    "en": "Students will be able to - Relate changes in primary productivity in terrestrial and aquatic ecosystems to seasonal changes in sunlight. - Observe empirical scientific data and formulate hypotheses to describe patterns in the data.",
+    "fr": "Relier les changements de productivité primaire dans les écosystèmes terrestres et aquatiques aux variations saisonnières de la lumière; observer des données et formuler des hypothèses."
+   },
+   "grades": [
+    9
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Visualization",
+    "Multiple Representations"
+   ],
+   "materials": {
+    "en": [
+     "Computer and projector with internet",
+     "Optional extension: poster paper, markers, devices for research"
+    ],
+    "fr": [
+     "Ordinateur et projecteur avec Internet",
+     "Prolongement facultatif : papier pour affiches, marqueurs, appareils pour la recherche"
+    ]
+   },
+   "prep": {
+    "en": "Pairs well with Raptor Migration.",
+    "fr": "Se jumelle bien avec « La migration des rapaces »."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.calacademy.org/educators/lesson-plans/photosynthesis-seen-from-space",
+     "lang": "en"
+    },
+    {
+     "en": "Lesson plan (PDF)",
+     "fr": "Plan de leçon (PDF, anglais)",
+     "url": "https://blog.calacademy.org/sites/default/files/assets/docs/pdf/habearth_classroom_photosynfromspace_lessonplan.pdf",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s9B2.2",
+    "s9B2.6",
+    "s9E1.2",
+    "s7B2.5"
+   ],
+   "processes": {
+    "sci": [
+     "research"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Qualitative and quantitative analysis",
+    "Climate science basics, climate resilience",
+    "Global climate systems, local and global impacts",
+    "Energy flow in organisms",
+    "Conservation and stewardship",
+    "Ecosystems"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "carbon-cycle-role-play",
+   "title": {
+    "en": "Carbon Cycle Role-Play",
+    "fr": "Jeu de rôle du cycle du carbone"
+   },
+   "summary": {
+    "en": "In this embodied demonstration/role-play, students will model the carbon cycle with and without human interaction. This activity also contains an extension assessment where students interpret their learning by creating diagrams of how carbon flows between the biosphere, hydrosphere, atmosphere and lithosphere. Use the provided materials to tell the story of how human activity can contribute to global climate change.",
+    "fr": "Dans ce jeu de rôle, les élèves modélisent le cycle du carbone avec et sans activité humaine, puis le représentent par des schémas."
+   },
+   "objectives": {
+    "en": "Students will be able to: - recognize that there is a finite amount of carbon on earth. - model how carbon moves around in the environment, from one place to another. - identify how humans influence the carbon cycle.",
+    "fr": "Reconnaître que la quantité de carbone sur Terre est finie; modéliser le déplacement du carbone; déterminer l'influence humaine sur le cycle du carbone."
+   },
+   "grades": [
+    9
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Multiple Representations",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "14–28 small light objects to represent carbon (ping-pong balls or coloured paper)",
+     "Role-play cards, printed double-sided: 1 per group (7 groups)",
+     "Chalk, if marking regions outdoors",
+     "A large open space (gym, cafeteria, yard)"
+    ],
+    "fr": [
+     "14 à 28 petits objets légers pour le carbone (balles de ping-pong ou papier coloré)",
+     "Cartes de jeu de rôle imprimées recto verso : 1 par groupe (7 groupes)",
+     "Craie pour délimiter les zones à l'extérieur",
+     "Grand espace ouvert (gymnase, cafétéria, cour)"
+    ]
+   },
+   "prep": {
+    "en": "10 minutes of prep; 30–45 minutes to run.",
+    "fr": "10 minutes de préparation; 30 à 45 minutes d'activité."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.calacademy.org/educators/lesson-plans/carbon-cycle-role-play",
+     "lang": "en"
+    },
+    {
+     "en": "Lesson plan with role cards (PDF)",
+     "fr": "Plan de leçon et cartes (PDF, anglais)",
+     "url": "https://blog.calacademy.org/sites/default/files/assets/docs/pdf/048_carboncycleroleplayredesign10nov2014mks.pdf",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s9B2.2",
+    "s9B2.5",
+    "s10D3.5",
+    "s7B2.5"
+   ],
+   "processes": {
+    "sci": [
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Energy flow in organisms",
+    "Earth and human activity",
+    "Conservation and stewardship"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "photosynthesis-activity-with-lego",
+   "title": {
+    "en": "Photosynthesis Activity with LEGO",
+    "fr": "La photosynthèse avec des LEGO"
+   },
+   "summary": {
+    "en": "Designed by MIT's Edgerton Center, this activity invites students to model the photosynthesis reaction with LEGO bricks by building the products from the reactants. Student start with carbon dioxide and water molecules and use them to create glucose and oxygen. Students can show how plants use glucose by modeling cellular respiration, and building starch and cellulose. In addition to a comprehensive activity, this resource also provides a full teacher guide and accompanying lesson.",
+    "fr": "Conçue par le Edgerton Center du MIT, cette activité modélise la photosynthèse avec des briques LEGO : les élèves transforment du dioxyde de carbone et de l'eau en glucose et en oxygène, puis modélisent la respiration cellulaire, l'amidon et la cellulose."
+   },
+   "objectives": {
+    "en": "- Students will develop an understanding of the photosynthesis reaction by modelling it with legos, building the products (glucose and oxygen) from the reactants (carbon dioxide and water). Students can model cellular respiration and build starch and cellulose to show how plants use glucose.",
+    "fr": "Comprendre la réaction de photosynthèse en la modélisant avec des LEGO, des réactifs (CO₂, H₂O) aux produits (glucose, O₂); modéliser la respiration cellulaire et l'amidon."
+   },
+   "grades": [
+    9
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Mental Rotation",
+    "Visualization",
+    "Multiple Representations",
+    "Schematizing",
+    "Visuospatial Manipulation"
+   ],
+   "materials": {
+    "en": [
+     "Per kit (shared by 2 students): 36 red 2×4, 12 black 2×4, 24 white 1×2 LEGO bricks",
+     "Instructional mats, e.g., 'Making glucose molecules' (free download)",
+     "Student worksheet",
+     "Optional: storage box with dividers"
+    ],
+    "fr": [
+     "Par trousse (2 élèves) : 36 briques LEGO rouges 2×4, 12 noires 2×4, 24 blanches 1×2",
+     "Napperons d'instructions, p. ex. « Making glucose molecules » (téléchargement gratuit)",
+     "Fiche de l'élève",
+     "Facultatif : boîte de rangement à compartiments"
+    ]
+   },
+   "prep": {
+    "en": "Brick colours follow the CPK standard (red = O, black = C, white = H).",
+    "fr": "Les couleurs suivent la norme CPK (rouge = O, noir = C, blanc = H)."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://edgerton.mit.edu/molecule-sets/photosynthesis",
+     "lang": "en"
+    },
+    {
+     "en": "How to assemble the kits",
+     "fr": "Assembler les trousses (anglais)",
+     "url": "https://edgerton.mit.edu/information-mit-edgerton-center-molecule-sets",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s9B2.3",
+    "s9C2.7"
+   ],
+   "processes": {
+    "sci": [
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Correct use of equipment and tools",
+    "Biochemical reactions",
+    "Structure and function of molecules and organisms",
+    "Organization of matter",
+    "Ecosystems"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "understanding-ocean-acidification-and-biomagnification-with-",
+   "title": {
+    "en": "Understanding Ocean Acidification and Biomagnification with LEGO",
+    "fr": "Acidification des océans et bioamplification avec des LEGO"
+   },
+   "summary": {
+    "en": "Designed by MIT's Edgerton Center, this lesson introduces teachers and students to using legos for molecular modelling and then takes them through a lesson for modelling ocean acidification. Several short activities explain what the pH numbers mean, make predictions for our ocean’s pH in the future, and provide suggestions for what students can do to slow down ocean acidification. This activity also contains complementary teacher preparation, tips, resources and slides.",
+    "fr": "Conçue par le Edgerton Center du MIT, cette leçon initie à la modélisation moléculaire avec des LEGO pour représenter l'acidification des océans, le pH et les mesures pour la ralentir."
+   },
+   "objectives": {
+    "en": "- students model, using LEGO bricks, how increasing levels of carbon dioxide in the air can alter chemical reactions in the ocean water. - students can also extend those models to learn more about pH and mercury biomagnification in food webs.",
+    "fr": "Modéliser avec des LEGO comment la hausse du CO₂ dans l'air modifie les réactions chimiques dans l'océan; prolonger vers le pH et la bioamplification du mercure."
+   },
+   "grades": [
+    9
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Mental Rotation",
+    "Visualization",
+    "Multiple Representations",
+    "Visuospatial Manipulation",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "Per kit (shared by 2 students): 36 red 2×4, 12 black 2×4, 24 white 1×2, 2 green 2×4 LEGO bricks",
+     "Instructional mats (free download)",
+     "Teacher Google Slides"
+    ],
+    "fr": [
+     "Par trousse (2 élèves) : 36 briques LEGO rouges 2×4, 12 noires 2×4, 24 blanches 1×2, 2 vertes 2×4",
+     "Napperons d'instructions (téléchargement gratuit)",
+     "Diaporama Google Slides de l'enseignant"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://edgerton.mit.edu/molecule-sets/understanding-oceans",
+     "lang": "en"
+    },
+    {
+     "en": "How to assemble the kits",
+     "fr": "Assembler les trousses (anglais)",
+     "url": "https://edgerton.mit.edu/information-mit-edgerton-center-molecule-sets",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s10C3.7",
+    "s10C2.6",
+    "s9B2.5",
+    "s10D3.6"
+   ],
+   "processes": {
+    "sci": [
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Correct use of equipment and tools",
+    "Ecosystems",
+    "Earth and the solar system",
+    "Structure and properties of matter",
+    "Biochemical reactions",
+    "Structure and function of molecules and organisms",
+    "Earth and human activity",
+    "Conservation and stewardship"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "hexafraction",
+   "title": {
+    "en": "HexaFraction",
+    "fr": "HexaFraction"
+   },
+   "summary": {
+    "en": "Students take turns drawing fraction cards and using pattern blocks to represent those fractions on hexagons. The student who claims the most hexagons wins.",
+    "fr": "À tour de rôle, les élèves tirent des cartes de fractions et utilisent des blocs-formes pour les représenter sur des hexagones. Celui qui réclame le plus d'hexagones gagne."
+   },
+   "objectives": {
+    "en": "Students use pattern blocks to represent and compose fractions, developing understanding of equivalence and part–whole relationships.",
+    "fr": "Utiliser des blocs-formes pour représenter et composer des fractions, et comprendre l'équivalence et les relations partie-tout."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Spatial Language",
+    "Visualization",
+    "Mental Rotation"
+   ],
+   "materials": {
+    "en": [
+     "Pattern blocks: 1 tub per pair",
+     "Printed game board (in lesson plan)",
+     "Fraction cards (in lesson plan)"
+    ],
+    "fr": [
+     "Blocs-formes : 1 bac par dyade",
+     "Plateau de jeu imprimé (dans le plan de leçon)",
+     "Cartes de fractions (dans le plan de leçon)"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.oise.utoronto.ca/robertson/lesson-plans/hexa-fraction",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5B1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "representing",
+     "reasoning",
+     "communicating"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "mini-assignment-crack-the-circuit",
+   "title": {
+    "en": "Mini Assignment Crack the Circuit",
+    "fr": "Mini-tâche : Crack the Circuit"
+   },
+   "summary": {
+    "en": "Crack the Circuit is an interactive puzzle game developed by Universe and More. It invites students to explore the relationship between electrical circuits and their diagrams. The Project Spatialize team has designed a short classroom resource (with an assessment option) to accompany the game.",
+    "fr": "Crack the Circuit est un jeu-casse-tête interactif de Universe and More sur les circuits électriques et leurs schémas. L'équipe de Project Spatialize a conçu une courte ressource (avec option d'évaluation) pour l'accompagner."
+   },
+   "objectives": {
+    "en": "students will be able to: - use schematic elements of circuit diagrams - draw circuit diagrams from partially visible electrical circuits",
+    "fr": "Utiliser les éléments schématiques des circuits; dessiner des schémas à partir de circuits partiellement visibles."
+   },
+   "grades": [
+    10
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Schematizing",
+    "Multiple Representations"
+   ],
+   "materials": {
+    "en": [
+     "Computers with internet (1 per student or pair)",
+     "Mini-task handout with scoring table, 1 per student"
+    ],
+    "fr": [
+     "Ordinateurs avec Internet (1 par élève ou dyade)",
+     "Fiche de la mini-tâche avec grille de notation, 1 par élève"
+    ]
+   },
+   "prep": {
+    "en": "Students submit screenshots of two solved levels with explanations.",
+    "fr": "Les élèves remettent des captures d'écran de deux niveaux réussis avec leurs explications."
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://drive.google.com/drive/folders/1hRlNkE_G0VEGI-UvGeKBLarW6rj2srvW?usp=share_link",
+     "lang": "en"
+    },
+    {
+     "en": "Crack the Circuit game",
+     "fr": "Jeu Crack the Circuit (anglais)",
+     "url": "https://universeandmore.com/crack-the-circuit",
+     "lang": "en"
+    },
+    {
+     "en": "Mini-task (English)",
+     "fr": "Mini-tâche (anglais)",
+     "url": "https://docs.google.com/document/d/1zDRInkNGFuWSZVrHqJRo14hMiflEaGkPzd4AxHXZodg/edit",
+     "lang": "en"
+    },
+    {
+     "en": "Mini-task (French)",
+     "fr": "Mini-tâche (français)",
+     "url": "https://docs.google.com/document/d/1RHv-5EtDzrw4ddwJXLoib6aBE97NNlRsxAAJvK261QY/edit",
+     "lang": "fr"
+    }
+   ],
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "expectations": [
+    "s9D2.3",
+    "s6C2.6"
+   ],
+   "processes": {
+    "sci": [
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Electric circuits"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "modeling-weather-patterns-and-the-coriolis-effect",
+   "title": {
+    "en": "Modeling Weather Patterns and the Coriolis Effect",
+    "fr": "Modéliser les régimes météorologiques et l'effet Coriolis"
+   },
+   "summary": {
+    "en": "In this activity, students will learn how pressure differences cause air to move from high pressure to low pressure areas, and how the Coriolis effect deflects wind in a predictable pattern.",
+    "fr": "Les élèves apprennent comment les différences de pression font circuler l'air des zones de haute pression vers celles de basse pression, et comment l'effet Coriolis dévie le vent."
+   },
+   "objectives": {
+    "en": "",
+    "fr": "Expliquer la circulation de l'air selon la pression et la déviation des vents par l'effet Coriolis."
+   },
+   "grades": [
+    7
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Mental Rotation",
+    "Perspective Taking",
+    "Visualization",
+    "Visuospatial Manipulation",
+    "Schematizing",
+    "Multiple Representations",
+    "Spatial Language",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "1 balloon per pair (to model high pressure, then to draw on as Earth)",
+     "Globe",
+     "Markers, pens or pencils",
+     "Student worksheet and answer key (in lesson)"
+    ],
+    "fr": [
+     "1 ballon par dyade (pour la haute pression, puis comme modèle de la Terre)",
+     "Globe terrestre",
+     "Marqueurs, stylos ou crayons",
+     "Fiche de l'élève et corrigé (dans la leçon)"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/resources/lesson-plan/modeling-weather-patterns-and-the-coriolis-effect/",
+     "lang": "en"
+    },
+    {
+     "en": "Teacher guide (JPL)",
+     "fr": "Guide de l'enseignant (JPL, anglais)",
+     "url": "https://www.jpl.nasa.gov/edu/teach/activity/modeling-weather-patterns-and-the-coriolis-effect/",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s10D3.2",
+    "s10D2.7",
+    "s7E2.5"
+   ],
+   "processes": {
+    "sci": [
+     "experiment"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Correct use of equipment and tools",
+    "Qualitative and quantitative analysis",
+    "Weather systems and climate",
+    "Weather patterns",
+    "Space travel"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "experimenting-with-gravity",
+   "title": {
+    "en": "Experimenting with Gravity",
+    "fr": "Expériences sur la gravité"
+   },
+   "summary": {
+    "en": "Students will conduct experiments to understand gravity’s effect on falling objects. They will hypothesize about factors influencing fall time, drop objects simultaneously, record results, and discuss observations. As part of the hands-on inquiry outlined in the lesson, students should be encouraged draw schematic representations of their experimental observations.",
+    "fr": "Les élèves mènent des expériences sur l'effet de la gravité sur la chute des objets : ils formulent des hypothèses, lâchent des objets simultanément, notent et schématisent leurs observations."
+   },
+   "objectives": {
+    "en": "- Demonstrate an understanding of forces and how they lead to movement and changes in movement.",
+    "fr": "Comprendre les forces et comment elles causent le mouvement et les changements de mouvement."
+   },
+   "grades": [
+    8
+   ],
+   "type": "specific",
+   "subject": "sci",
+   "skills": [
+    "Multiple Representations",
+    "Spatial Language",
+    "Schematizing"
+   ],
+   "materials": {
+    "en": [
+     "4 balls of similar size but different mass per group (tennis, golf, ping-pong, foam)",
+     "2 sheets of paper per group",
+     "A phone or camera that records slow motion"
+    ],
+    "fr": [
+     "4 balles de taille semblable mais de masse différente par groupe (tennis, golf, ping-pong, mousse)",
+     "2 feuilles de papier par groupe",
+     "Téléphone ou caméra avec ralenti"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.oise.utoronto.ca/robertson/lesson-plans/experimenting-gravity",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s6E2.3",
+    "s6D2.2",
+    "s58A1.2"
+   ],
+   "processes": {
+    "sci": [
+     "experiment",
+     "communicate"
+    ],
+    "math": []
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  },
+  {
+   "id": "using-maps-and-investigating-catch-rates-to-understand-lobst",
+   "title": {
+    "en": "Using maps and investigating catch rates to understand lobster abundance in Nova Scotia waters",
+    "fr": "Cartes et taux de capture : l'abondance du homard en Nouvelle-Écosse"
+   },
+   "summary": {
+    "en": "Students will explore the interaction between lobsters and fishers in Nova Scotia using maps to examine lobster abundance and the spatial distribution of Mi’kmaq communities. They will learn about Catch-per-unit-effort (CPUE) as a measure of lobster abundance and investigate the factors contributing to lobster populations in different areas. The lesson will also highlight the importance of Indigenous knowledge in fisheries management.",
+    "fr": "Les élèves examinent, à l'aide de cartes, l'abondance du homard et la répartition des communautés mi'kmaq en Nouvelle-Écosse, apprennent la notion de capture par unité d'effort (CPUE) et l'importance du savoir autochtone en gestion des pêches."
+   },
+   "objectives": {
+    "en": "- students will apply both mathematics and science to investigate lobster abundance in relation to fishing practices",
+    "fr": "Appliquer les mathématiques et les sciences pour étudier l'abondance du homard en lien avec les pratiques de pêche."
+   },
+   "grades": [
+    7,
+    9
+   ],
+   "type": "specific",
+   "subject": "both",
+   "skills": [
+    "Multiple Representations",
+    "Orientation"
+   ],
+   "materials": {
+    "en": [
+     "Student lesson",
+     "Map of fishing areas bordering Nova Scotia (Appendix A)",
+     "Map of First Nations in Nova Scotia (Appendix B)",
+     "Map of annual lobster patterns (Appendix C)",
+     "Map of eggs, egg-bearing and adult lobsters (Appendix D)",
+     "Recording table for lobsters per fishing area (Appendix E)"
+    ],
+    "fr": [
+     "Leçon de l'élève",
+     "Carte des zones de pêche de la Nouvelle-Écosse (annexe A)",
+     "Carte des Premières Nations de la Nouvelle-Écosse (annexe B)",
+     "Carte de la répartition annuelle du homard (annexe C)",
+     "Carte des œufs, des femelles œuvées et des adultes (annexe D)",
+     "Tableau des homards par zone de pêche (annexe E)"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.oise.utoronto.ca/robertson/lesson-plans/using-maps-and-investigating-catch-rates-understand-lobster-abundance-nova",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "s7B1.3",
+    "s7B2.8",
+    "s9B1.3",
+    "s9B2.5",
+    "m7D1.6"
+   ],
+   "processes": {
+    "sci": [
+     "research"
+    ],
+    "math": [
+     "representing",
+     "connecting"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [
+    "Impact analysis across spatial and temporal scales, impact of geographic locale on weather, impact of weather on land and infrastructure",
+    "Ecosystems",
+    "Biodiversity and humans",
+    "Earth and human activity",
+    "Conservation and stewardship"
+   ],
+   "issue": ""
+  },
+  {
+   "id": "fractions-wits-wagers",
+   "title": {
+    "en": "Fractions Wits & Wagers",
+    "fr": "Fractions : « Wits & Wagers »"
+   },
+   "summary": {
+    "en": "Students estimate the position of fractions on a number line by placing arrows, then wager on the arrow they believe is closest to the correct answer.",
+    "fr": "Les élèves estiment la position de fractions sur une droite numérique avec des flèches, puis parient sur la flèche la plus proche."
+   },
+   "objectives": {
+    "en": "Students estimate and compare fractions on a number line, developing understanding of fraction magnitude, ordinality, and relative size.",
+    "fr": "Estimer et comparer des fractions sur une droite numérique pour comprendre la grandeur et l'ordre des fractions."
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "general",
+   "subject": "math",
+   "skills": [
+    "Visualization",
+    "Spatial Language"
+   ],
+   "materials": {
+    "en": [
+     "A 1-metre number line from 0 to 1 (e.g., masking tape on the board)",
+     "Metre stick to mark exact positions",
+     "Coloured arrow sticky notes (1 colour per team)",
+     "Coloured game pieces for wagers",
+     "Fraction cards (in lesson plan)"
+    ],
+    "fr": [
+     "Une droite numérique de 1 m, de 0 à 1 (p. ex., ruban-cache au tableau)",
+     "Règle d'un mètre pour marquer les positions exactes",
+     "Papillons adhésifs en flèche (1 couleur par équipe)",
+     "Pions de couleur pour les paris",
+     "Cartes de fractions (dans le plan de leçon)"
+    ]
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "Plan de leçon (anglais)",
+     "url": "https://www.oise.utoronto.ca/robertson/lesson-plans/fraction-wits-and-wagers",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [
+    "m5B1.4"
+   ],
+   "processes": {
+    "sci": [],
+    "math": [
+     "reasoning",
+     "representing",
+     "communicating"
+    ]
+   },
+   "adaptedFrom": "",
+   "concepts": [],
+   "issue": ""
+  }
+ ]
+}

@@ -29,7 +29,14 @@ These materials are shared for use by teachers, students, schools, and other edu
 
 > "[Activity title]" by Project Spatialize, licensed under CC BY-NC-SA 4.0.
 
-For adapted activities, this license covers only Project Spatialize's changes and additions. The original work remains under its creator's terms.
+For adapted activities, this license covers only Project Spatialize's changes and additions. The original work remains under its creator's terms. The following Project Spatialize activities are adaptations:
+
+| Activity | Adapted from |
+|---|---|
+| Skyscrapers; Cube Challenge; Mandalas; Pentomino Battleship | The Robertson Program, Ontario Institute for Studies in Education (OISE), University of Toronto |
+| The Paper Folding Skeptic | YouCubed Paper Folding task, Stanford University (youcubed.org/tasks/paper-folding) |
+
+French translations of activity descriptions on the website are drafts and are covered by this license.
 
 ## 2. Third-party material (not covered by this license)
 
