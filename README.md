@@ -2,7 +2,7 @@
 
 A searchable library of hands-on activities that build spatial reasoning in Grades 5–10 math and science. Each activity is tagged with the spatial skills it develops and linked to the Ontario curriculum (Science and Technology 2022, Grade 9 SNC1W 2022, Grade 10 SNC2D 2008).
 
-**Live site:** https://YOUR-USERNAME.github.io/spatialize-activities/
+**Live site:** https://abbeygandhi.github.io/spatialize-activities/
 
 ## Files
 - `index.html` is the whole website (activity data is built into it).
