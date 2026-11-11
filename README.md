@@ -1,4 +1,4 @@
-# Spatialize Activity Library / Bibliothèque d'activités Spatialize
+# Spatialized Activity Library / Bibliothèque d'activités Spatialize
 
 A bilingual (English/French) searchable library of hands-on activities that build spatial reasoning in Grades 5–10 math and science. Each activity is tagged with the spatial skills it develops, the specific Ontario curriculum expectations it supports (science and math), the Ontario thinking processes it uses, and whether a French version exists.
 
