@@ -124,9 +124,9 @@ function renderForm(){
     ${pair("title","Title",a.title)}
     ${pair("summary","Short summary",a.summary,{area:true})}
     ${pair("objectives","Objectives",a.objectives,{area:true})}
-    <fieldset><legend>Grades</legend><div class="chips">${[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>`<label class="chip" for="g${g}"><input type="checkbox" id="g${g}" data-grade="${g}" ${a.grades.includes(g)?"checked":""}><span>${g}</span></label>`).join("")}</div></fieldset>
+    <fieldset><legend>Grades <small style="text-transform:none;letter-spacing:0;font-weight:400">(set automatically from the curriculum expectations below)</small></legend><div class="chips">${[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>`<label class="chip" for="g${g}"><input type="checkbox" id="g${g}" data-grade="${g}" ${a.grades.includes(g)?"checked":""}><span>${g}</span></label>`).join("")}</div></fieldset>
     <div class="pair">
-      <label class="f">Type<select data-p="type"><option value="general" ${a.type==="general"?"selected":""}>For all grades (general)</option><option value="specific" ${a.type==="specific"?"selected":""}>Curriculum specific</option></select></label>
+      <label class="f">Type<select data-p="type"><option value="puzzle" ${a.type==="puzzle"?"selected":""}>Puzzle or game</option><option value="lesson" ${a.type!=="puzzle"?"selected":""}>Lesson</option></select></label>
       <label class="f">Adapted from <small>(leave blank if original)</small><input type="text" data-p="adaptedFrom" value="${esc(a.adaptedFrom||"")}"></label>
     </div>
     <label class="chip" for="hasfr" style="justify-self:start"><input type="checkbox" id="hasfr" ${a.languages.includes("fr")?"checked":""}><span>A French version of this activity exists</span></label>
@@ -199,7 +199,7 @@ function onInput(e){
   else if(el.dataset.link!==undefined){ a.links[+el.dataset.link][el.dataset.k]=el.value; }
   else if(el.dataset.grade){ const g=+el.dataset.grade; a.grades=el.checked?[...new Set([...a.grades,g])].sort((x,y)=>x-y):a.grades.filter(x=>x!==g); }
   else if(el.dataset.skill){ const s=el.dataset.skill; a.skills=el.checked?[...a.skills,s]:a.skills.filter(x=>x!==s); }
-  else if(el.dataset.exp){ const k=el.dataset.exp; a.expectations=el.checked?[...a.expectations,k]:a.expectations.filter(x=>x!==k); a.subject=subjectOf(a); }
+  else if(el.dataset.exp){ const k=el.dataset.exp; a.expectations=el.checked?[...a.expectations,k]:a.expectations.filter(x=>x!==k); a.subject=subjectOf(a); syncGrades(a); }
   else if(el.dataset.proc){ const g=el.dataset.proc; a.processes[g]=el.checked?[...a.processes[g],el.value]:a.processes[g].filter(x=>x!==el.value); }
   else if(el.id==="hasfr"){ a.languages=el.checked?["en","fr"]:["en"]; }
   else if(el.id==="expq"){ const q=el.value.trim().toLowerCase(); document.querySelectorAll("#exppick label").forEach(l=>l.hidden=q&&!l.dataset.hay.includes(q)); return; }
@@ -222,6 +222,10 @@ function onClick(e){
     if(!cur.expectations.includes(key)) cur.expectations.push(key); cur.subject=subjectOf(cur); markDirty(); renderForm();
   }
 }
+// Grades follow the linked Ontario expectations (Grades 5–10 only)
+function expGrades(a){ return [...new Set(a.expectations.map(k=>DB.expectations[k]?.grade).filter(g=>g>=5&&g<=10))].sort((x,y)=>x-y); }
+function syncGrades(a){ const g=expGrades(a); if(!g.length) return; a.grades=g;
+  document.querySelectorAll("[data-grade]").forEach(cb=>cb.checked=g.includes(+cb.dataset.grade)); }
 function uniqueId(base){ let id=base||"activity", n=2; while(DB.activities.some(a=>a.id===id)) id=`${base}-${n++}`; return id; }
 function select(a){ cur=a; renderList(); renderForm(); window.scrollTo({top:0}); }
 
@@ -231,6 +235,7 @@ function validate(){
     if(!a.title.en) probs.push("An activity has no English title.");
     if(!a.grades.length) probs.push(`"${a.title.en}" has no grade.`);
     if(!a.skills.length) probs.push(`"${a.title.en}" has no spatial skill.`);
+    const eg=expGrades(a); if(eg.length && eg.join()!==a.grades.join()) probs.push(`"${a.title.en}" is listed for grades ${a.grades.join(", ")||"none"} but its expectations are for grades ${eg.join(", ")}.`);
     a.links.forEach(l=>{ if(l.url && !/^https?:\/\//.test(l.url)) probs.push(`"${a.title.en}" has a link that doesn't start with https://`); });
     if(!a.id) a.id=uniqueId(slug(a.title.en)); if(ids.has(a.id)) a.id=uniqueId(a.id); ids.add(a.id);
     a.subject=subjectOf(a);
@@ -244,7 +249,7 @@ $("#form").addEventListener("change",onInput);
 $("#form").addEventListener("click",onClick);
 $("#list").addEventListener("click",e=>{ const b=e.target.closest("[data-i]"); if(b) select(DB.activities[+b.dataset.i]); });
 $("#lsearch").addEventListener("input",renderList);
-$("#new").onclick=()=>{ const a={id:uniqueId("new-activity"),title:{en:"New activity",fr:""},summary:{en:"",fr:""},objectives:{en:"",fr:""},grades:[],type:"general",subject:"math",skills:[],materials:{en:[],fr:[]},prep:{en:"",fr:""},links:[],languages:["en"],expectations:[],processes:{sci:[],math:[]},adaptedFrom:"",concepts:[],issue:""}; DB.activities.unshift(a); select(a); markDirty(); };
+$("#new").onclick=()=>{ const a={id:uniqueId("new-activity"),title:{en:"New activity",fr:""},summary:{en:"",fr:""},objectives:{en:"",fr:""},grades:[],type:"lesson",subject:"math",skills:[],materials:{en:[],fr:[]},prep:{en:"",fr:""},links:[],languages:["en"],expectations:[],processes:{sci:[],math:[]},adaptedFrom:"",concepts:[],issue:""}; DB.activities.unshift(a); select(a); markDirty(); };
 
 $("#download").onclick=()=>{
   const probs=validate(); if(probs.length){ setStatus("Check before saving: "+probs.slice(0,3).join(" "),true); }

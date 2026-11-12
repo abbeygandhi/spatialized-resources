@@ -84,6 +84,7 @@ textarea{resize:vertical;min-height:70px}
 .thumb svg.art{height:82px;width:auto}
 .thumb .badges{display:flex;flex-direction:column;align-items:flex-end;gap:6px;align-self:flex-start;margin-top:12px}
 .pill{font:700 .72rem/1 var(--body);padding:5px 8px;border-radius:6px;letter-spacing:.04em;text-transform:uppercase;background:var(--surface);border:1px solid var(--line);white-space:nowrap}
+.pill.puz{display:inline-flex;align-items:center;gap:4px;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 .lang-badges{display:flex;gap:4px}
 .lang-badges b{font:700 .7rem/1 var(--body);padding:4px 6px;border-radius:5px;background:var(--surface);border:1px solid var(--line)}
 .lang-badges b.fr{background:var(--ok-bg);color:var(--ok);border-color:transparent}

@@ -47,6 +47,7 @@
       <input type="search" id="q" autocomplete="off">
     </div>
     <fieldset><legend data-t="fGrade"></legend><div class="chips" id="f-grade"></div></fieldset>
+    <fieldset><legend data-t="fType"></legend><div class="chips" id="f-type"></div></fieldset>
     <fieldset><legend data-t="fSubj"></legend><div class="chips" id="f-subj"></div></fieldset>
     <fieldset><legend data-t="fSkill"></legend><div class="chips" id="f-skill"></div></fieldset>
     <fieldset><legend data-t="fLang"></legend><div class="chips" id="f-lang"></div></fieldset>
@@ -88,14 +89,14 @@ const T = {
   nExp:n=>`${n} Ontario expectation${n===1?"":"s"}`, close:"Close", objectives:"Objectives", materials:"Materials", prep:"Teacher notes",
   skills:"Spatial skills", sciExp:"Ontario science expectations", mathExp:"Ontario math expectations",
   procs:"Thinking processes", sciProc:"Science", mathProc:"Math", concepts:"Science contexts and concepts", resources:"Lesson plan and resources",
-  noLink:"Lesson plan link coming soon.", adapted:s=>`Adapted from ${s}.`, type:{general:"For all grades",specific:"Curriculum specific"},
+  noLink:"Lesson plan link coming soon.", adapted:s=>`Adapted from ${s}.`, type:{puzzle:"Puzzle or game",lesson:"Lesson"}, fType:"Activity type", types:{puzzle:"Puzzles & games",lesson:"Lessons"},
   langAvail:{en:"English only", both:"English and French"},
   aboutAlign:"<strong>About the Ontario alignment.</strong> Expectations are drawn from Science and Technology, Grades 1–8 (2022), Science Grade 9 SNC1W (2022), Science Grade 10 SNC2D (2008), Mathematics Grades 1–8 (2020), Mathematics Grade 9 MTH1W (2021) and Grade 10 MPM2D (2005). Thinking processes refer to the scientific and engineering design processes in Strand A (science) and the seven mathematical processes (math). Wording is abridged; check the official curriculum for full text.",
   license:'Activities created or adapted by Project Spatialize, and this library\'s descriptions, tags and curriculum mapping, are shared under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a>. Curated activities from other organizations remain the property of their creators; we link to their original pages. French translations of descriptions are drafts under review.',
   editLink:"Update the library (editors)",
  },
  fr: {
-  skip:"Aller aux activités", title:"Bibliothèque d'activités « spatialisées »",
+  skip:"Aller aux activités", title:"Bibliothèque d'activités Spatialized",
   lede:"Des activités concrètes pour développer le raisonnement spatial en mathématiques et en sciences, de la 5e à la 10e année. Chaque fiche indique les habiletés spatiales visées, les attentes du curriculum de l'Ontario et la disponibilité en français.",
   stActs:"activités", stExp:"attentes de l'Ontario liées", stFr:"offertes en français",
   keyH:"Habiletés spatiales", search:"Rechercher", searchPh:"Titre, sujet, matériel ou code (p. ex., E2.5)",
@@ -105,7 +106,7 @@ const T = {
   nExp:n=>`${n} attente${n>1?"s":""} de l'Ontario`, close:"Fermer", objectives:"Objectifs", materials:"Matériel", prep:"Notes pour l'enseignant",
   skills:"Habiletés spatiales", sciExp:"Attentes en sciences (Ontario)", mathExp:"Attentes en mathématiques (Ontario)",
   procs:"Processus de pensée", sciProc:"Sciences", mathProc:"Mathématiques", concepts:"Contextes et concepts scientifiques", resources:"Plan de leçon et ressources",
-  noLink:"Lien vers le plan de leçon à venir.", adapted:s=>`Adapté de : ${s}.`, type:{general:"Toutes les années",specific:"Lié au curriculum"},
+  noLink:"Lien vers le plan de leçon à venir.", adapted:s=>`Adapté de : ${s}.`, type:{puzzle:"Casse-tête ou jeu",lesson:"Leçon"}, fType:"Type d'activité", types:{puzzle:"Casse-têtes et jeux",lesson:"Leçons"},
   langAvail:{en:"Anglais seulement", both:"Anglais et français"},
   aboutAlign:"<strong>Arrimage au curriculum de l'Ontario.</strong> Les attentes proviennent de Sciences et technologie, 1re à 8e année (2022), Sciences 9e année SNC1W (2022), Sciences 10e année SNC2D (2008), Mathématiques 1re à 8e année (2020), Mathématiques 9e année MTH1W (2021) et 10e année MPM2D (2005). Les processus de pensée renvoient aux processus scientifiques et de design en ingénierie du domaine A (sciences) et aux sept processus mathématiques. Libellés abrégés et traduits; consultez le curriculum officiel pour le texte complet.",
   license:'Les activités créées ou adaptées par Project Spatialize, ainsi que les descriptions, étiquettes et arrimages de cette bibliothèque, sont diffusés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a>. Les activités d\'autres organismes demeurent la propriété de leurs auteurs; nous renvoyons à leurs pages d\'origine. Les traductions françaises sont des ébauches en cours de révision.',
@@ -117,7 +118,8 @@ let DB = null, lang = "en";
 try { const s = localStorage.getItem("spz-lang"); if (s === "fr" || s === "en") lang = s; } catch(e) {}
 const $ = s => document.querySelector(s);
 const t = k => T[lang][k];
-const state = {q:"", grades:new Set(), subj:new Set(), skills:new Set(), fr:false};
+const state = {q:"", grades:new Set(), type:new Set(), subj:new Set(), skills:new Set(), fr:false};
+const PUZ = '<svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h6v2.5a1.5 1.5 0 1 0 3 0V4h7v6h-2.5a1.5 1.5 0 1 0 0 3H20v7h-7v-2.5a1.5 1.5 0 1 0-3 0V20H4z"/></svg>';
 const pick = o => (o && (o[lang] || o.en)) || "";
 
 function art(a){
@@ -142,6 +144,7 @@ function chip(group,val,label,ico=""){
 function buildFilters(){
   const keep = new Set([...document.querySelectorAll("#filters input:checked")].map(i=>i.id));
   $("#f-grade").innerHTML=[5,6,7,8,9,10].map(g=>chip("grades",g,g)).join("");
+  $("#f-type").innerHTML=["puzzle","lesson"].map(k=>chip("type",k,t("types")[k],k==="puzzle"?PUZ:"")).join("");
   $("#f-subj").innerHTML=["math","sci","both"].map(s=>chip("subj",s,t("subj")[s])).join("");
   const used=[...new Set(DB.activities.flatMap(a=>a.skills))].sort((a,b)=>skillName(a,lang).localeCompare(skillName(b,lang),lang));
   $("#f-skill").innerHTML=used.map(s=>chip("skills",s,skillName(s,lang),icon(s,15))).join("");
@@ -161,6 +164,7 @@ function hay(a){
 }
 function match(a){
   if(state.grades.size && !a.grades.some(g=>state.grades.has(g))) return false;
+  if(state.type.size && !state.type.has(a.type)) return false;
   if(state.subj.size && !state.subj.has(a.subject)) return false;
   if(state.skills.size && ![...state.skills].every(s=>a.skills.includes(s))) return false;
   if(state.fr && !a.languages.includes("fr")) return false;
@@ -170,7 +174,7 @@ function match(a){
 function card(a){
   const n=a.expectations.length;
   return `<li class="card">
-   <div class="thumb">${art(a)}<span class="badges"><span class="pill">${esc(t("subj")[a.subject])}</span>${langBadges(a)}</span></div>
+   <div class="thumb">${art(a)}<span class="badges">${a.type==="puzzle"?`<span class="pill puz">${PUZ}${esc(t("type").puzzle)}</span>`:""}<span class="pill">${esc(t("subj")[a.subject])}</span>${langBadges(a)}</span></div>
    <div class="card-body">
      <span class="grades">${esc(gradesText(a.grades,lang))}</span>
      <h3><button type="button" data-id="${a.id}">${esc(pick(a.title))}</button></h3>
@@ -231,7 +235,7 @@ $("#dlg").addEventListener("close",()=>{ if(location.hash) history.replaceState(
 $("#dlg").addEventListener("click",e=>{ if(e.target.id==="dlg") e.target.close(); });
 $("#grid").addEventListener("click",e=>{ const b=e.target.closest("[data-id]"); if(b) openDlg(b.dataset.id); });
 $("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase(); render();});
-$("#reset").onclick=()=>{ ["grades","subj","skills"].forEach(k=>state[k].clear()); state.fr=false; state.q=""; $("#q").value="";
+$("#reset").onclick=()=>{ ["grades","type","subj","skills"].forEach(k=>state[k].clear()); state.fr=false; state.q=""; $("#q").value="";
   document.querySelectorAll("#filters input[type=checkbox]").forEach(i=>i.checked=false); render(); };
 window.addEventListener("hashchange",()=>{ const id=location.hash.slice(1); if(id) openDlg(id,false); });
 
