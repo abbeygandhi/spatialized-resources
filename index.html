@@ -50,6 +50,8 @@
     <fieldset><legend data-t="fType"></legend><div class="chips" id="f-type"></div></fieldset>
     <fieldset><legend data-t="fSubj"></legend><div class="chips" id="f-subj"></div></fieldset>
     <fieldset><legend data-t="fSkill"></legend><div class="chips" id="f-skill"></div></fieldset>
+    <fieldset><legend data-t="fSciProc"></legend><div class="chips" id="f-sp"></div></fieldset>
+    <fieldset><legend data-t="fMathProc"></legend><div class="chips" id="f-mp"></div></fieldset>
     <fieldset><legend data-t="fLang"></legend><div class="chips" id="f-lang"></div></fieldset>
     <button type="button" class="btn" id="reset" data-t="reset"></button>
   </aside>
@@ -89,9 +91,9 @@ const T = {
   nExp:n=>`${n} Ontario expectation${n===1?"":"s"}`, close:"Close", objectives:"Objectives", materials:"Materials", prep:"Teacher notes",
   skills:"Spatial skills", sciExp:"Ontario science expectations", mathExp:"Ontario math expectations",
   procs:"Thinking processes", sciProc:"Science", mathProc:"Math", concepts:"Science contexts and concepts", resources:"Lesson plan and resources",
-  noLink:"Lesson plan link coming soon.", adapted:s=>`Adapted from ${s}.`, type:{puzzle:"Puzzle or game",lesson:"Lesson"}, fType:"Activity type", types:{puzzle:"Puzzles & games",lesson:"Lessons"},
+  noLink:"Lesson plan link coming soon.", adapted:s=>`Adapted from ${s}.`, type:{puzzle:"Puzzle or game",lesson:"Lesson"}, fType:"Activity type", fSciProc:"Science thinking processes", fMathProc:"Math thinking processes", types:{puzzle:"Puzzles & games",lesson:"Lessons"},
   langAvail:{en:"English only", both:"English and French"},
-  aboutAlign:"<strong>About the Ontario alignment.</strong> Expectations are drawn from Science and Technology, Grades 1–8 (2022), Science Grade 9 SNC1W (2022), Science Grade 10 SNC2D (2008), Mathematics Grades 1–8 (2020), Mathematics Grade 9 MTH1W (2021) and Grade 10 MPM2D (2005). Thinking processes refer to the scientific and engineering design processes in Strand A (science) and the seven mathematical processes (math). Wording is abridged; check the official curriculum for full text.",
+  aboutAlign:"<strong>About the Ontario alignment.</strong> Expectations are drawn from Science and Technology, Grades 1–8 (2022), Science Grade 9 SNC1W (2022), Science Grade 10 SNC2D (2008), Mathematics Grades 1–8 (2020), Mathematics Grade 9 MTH1W (2021) and Grade 10 MPM2D (2005). Thinking processes refer to the scientific and engineering design processes in Strand A (science) and the seven mathematical processes (math). Expectation wording, in English and French, comes from the Ministry's Curriculum and Resources website. Grade 10 MPM2D shows overall expectations.",
   license:'Activities created or adapted by Project Spatialize, and this library\'s descriptions, tags and curriculum mapping, are shared under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a>. Curated activities from other organizations remain the property of their creators; we link to their original pages. French translations of descriptions are drafts under review.',
   editLink:"Update the library (editors)",
  },
@@ -106,9 +108,9 @@ const T = {
   nExp:n=>`${n} attente${n>1?"s":""} de l'Ontario`, close:"Fermer", objectives:"Objectifs", materials:"Matériel", prep:"Notes pour l'enseignant",
   skills:"Habiletés spatiales", sciExp:"Attentes en sciences (Ontario)", mathExp:"Attentes en mathématiques (Ontario)",
   procs:"Processus de pensée", sciProc:"Sciences", mathProc:"Mathématiques", concepts:"Contextes et concepts scientifiques", resources:"Plan de leçon et ressources",
-  noLink:"Lien vers le plan de leçon à venir.", adapted:s=>`Adapté de : ${s}.`, type:{puzzle:"Casse-tête ou jeu",lesson:"Leçon"}, fType:"Type d'activité", types:{puzzle:"Casse-têtes et jeux",lesson:"Leçons"},
+  noLink:"Lien vers le plan de leçon à venir.", adapted:s=>`Adapté de : ${s}.`, type:{puzzle:"Casse-tête ou jeu",lesson:"Leçon"}, fType:"Type d'activité", fSciProc:"Processus de pensée en sciences", fMathProc:"Processus mathématiques", types:{puzzle:"Casse-têtes et jeux",lesson:"Leçons"},
   langAvail:{en:"Anglais seulement", both:"Anglais et français"},
-  aboutAlign:"<strong>Arrimage au curriculum de l'Ontario.</strong> Les attentes proviennent de Sciences et technologie, 1re à 8e année (2022), Sciences 9e année SNC1W (2022), Sciences 10e année SNC2D (2008), Mathématiques 1re à 8e année (2020), Mathématiques 9e année MTH1W (2021) et 10e année MPM2D (2005). Les processus de pensée renvoient aux processus scientifiques et de design en ingénierie du domaine A (sciences) et aux sept processus mathématiques. Libellés abrégés et traduits; consultez le curriculum officiel pour le texte complet.",
+  aboutAlign:"<strong>Arrimage au curriculum de l'Ontario.</strong> Les attentes proviennent de Sciences et technologie, 1re à 8e année (2022), Sciences 9e année SNC1W (2022), Sciences 10e année SNC2D (2008), Mathématiques 1re à 8e année (2020), Mathématiques 9e année MTH1W (2021) et 10e année MPM2D (2005). Les processus de pensée renvoient aux processus scientifiques et de design en ingénierie du domaine A (sciences) et aux sept processus mathématiques. Le libellé des attentes, en anglais et en français, provient du site Curriculum et ressources du Ministère. Pour MPM2D (10e année), ce sont les attentes générales.",
   license:'Les activités créées ou adaptées par Project Spatialize, ainsi que les descriptions, étiquettes et arrimages de cette bibliothèque, sont diffusés sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="license noopener" target="_blank">CC BY-NC-SA 4.0</a>. Les activités d\'autres organismes demeurent la propriété de leurs auteurs; nous renvoyons à leurs pages d\'origine. Les traductions françaises sont des ébauches en cours de révision.',
   editLink:"Mettre à jour la bibliothèque (éditeurs)",
  }
@@ -118,7 +120,7 @@ let DB = null, lang = "en";
 try { const s = localStorage.getItem("spz-lang"); if (s === "fr" || s === "en") lang = s; } catch(e) {}
 const $ = s => document.querySelector(s);
 const t = k => T[lang][k];
-const state = {q:"", grades:new Set(), type:new Set(), subj:new Set(), skills:new Set(), fr:false};
+const state = {q:"", grades:new Set(), type:new Set(), subj:new Set(), skills:new Set(), sp:new Set(), mp:new Set(), fr:false};
 const PUZ = '<svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h6v2.5a1.5 1.5 0 1 0 3 0V4h7v6h-2.5a1.5 1.5 0 1 0 0 3H20v7h-7v-2.5a1.5 1.5 0 1 0-3 0V20H4z"/></svg>';
 const pick = o => (o && (o[lang] || o.en)) || "";
 
@@ -148,6 +150,9 @@ function buildFilters(){
   $("#f-subj").innerHTML=["math","sci","both"].map(s=>chip("subj",s,t("subj")[s])).join("");
   const used=[...new Set(DB.activities.flatMap(a=>a.skills))].sort((a,b)=>skillName(a,lang).localeCompare(skillName(b,lang),lang));
   $("#f-skill").innerHTML=used.map(s=>chip("skills",s,skillName(s,lang),icon(s,15))).join("");
+  const usedP=g=>Object.keys(DB.processes[g]).filter(k=>DB.activities.some(a=>a.processes[g].includes(k)));
+  $("#f-sp").innerHTML=usedP("sci").map(k=>chip("sp",k,DB.processes.sci[k][lang])).join("");
+  $("#f-mp").innerHTML=usedP("math").map(k=>chip("mp",k,DB.processes.math[k][lang])).join("");
   $("#f-lang").innerHTML=chip("fr","1",t("frOnly"));
   keep.forEach(id=>{const el=document.getElementById(id); if(el) el.checked=true;});
   $("#skill-key").innerHTML=used.map(s=>`<li>${icon(s,20)}<span><strong>${esc(skillName(s,lang))}</strong> — ${esc(SKILLS[s]?SKILLS[s][lang+"_d"]:"")}</span></li>`).join("");
@@ -167,6 +172,8 @@ function match(a){
   if(state.type.size && !state.type.has(a.type)) return false;
   if(state.subj.size && !state.subj.has(a.subject)) return false;
   if(state.skills.size && ![...state.skills].every(s=>a.skills.includes(s))) return false;
+  if(state.sp.size && ![...state.sp].every(p=>a.processes.sci.includes(p))) return false;
+  if(state.mp.size && ![...state.mp].every(p=>a.processes.math.includes(p))) return false;
   if(state.fr && !a.languages.includes("fr")) return false;
   if(state.q && !a._hay.includes(state.q)) return false;
   return true;
@@ -235,12 +242,14 @@ $("#dlg").addEventListener("close",()=>{ if(location.hash) history.replaceState(
 $("#dlg").addEventListener("click",e=>{ if(e.target.id==="dlg") e.target.close(); });
 $("#grid").addEventListener("click",e=>{ const b=e.target.closest("[data-id]"); if(b) openDlg(b.dataset.id); });
 $("#q").addEventListener("input",e=>{state.q=e.target.value.trim().toLowerCase(); render();});
-$("#reset").onclick=()=>{ ["grades","type","subj","skills"].forEach(k=>state[k].clear()); state.fr=false; state.q=""; $("#q").value="";
+$("#reset").onclick=()=>{ ["grades","type","subj","skills","sp","mp"].forEach(k=>state[k].clear()); state.fr=false; state.q=""; $("#q").value="";
   document.querySelectorAll("#filters input[type=checkbox]").forEach(i=>i.checked=false); render(); };
 window.addEventListener("hashchange",()=>{ const id=location.hash.slice(1); if(id) openDlg(id,false); });
 
 fetch("data/activities.json",{cache:"no-cache"}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
-  DB=d; DB.activities.forEach(a=>a._hay=hay(a));
+  DB=d; const u=x=>[...new Set(x||[])];
+  DB.activities.forEach(a=>{ a.skills=u(a.skills); a.expectations=u(a.expectations); a.grades=u(a.grades); a.languages=u(a.languages);
+    a.processes={sci:u(a.processes?.sci),math:u(a.processes?.math)}; a._hay=hay(a); });
   $("#st-total").textContent=DB.activities.length;
   $("#st-exp").textContent=new Set(DB.activities.flatMap(a=>a.expectations)).size;
   $("#st-fr").textContent=DB.activities.filter(a=>a.languages.includes("fr")).length;

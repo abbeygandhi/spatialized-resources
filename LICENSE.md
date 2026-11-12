@@ -60,6 +60,8 @@ The following activities were curated from other organizations. **They are not t
 | Math for Social Justice (sites.google.com/view/mtc4socialjustice) | Geometry for Combatting Food Insecurity |
 | Universe and More (universeandmore.com) | *Crack the Circuit* game. The companion classroom resource is by Project Spatialize and is covered by Section 1. |
 
+Ontario curriculum expectations (in `data/curriculum.json`, and quoted on the website) are © King's Printer for Ontario. They are reproduced from the Ministry of Education's Curriculum and Resources website (dcp.edu.gov.on.ca) for non-commercial educational reference, and are not covered by this repository's licenses.
+
 Trademarks such as LEGO and Desmos belong to their respective owners and appear for descriptive purposes only.
 
 If you are a rights holder and would like a listing changed or removed, please open an issue in this repository.

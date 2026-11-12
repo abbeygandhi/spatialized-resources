@@ -1,8 +1,8 @@
-# Spatialized Activity Library / Bibliothèque d'activités Spatialize
+# Spatialize Activity Library / Bibliothèque d'activités Spatialize
 
 A bilingual (English/French) searchable library of hands-on activities that build spatial reasoning in Grades 5–10 math and science. Each activity is tagged with the spatial skills it develops, the specific Ontario curriculum expectations it supports (science and math), the Ontario thinking processes it uses, and whether a French version exists.
 
-**Live site:** [https://abbeygandhi.github.io/spatialized-activities/](https://abbeygandhi.github.io/spatialized-resources/)
+**Live site:** https://YOUR-USERNAME.github.io/spatialize-activities/
 
 ## What's in this repository
 
@@ -10,7 +10,8 @@ A bilingual (English/French) searchable library of hands-on activities that buil
 |---|---|
 | `index.html` | The public website |
 | `admin.html` | The editor for adding and updating activities (not linked from search engines) |
-| `data/activities.json` | All activity data, curriculum expectations and thinking processes. **This is the only file that changes when you update activities.** |
+| `data/activities.json` | All activity data, the curriculum expectations they link to, and thinking processes. **This is the only file that changes when you update activities.** |
+| `data/curriculum.json` | Every Ontario specific expectation for Grades 5–10 math and science (570), in English and French, for searching in the editor. It doesn't need updating unless the curriculum changes. |
 | `data/spatialize-activities-ontario.csv` | A spreadsheet copy of the activities for Excel or Google Sheets |
 | `assets/` | Shared styles, skill icons and helper code |
 | `LICENSE.md` | License and credits for third-party and adapted activities |
@@ -27,7 +28,7 @@ The site updates within a minute or two. The editor keeps an unsaved draft in yo
 
 ## Curriculum alignment
 
-Expectations are drawn from Science and Technology, Grades 1–8 (2022); Science, Grade 9 SNC1W (2022); Science, Grade 10 SNC2D (2008); Mathematics, Grades 1–8 (2020); Mathematics, Grade 9 MTH1W (2021); and Mathematics, Grade 10 MPM2D (2005). Wording on the site is abridged, and the French wording is a draft translation. Teachers should check the official curriculum for full text.
+Expectations come from the Ministry of Education's Curriculum and Resources website (dcp.edu.gov.on.ca), with official English and French wording: Science and Technology, Grades 5–8 (2022); Science, Grade 9 SNC1W (2022); Science, Grade 10 SNC2D (2008); Mathematics, Grades 5–8 (2020); Mathematics, Grade 9 MTH1W (2021). Grade 10 MPM2D (2005) is published only as a PDF, so its overall expectations are included, with draft French. 24 SNC2D expectations have no French version on the Ministry site and show in English.
 
 ## License
 

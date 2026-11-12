@@ -7,675 +7,771 @@
    "grade": 6,
    "course": "",
    "code": "C2.6",
+   "strand": "C",
    "en": "explain the functions of the components of a simple electrical circuit",
-   "fr": "expliquer la fonction des composants d'un circuit électrique simple",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+   "fr": "expliquer les fonctions des composantes d’un circuit électrique simple",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6/strands"
   },
   "s6C2.7": {
    "subj": "sci",
    "grade": 6,
    "course": "",
    "code": "C2.7",
+   "strand": "C",
    "en": "distinguish between series and parallel circuits, and identify common uses of each type of circuit",
-   "fr": "distinguer les circuits en série des circuits en parallèle et nommer des usages courants de chacun",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+   "fr": "distinguer les circuits en série des circuits en parallèle, et déterminer des utilisations courantes de chaque type de circuit",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6/strands"
   },
   "s6D2.2": {
    "subj": "sci",
    "grade": 6,
    "course": "",
    "code": "D2.2",
-   "en": "describe the relationships between the four forces of flight – lift, weight, thrust, and drag",
-   "fr": "décrire les relations entre les quatre forces du vol : portance, poids, poussée et traînée",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+   "strand": "D",
+   "en": "describe the relationships between the four forces of flight – lift, weight, thrust, and drag – that make flight possible",
+   "fr": "décrire les relations qui existent entre les quatre forces du vol: la portance, le poids, la traînée et la poussée, et qui rendent le vol possible",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6/strands"
   },
   "s6E2.1": {
    "subj": "sci",
    "grade": 6,
    "course": "",
    "code": "E2.1",
-   "en": "identify components of the solar system, including the Sun, Earth and other planets, natural satellites, comets, asteroids, and meteoroids",
-   "fr": "identifier les composantes du système solaire, dont le Soleil, la Terre et les autres planètes, les satellites naturels, les comètes, les astéroïdes et les météoroïdes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+   "strand": "E",
+   "en": "identify components of the solar system, including the Sun, Earth and other planets, natural satellites, comets, asteroids, and meteoroids, and describe their main physical characteristics",
+   "fr": "identifier des composantes du système solaire, incluant le Soleil, la Terre, les autres planètes, les satellites naturels, les comètes, les astéroïdes et les météoroïdes, et décrire leurs principales caractéristiques physiques",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6/strands"
   },
   "s6E2.3": {
    "subj": "sci",
    "grade": 6,
    "course": "",
    "code": "E2.3",
+   "strand": "E",
    "en": "describe the relationship between the force of gravity and the weight of a body",
-   "fr": "décrire la relation entre la force gravitationnelle et le poids d'un corps",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+   "fr": "décrire la relation entre la force gravitationnelle et le poids d’un corps",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6/strands"
   },
   "s6E2.5": {
    "subj": "sci",
    "grade": 6,
    "course": "",
    "code": "E2.5",
+   "strand": "E",
    "en": "describe various effects of the relative positions and motions of Earth, the Moon, and the Sun",
-   "fr": "décrire divers effets des positions et des mouvements relatifs de la Terre, de la Lune et du Soleil",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6"
+   "fr": "décrire divers effets des mouvements et des positions relatives de la Terre, de la Lune et du Soleil",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-6/strands"
   },
   "s7B1.3": {
    "subj": "sci",
    "grade": 7,
    "course": "",
    "code": "B1.3",
-   "en": "analyse how diverse First Nations, Métis, and Inuit practices and perspectives contribute to…",
-   "fr": "analyser comment diverses pratiques et perspectives des Premières Nations, des Métis et des Inuit contribuent à…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+   "strand": "B",
+   "en": "analyse how diverse First Nations, Métis, and Inuit practices and perspectives contribute to environmental sustainability",
+   "fr": "examiner les diverses pratiques et perspectives des Premières Nations, des Métis et des Inuit en tenant compte de leur contribution à la durabilité de l’environnement",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7/strands"
   },
   "s7B2.1": {
    "subj": "sci",
    "grade": 7,
    "course": "",
    "code": "B2.1",
+   "strand": "B",
    "en": "explain that an ecosystem is a network of interactions among living organisms and their environment",
-   "fr": "expliquer qu'un écosystème est un réseau d'interactions entre les organismes vivants et leur environnement",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+   "fr": "expliquer qu’un écosystème est un réseau d’interactions entre des organismes vivants et leur environnement",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7/strands"
   },
   "s7B2.4": {
    "subj": "sci",
    "grade": 7,
    "course": "",
    "code": "B2.4",
+   "strand": "B",
    "en": "describe the transfer of energy in a food chain, and explain the effects of altering any part of the chain",
-   "fr": "décrire le transfert d'énergie dans une chaîne alimentaire et expliquer les effets d'un changement dans la chaîne",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+   "fr": "décrire le transfert d’énergie qui s’effectue dans une chaîne alimentaire et expliquer les effets de modifications faites à une partie quelconque de la chaîne",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7/strands"
   },
   "s7B2.5": {
    "subj": "sci",
    "grade": 7,
    "course": "",
    "code": "B2.5",
+   "strand": "B",
    "en": "describe how matter is cycled within the environment, and explain how the cycling of matter promotes sustainability",
-   "fr": "décrire le cycle de la matière dans l'environnement et expliquer comment il favorise la durabilité",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+   "fr": "décrire la circulation d’éléments nutritifs au sein de l’environnement et expliquer comment le recyclage d’éléments nutritifs favorise la durabilité de l’environnement",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7/strands"
   },
   "s7B2.8": {
    "subj": "sci",
    "grade": 7,
    "course": "",
    "code": "B2.8",
-   "en": "describe how different approaches to agriculture and to harvesting food from the natural environment…",
-   "fr": "décrire comment différentes approches de l'agriculture et de la récolte d'aliments dans le milieu naturel…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
+   "strand": "B",
+   "en": "describe how different approaches to agriculture and to harvesting food from the natural environment can impact an ecosystem, and identify strategies that can be used to maintain and/or restore balance to ecosystems",
+   "fr": "décrire différentes approches en lien avec l’agriculture et les récoltes dans la nature qui peuvent avoir une incidence sur un écosystème, et déterminer des pratiques qui peuvent être utilisées pour maintenir ou rétablir l’équilibre dans un écosystème",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7/strands"
   },
   "s7E2.5": {
    "subj": "sci",
    "grade": 7,
    "course": "",
    "code": "E2.5",
-   "en": "explain how heat is transmitted in liquids and gases through convection, and describe natural processes affected by convection",
-   "fr": "expliquer comment la chaleur se transmet par convection dans les liquides et les gaz, et décrire des processus naturels touchés par la convection",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7"
-  },
-  "s9A1.2": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "A1.2",
-   "en": "apply a scientific experimentation process and associated skills to conduct investigations",
-   "fr": "appliquer un processus d'expérimentation scientifique et les habiletés connexes pour mener des recherches",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9B1.3": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "B1.3",
-   "en": "investigate and explain how sustainable practices used by various communities, including First Nations, Métis, and Inuit communities, …",
-   "fr": "examiner et expliquer comment les pratiques durables de diverses communautés, dont les Premières Nations, les Métis et les Inuit…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9B2.2": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "B2.2",
-   "en": "explain how naturally occurring phenomena, including the cycling of matter and the flow of energy, contribute to…",
-   "fr": "expliquer comment des phénomènes naturels, dont le cycle de la matière et le flux d'énergie, contribuent à…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9B2.3": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "B2.3",
-   "en": "compare and contrast the processes of cellular respiration and photosynthesis with respect to the flow of energy…",
-   "fr": "comparer la respiration cellulaire et la photosynthèse quant au flux d'énergie…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9B2.5": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "B2.5",
-   "en": "explain the effects of various human activities on the dynamic equilibrium of ecosystems",
-   "fr": "expliquer les effets de diverses activités humaines sur l'équilibre dynamique des écosystèmes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9B2.6": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "B2.6",
-   "en": "identify and use various indicators of climate change to describe the impacts of climate change on local and…",
-   "fr": "identifier et utiliser divers indicateurs du changement climatique pour décrire ses effets…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9C2.2": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "C2.2",
-   "en": "research the role of experimental evidence in the development of various atomic models, and compare and contrast those models",
-   "fr": "étudier le rôle des preuves expérimentales dans l'élaboration de divers modèles atomiques, et comparer ces modèles",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9C2.3": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "C2.3",
-   "en": "identify the location, relative mass, and charge of subatomic particles within an atom, using the Bohr-Rutherford model",
-   "fr": "identifier l'emplacement, la masse relative et la charge des particules subatomiques à l'aide du modèle de Bohr-Rutherford",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9C2.7": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "C2.7",
-   "en": "describe the relationship between the structure of simple compounds and their chemical formulas",
-   "fr": "décrire la relation entre la structure de composés simples et leur formule chimique",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9D2.3": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "D2.3",
-   "en": "identify the components of a direct current (DC) circuit and explain their functions, and identify electrical…",
-   "fr": "identifier les composants d'un circuit à courant continu et expliquer leur fonction…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9D2.6": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "D2.6",
-   "en": "construct series and parallel circuits to compare electric current, potential difference, and resistance in both types of circuits",
-   "fr": "construire des circuits en série et en parallèle pour comparer le courant, la différence de potentiel et la résistance",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9E1.2": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "E1.2",
-   "en": "evaluate how space observation and exploration technologies contribute to our understanding of climate change…",
-   "fr": "évaluer comment les technologies d'observation et d'exploration spatiales contribuent à notre compréhension du changement climatique…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9E2.3": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "E2.3",
-   "en": "summarize observational evidence used to support theories about the origin and evolution of the universe",
-   "fr": "résumer les preuves observationnelles qui appuient les théories sur l'origine et l'évolution de l'Univers",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9E2.4": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "E2.4",
-   "en": "describe major components of the solar system and the universe and compare their characteristics",
-   "fr": "décrire les principales composantes du système solaire et de l'Univers et comparer leurs caractéristiques",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9E2.5": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "E2.5",
-   "en": "quantify distances in the solar system and the universe by applying an understanding of relative distances…",
-   "fr": "quantifier des distances dans le système solaire et l'Univers en utilisant les distances relatives…",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s9E2.6": {
-   "subj": "sci",
-   "grade": 9,
-   "course": "SNC1W",
-   "code": "E2.6",
-   "en": "conduct investigations to explain the causes of various astronomical phenomena that can be observed from Earth",
-   "fr": "mener des recherches pour expliquer les causes de divers phénomènes astronomiques observables depuis la Terre",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w"
-  },
-  "s10C2.6": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "C2.6",
-   "en": "plan and conduct an inquiry to classify some common substances as acidic, basic, or neutral",
-   "fr": "planifier et mener une enquête pour classer des substances courantes comme acides, basiques ou neutres",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10C3.7": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "C3.7",
-   "en": "describe how the pH scale is used to classify solutions as acidic, basic, or neutral",
-   "fr": "décrire comment l'échelle de pH sert à classer les solutions comme acides, basiques ou neutres",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10D2.7": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "D2.7",
-   "en": "investigate the influence of ocean currents on local and global heat transfer and precipitation patterns",
-   "fr": "étudier l'influence des courants océaniques sur le transfert de chaleur et les régimes de précipitations",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10D3.2": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "D3.2",
-   "en": "describe and explain heat transfer in the hydrosphere and atmosphere and its effects on air and water currents",
-   "fr": "décrire et expliquer le transfert de chaleur dans l'hydrosphère et l'atmosphère et ses effets sur les courants d'air et d'eau",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10D3.5": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "D3.5",
-   "en": "describe the principal sources and sinks, both natural and anthropogenic, of greenhouse gases",
-   "fr": "décrire les principales sources et les principaux puits, naturels et anthropiques, de gaz à effet de serre",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10D3.6": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "D3.6",
-   "en": "describe how different carbon and nitrogen compounds trap heat in the atmosphere and hydrosphere",
-   "fr": "décrire comment divers composés de carbone et d'azote retiennent la chaleur dans l'atmosphère et l'hydrosphère",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10E2.2": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "E2.2",
-   "en": "use an inquiry process to investigate the laws of reflection, using plane and curved mirrors, and draw ray diagrams",
-   "fr": "utiliser un processus d'enquête pour étudier les lois de la réflexion avec des miroirs plans et courbes, et tracer des diagrammes de rayons",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10E2.4": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "E2.4",
-   "en": "use an inquiry process to investigate the refraction of light as it passes through media of different refractive indices",
-   "fr": "utiliser un processus d'enquête pour étudier la réfraction de la lumière dans des milieux d'indices de réfraction différents",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "s10E3.5": {
-   "subj": "sci",
-   "grade": 10,
-   "course": "SNC2D",
-   "code": "E3.5",
-   "en": "describe the characteristics and positions of images formed by converging lenses, using ray diagrams",
-   "fr": "décrire, à l'aide de diagrammes de rayons, les caractéristiques et la position des images formées par des lentilles convergentes",
-   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/science910_2008.pdf"
-  },
-  "m5B1.4": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "B1.4",
-   "en": "compare and order fractions from halves to twelfths, including improper fractions and mixed numbers, in various contexts",
-   "fr": "comparer et ordonner des fractions des demis aux douzièmes, y compris des fractions impropres et des nombres fractionnaires",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5C1.2": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "C1.2",
-   "en": "create and translate growing and shrinking patterns using various representations, including tables of values and graphs",
-   "fr": "créer et traduire des suites croissantes et décroissantes au moyen de diverses représentations, dont des tables de valeurs et des graphiques",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5E1.1": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "E1.1",
-   "en": "identify geometric properties of triangles, and construct different types of triangles when given side or angle measurements",
-   "fr": "identifier les propriétés géométriques des triangles et construire différents types de triangles à partir de mesures de côtés ou d'angles",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5E1.2": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "E1.2",
-   "en": "construct three-dimensional objects when given their top, front, and side views",
-   "fr": "construire des objets à trois dimensions à partir de leurs vues de dessus, de face et de côté",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5E1.4": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "E1.4",
-   "en": "plot and read coordinates in the first quadrant of a Cartesian plane using various scales, and describe the translations that move a point from one coordinate to another",
-   "fr": "situer et lire des coordonnées dans le premier quadrant d'un plan cartésien et décrire les translations qui déplacent un point",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5E1.5": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "E1.5",
-   "en": "describe and perform translations, reflections, and rotations up to 180° on a grid, and predict the results of these transformations",
-   "fr": "décrire et effectuer des translations, des réflexions et des rotations jusqu'à 180° sur une grille, et prédire le résultat",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5E2.5": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "E2.5",
-   "en": "use the area relationships among rectangles, parallelograms, and triangles to develop the formulas for the area of a parallelogram and a triangle",
-   "fr": "utiliser les relations d'aire entre rectangles, parallélogrammes et triangles pour établir les formules d'aire du parallélogramme et du triangle",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m5E2.6": {
-   "subj": "math",
-   "grade": 5,
-   "course": "",
-   "code": "E2.6",
-   "en": "show that two-dimensional shapes with the same area can have different perimeters, and solve related problems",
-   "fr": "démontrer que des figures planes de même aire peuvent avoir des périmètres différents, et résoudre des problèmes connexes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m6E1.1": {
-   "subj": "math",
-   "grade": 6,
-   "course": "",
-   "code": "E1.1",
-   "en": "create lists of geometric properties of various types of quadrilaterals, including the properties of the diagonals, rotational symmetry, and line symmetry",
-   "fr": "dresser la liste des propriétés de divers quadrilatères, dont les diagonales, la symétrie de rotation et la symétrie axiale",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m6E1.2": {
-   "subj": "math",
-   "grade": 6,
-   "course": "",
-   "code": "E1.2",
-   "en": "draw top, front, and side views, as well as perspective views, of objects and physical spaces, using appropriate scales",
-   "fr": "dessiner les vues de dessus, de face et de côté ainsi que des vues en perspective d'objets et d'espaces, à l'échelle",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m6E1.3": {
-   "subj": "math",
-   "grade": 6,
-   "course": "",
-   "code": "E1.3",
-   "en": "plot and read coordinates in all four quadrants of a Cartesian plane, and describe the translations that move a point",
-   "fr": "situer et lire des coordonnées dans les quatre quadrants d'un plan cartésien et décrire les translations qui déplacent un point",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m6E1.4": {
-   "subj": "math",
-   "grade": 6,
-   "course": "",
-   "code": "E1.4",
-   "en": "describe and perform combinations of translations, reflections, and rotations up to 360° on a grid, and predict the results",
-   "fr": "décrire et effectuer des combinaisons de translations, de réflexions et de rotations jusqu'à 360° sur une grille, et prédire le résultat",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m6E2.5": {
-   "subj": "math",
-   "grade": 6,
-   "course": "",
-   "code": "E2.5",
-   "en": "create and use nets to demonstrate the relationship between the faces of prisms and pyramids and their surface areas",
-   "fr": "créer et utiliser des développements pour montrer la relation entre les faces des prismes et des pyramides et leur aire totale",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m7E1.1": {
-   "subj": "math",
-   "grade": 7,
-   "course": "",
-   "code": "E1.1",
-   "en": "describe and classify cylinders, pyramids, and prisms according to their geometric properties, including plane and rotational symmetry",
-   "fr": "décrire et classer des cylindres, des pyramides et des prismes selon leurs propriétés, y compris la symétrie plane et de rotation",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m7E1.2": {
-   "subj": "math",
-   "grade": 7,
-   "course": "",
-   "code": "E1.2",
-   "en": "make objects and models using appropriate scales, given their top, front, and side views or their perspective views",
-   "fr": "fabriquer des objets et des maquettes à l'échelle à partir de leurs vues de dessus, de face et de côté ou en perspective",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m7E2.3": {
-   "subj": "math",
-   "grade": 7,
-   "course": "",
-   "code": "E2.3",
-   "en": "use the relationships between the radius, diameter, and circumference of a circle to explain the formula for circumference and solve related problems",
-   "fr": "utiliser les relations entre le rayon, le diamètre et la circonférence d'un cercle pour expliquer la formule de la circonférence",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m7D1.6": {
-   "subj": "math",
-   "grade": 7,
-   "course": "",
-   "code": "D1.6",
-   "en": "analyse different sets of data presented in various ways by asking and answering questions, challenging preconceived notions, and drawing conclusions",
-   "fr": "analyser divers ensembles de données en posant des questions et en y répondant, en remettant en question des idées préconçues et en tirant des conclusions",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m8E1.3": {
-   "subj": "math",
-   "grade": 8,
-   "course": "",
-   "code": "E1.3",
-   "en": "use scale drawings to calculate actual lengths and areas, and reproduce scale drawings at different ratios",
-   "fr": "utiliser des dessins à l'échelle pour calculer des longueurs et des aires réelles, et reproduire des dessins à différentes échelles",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m8E1.4": {
-   "subj": "math",
-   "grade": 8,
-   "course": "",
-   "code": "E1.4",
-   "en": "describe and perform translations, reflections, rotations, and dilations on a Cartesian plane, and predict the results",
-   "fr": "décrire et effectuer des translations, des réflexions, des rotations et des homothéties dans un plan cartésien, et prédire le résultat",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m8E2.4": {
-   "subj": "math",
-   "grade": 8,
-   "course": "",
-   "code": "E2.4",
-   "en": "describe the Pythagorean relationship using various geometric models, and apply the theorem to solve problems",
-   "fr": "décrire la relation de Pythagore au moyen de modèles géométriques et appliquer le théorème pour résoudre des problèmes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m8D1.6": {
-   "subj": "math",
-   "grade": 8,
-   "course": "",
-   "code": "D1.6",
-   "en": "analyse different sets of data presented in various ways, including scatter plots and misleading graphs, and draw conclusions",
-   "fr": "analyser divers ensembles de données, y compris des diagrammes de dispersion et des graphiques trompeurs, et tirer des conclusions",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
-  },
-  "m9B3.5": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "B3.5",
-   "en": "pose and solve problems involving rates, percentages, and proportions in various contexts",
-   "fr": "poser et résoudre des problèmes comportant des taux, des pourcentages et des proportions",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9C3.1": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "C3.1",
-   "en": "compare the shapes of graphs of linear and non-linear relations to describe their rates of change and make predictions",
-   "fr": "comparer la forme des graphiques de relations linéaires et non linéaires pour décrire leur taux de variation et faire des prédictions",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9C3.2": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "C3.2",
-   "en": "represent linear relations using concrete materials, tables of values, graphs, and equations, and connect the representations",
-   "fr": "représenter des relations linéaires par du matériel concret, des tables de valeurs, des graphiques et des équations, et relier ces représentations",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9C4.3": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "C4.3",
-   "en": "translate, reflect, and rotate lines defined by y = ax, and determine the effect of these transformations",
-   "fr": "effectuer des translations, des réflexions et des rotations de droites définies par y = ax, et déterminer l'effet de ces transformations",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9E1.2": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "E1.2",
-   "en": "create and analyse designs involving geometric relationships and circle and triangle properties, using various tools",
-   "fr": "créer et analyser des motifs faisant appel à des relations géométriques et aux propriétés des cercles et des triangles",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9E1.4": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "E1.4",
-   "en": "show how changing one or more dimensions of a two-dimensional shape and a three-dimensional object affects perimeter, area, surface area, and volume",
-   "fr": "montrer comment la modification de dimensions d'une figure plane ou d'un solide influe sur le périmètre, l'aire, l'aire totale et le volume",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9E1.5": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "E1.5",
-   "en": "solve problems involving the side-length relationship for right triangles in real-life situations, including problems that involve composite shapes",
-   "fr": "résoudre des problèmes liés à la relation entre les côtés des triangles rectangles, y compris avec des figures composées",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m9E1.6": {
-   "subj": "math",
-   "grade": 9,
-   "course": "MTH1W",
-   "code": "E1.6",
-   "en": "solve problems involving the volume of prisms, pyramids, cylinders, and cones",
-   "fr": "résoudre des problèmes liés au volume de prismes, de pyramides, de cylindres et de cônes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w"
-  },
-  "m10Trig": {
-   "subj": "math",
-   "grade": 10,
-   "course": "MPM2D",
-   "code": "Trigonometry 2",
-   "en": "solve problems involving right triangles, using the primary trigonometric ratios and the Pythagorean theorem",
-   "fr": "résoudre des problèmes portant sur des triangles rectangles à l'aide des rapports trigonométriques de base et du théorème de Pythagore",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics"
+   "strand": "E",
+   "en": "explain how heat is transmitted in liquids and gases through convection, and describe natural processes that depend on convection",
+   "fr": "expliquer le transfert de chaleur par convection dans les liquides et les gaz et décrire des processus naturels qui font appel à la convection",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-7/strands"
   },
   "s8A3.3": {
    "subj": "sci",
    "grade": 8,
    "course": "",
    "code": "A3.3",
+   "strand": "A",
    "en": "analyse contributions to science and technology from various communities",
-   "fr": "analyser des contributions aux sciences et à la technologie provenant de diverses communautés",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-8"
+   "fr": "analyser des contributions apportées aux sciences et à la technologie par diverses communautés",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/science-technology/grades/grade-8/strands"
+  },
+  "s9A1.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "A1.2",
+   "strand": "A",
+   "en": "apply a scientific experimentation process and associated skills to conduct investigations, making connections between their observations and findings and the scientific concepts they are learning",
+   "fr": "appliquer une démarche expérimentale et les habiletés connexes pour effectuer des expériences afin d’établir des liens entre ses observations et conclusions et les concepts scientifiques à l’étude",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9B1.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B1.3",
+   "strand": "B",
+   "en": "investigate and explain how sustainable practices used by various communities, including First Nations, Métis, and Inuit communities, reflect an understanding of the importance of the dynamic equilibrium of ecosystems",
+   "fr": "examiner et décrire des façons dont des pratiques durables utilisées par diverses communautés, y compris celles des Premières Nations, des Métis et des Inuit, reflètent leur compréhension de l’importance de l’équilibre dynamique des écosystèmes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9B2.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.2",
+   "strand": "B",
+   "en": "explain how naturally occurring phenomena, including the cycling of matter and the flow of energy, contribute to the dynamic equilibrium within and between ecosystems",
+   "fr": "expliquer des phénomènes naturels, y compris les cycles de la matière et les transformations d’énergie, qui contribuent à l’équilibre dynamique au sein des écosystèmes et entre ces derniers",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9B2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.3",
+   "strand": "B",
+   "en": "compare and contrast the processes of cellular respiration and photosynthesis, and explain how their complementary relationship contributes to the dynamic equilibrium of ecosystems",
+   "fr": "décrire et comparer les processus de la respiration cellulaire et de la photosynthèse, et expliquer l’importance de leur relation de complémentarité pour l’équilibre dynamique des écosystèmes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9B2.5": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.5",
+   "strand": "B",
+   "en": "explain the effects of various human activities on the dynamic equilibrium of ecosystems",
+   "fr": "décrire les effets de diverses activités humaines sur l’équilibre dynamique des écosystèmes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9B2.6": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "B2.6",
+   "strand": "B",
+   "en": "identify and use various indicators of climate change to describe the impacts of climate change on local and global ecosystems, and analyse how human activities contribute to climate change",
+   "fr": "repérer et utiliser divers indicateurs de changements climatiques pour décrire les répercussions de ces changements sur les écosystèmes à l’échelle locale et mondiale, et analyser le rôle des activités humaines dans ces changements",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9C2.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "C2.2",
+   "strand": "C",
+   "en": "research the role of experimental evidence in the development of various atomic models, and compare and contrast different models of the atom",
+   "fr": "examiner le rôle des preuves expérimentales dans l’élaboration de différents modèles atomiques, et comparer différents modèles en distinguant leurs principales caractéristiques",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9C2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "C2.3",
+   "strand": "C",
+   "en": "identify the location, relative mass, and charge of subatomic particles within an atom, using the Bohr-Rutherford model",
+   "fr": "illustrer l’emplacement, la masse relative et la charge des particules subatomiques d’un atome, à l’aide du modèle de Bohr-Rutherford",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9C2.7": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "C2.7",
+   "strand": "C",
+   "en": "describe the relationship between the structure of simple compounds and their chemical formulas",
+   "fr": "décrire le lien entre la structure de composés simples et leur formule chimique",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9D2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "D2.3",
+   "strand": "D",
+   "en": "identify the components of a direct current (DC) circuit and explain their functions, and identify electrical quantities, their symbols, and their corresponding International System of Units (SI) units",
+   "fr": "nommer les composantes d’un circuit à courant continu (CC), décrire leurs fonctions, et déterminer leurs grandeurs physiques, leurs symboles et leurs unités du système international d’unités (SI)",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9D2.6": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "D2.6",
+   "strand": "D",
+   "en": "construct series and parallel circuits to compare electric current, potential difference, and resistance in both types of circuits",
+   "fr": "construire des circuits en série et en parallèle pour comparer le courant électrique, la différence de potentiel et la résistance dans ces types de circuits",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9E1.2": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E1.2",
+   "strand": "E",
+   "en": "evaluate how space observation and exploration technologies contribute to our understanding of climate change, natural disasters, and other phenomena",
+   "fr": "examiner les façons dont les technologies liées à l’observation et à l’exploration spatiales contribuent à la compréhension des changements climatiques, des catastrophes naturelles et d’autres phénomènes sur la Terre",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9E2.3": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.3",
+   "strand": "E",
+   "en": "summarize observational evidence used to support theories about the origin and evolution of the universe and the solar system, considering diverse ways of knowing",
+   "fr": "synthétiser des données d’observations qui appuient des théories sur l’origine et l’évolution du système solaire et de l’Univers, en tenant compte de diverses formes du savoir",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9E2.4": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.4",
+   "strand": "E",
+   "en": "describe major components of the solar system and the universe and compare their characteristics",
+   "fr": "décrire les principales composantes du système solaire et de l’Univers, et comparer leurs caractéristiques",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9E2.5": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.5",
+   "strand": "E",
+   "en": "quantify distances in the solar system and the universe by applying an understanding of relative distances and sizes and using appropriate units of measure",
+   "fr": "quantifier les distances dans le système solaire et l’Univers, en appliquant sa compréhension des distances et des tailles relatives et en utilisant des unités de mesures appropriées",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s9E2.6": {
+   "subj": "sci",
+   "grade": 9,
+   "course": "SNC1W",
+   "code": "E2.6",
+   "strand": "E",
+   "en": "conduct investigations to explain the causes of various astronomical phenomena that can be observed from Earth",
+   "fr": "effectuer des recherches et/ou des expériences pour expliquer les causes de divers phénomènes astronomiques observables depuis la Terre",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc1w/strands"
+  },
+  "s10C2.6": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "C2.6",
+   "strand": "C",
+   "en": "plan and conduct an inquiry to classify some common substances as acidic, basic, or neutral (e.g., use acid–base indicators or pH test strips to classify common household substances)",
+   "fr": "identifier, à partir d’expériences, les composantes d’une réaction de neutralisation (acide, base, sel et eau)",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10C3.7": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "C3.7",
+   "strand": "C",
+   "en": "describe how the pH scale is used to classify solutions as acidic, basic, or neutral (e.g., a solution with a pH of 1 is highly acidic; a solution with a pH of 7 is neutral)",
+   "fr": "",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10D2.7": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D2.7",
+   "strand": "D",
+   "en": "investigate, through research or simulations, the influence of ocean currents on local and global heat transfer and precipitation patterns",
+   "fr": "",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10D3.2": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D3.2",
+   "strand": "D",
+   "en": "describe and explain heat transfer in the hydrosphere and atmosphere and its effects on air and water currents",
+   "fr": "discuter d’actions gouvernementales et non gouvernementales prises pour lutter contre les changements climatiques (p. ex., programme de surveillance de la biodiversité et des écosystèmes, campagne de sensibilisation, accord international pour réduire les émissions de gaz à effet de serre, Semaine canadienne de l’environnement, Journée des océans, programme d’écocivisme communautaire)",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10D3.5": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D3.5",
+   "strand": "D",
+   "en": "describe the principal sources and sinks, both natural and/or anthropogenic, of greenhouse gases (e.g., carbon dioxide, methane, nitrous oxide, halocarbons, water vapour)",
+   "fr": "",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10D3.6": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "D3.6",
+   "strand": "D",
+   "en": "describe how different carbon and nitrogen compounds (e.g., carbon dioxide, methane, nitrous oxide) influence the trapping of heat in the atmosphere and hydrosphere",
+   "fr": "",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10E2.2": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "E2.2",
+   "strand": "E",
+   "en": "use an inquiry process to investigate the laws of reflection, using plane and curved mirrors, and draw ray diagrams to summarize their findings",
+   "fr": "vérifier expérimentalement les caractéristiques et la position d’une image produite par des miroirs concaves et convexes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10E2.4": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "E2.4",
+   "strand": "E",
+   "en": "use an inquiry process to investigate the refraction of light as it passes through media of different refractive indices, compile data on their findings, and analyse the data to determine if there is a trend (e.g., the amount by which the angle of refraction changes as the angle of incidence increases varies for media of different refractive indices)",
+   "fr": "examiner les phénomènes de la réfraction, de la réflexion partielle et de la réflexion totale de la lumière et les illustrer à l’aide de diagrammes de rayons",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "s10E3.5": {
+   "subj": "sci",
+   "grade": 10,
+   "course": "SNC2D",
+   "code": "E3.5",
+   "strand": "E",
+   "en": "describe the characteristics and positions of images formed by converging lenses (e.g., orientation, size, type), with the aid of ray diagrams",
+   "fr": "",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-science/courses/snc2d/strands"
+  },
+  "m5B1.4": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "B1.4",
+   "strand": "B",
+   "en": "compare and order fractions from halves to twelfths, including improper fractions and mixed numbers, in various contexts",
+   "fr": "comparer et ordonner des fractions à partir des demis jusqu’aux douzièmes, y compris des fractions impropres et des nombres fractionnaires, dans divers contextes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-b/b1#b1-4"
+  },
+  "m5C1.2": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "C1.2",
+   "strand": "C",
+   "en": "create and translate growing and shrinking patterns using various representations, including tables of values and graphs",
+   "fr": "créer des suites croissantes et des suites décroissantes, à l’aide d’une variété de représentations, y compris des tables de valeurs et des représentations graphiques, et établir des liens entre les différentes représentations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-c/c1#c1-2"
+  },
+  "m5E1.1": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.1",
+   "strand": "E",
+   "en": "identify geometric properties of triangles, and construct different types of triangles when given side or angle measurements",
+   "fr": "reconnaître les propriétés géométriques des triangles et construire divers types de triangles en utilisant des mesures d’angles ou de côtés données",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e1#e1-1"
+  },
+  "m5E1.2": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.2",
+   "strand": "E",
+   "en": "identify and construct congruent triangles, rectangles, and parallelograms",
+   "fr": "reconnaître et construire des triangles, des rectangles et des parallélogrammes congruents",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e1#e1-2"
+  },
+  "m5E1.3": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.3",
+   "strand": "E",
+   "en": "draw top, front, and side views of objects, and match drawings with objects",
+   "fr": "tracer les vues de côté, de face et de dessus de divers objets et faire correspondre le dessin à l’objet",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e1#e1-3"
+  },
+  "m5E1.4": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.4",
+   "strand": "E",
+   "en": "plot and read coordinates in the first quadrant of a Cartesian plane using various scales, and describe the translations that move a point from one coordinate to another",
+   "fr": "situer et lire des coordonnées dans le premier quadrant d’un plan cartésien en utilisant diverses échelles, et décrire les déplacements d’une coordonnée à l’autre à l’aide de translations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e1#e1-4"
+  },
+  "m5E1.5": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E1.5",
+   "strand": "E",
+   "en": "describe and perform translations, reflections, and rotations up to 180° on a grid, and predict the results of these transformations",
+   "fr": "décrire et effectuer des translations, des réflexions et des rotations jusqu’à 180° dans une grille, et prédire les résultats de ces transformations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e1#e1-5"
+  },
+  "m5E2.5": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E2.5",
+   "strand": "E",
+   "en": "use the area relationships among rectangles, parallelograms, and triangles to develop the formulas for the area of a parallelogram and the area of a triangle, and solve related problems",
+   "fr": "utiliser les relations entre l’aire des rectangles, des parallélogrammes et des triangles afin de développer des formules pour l’aire d’un parallélogramme et d’un triangle, et résoudre des problèmes connexes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e2#e2-5"
+  },
+  "m5E2.6": {
+   "subj": "math",
+   "grade": 5,
+   "course": "",
+   "code": "E2.6",
+   "strand": "E",
+   "en": "show that two-dimensional shapes with the same area can have different perimeters, and solve related problems",
+   "fr": "démontrer que des figures planes ayant la même aire peuvent avoir des périmètres différents et résoudre des problèmes connexes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g5-math/strand-e/e2#e2-6"
   },
   "m6B1.3": {
    "subj": "math",
    "grade": 6,
    "course": "",
    "code": "B1.3",
+   "strand": "B",
    "en": "compare and order integers, decimal numbers, and fractions, separately and in combination, in various contexts",
-   "fr": "comparer et ordonner des nombres entiers, des nombres décimaux et des fractions, séparément et ensemble, dans divers contextes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "fr": "comparer et ordonner des nombres entiers, des nombres décimaux et des fractions, séparément et en les combinant, dans divers contextes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-b/b1#b1-3"
   },
-  "m7B1.3": {
+  "m6E1.1": {
    "subj": "math",
-   "grade": 7,
+   "grade": 6,
    "course": "",
-   "code": "B1.3",
-   "en": "read, represent, compare, and order rational numbers, including positive and negative fractions and decimal numbers to thousandths, in various contexts",
-   "fr": "lire, représenter, comparer et ordonner des nombres rationnels, y compris des fractions positives et négatives et des nombres décimaux jusqu'aux millièmes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "code": "E1.1",
+   "strand": "E",
+   "en": "create lists of the geometric properties of various types of quadrilaterals, including the properties of the diagonals, rotational symmetry, and line symmetry",
+   "fr": "créer des listes des propriétés géométriques de divers types de quadrilatères, y compris les propriétés des diagonales, la symétrie rotationnelle et les axes de symétrie",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-e/e1#e1-1"
   },
-  "m8B1.2": {
+  "m6E1.2": {
    "subj": "math",
-   "grade": 8,
+   "grade": 6,
    "course": "",
-   "code": "B1.2",
-   "en": "describe, compare, and order numbers in the real number system (rational and irrational numbers), separately and in combination, in various contexts",
-   "fr": "décrire, comparer et ordonner des nombres réels (rationnels et irrationnels), séparément et ensemble, dans divers contextes",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "code": "E1.2",
+   "strand": "E",
+   "en": "construct three-dimensional objects when given their top, front, and side views",
+   "fr": "construire des objets à trois dimensions à partir de vues de face, de côté et de dessus",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-e/e1#e1-2"
+  },
+  "m6E1.3": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E1.3",
+   "strand": "E",
+   "en": "plot and read coordinates in all four quadrants of a Cartesian plane, and describe the translations that move a point from one coordinate to another",
+   "fr": "situer et lire des coordonnées dans les quatre quadrants d’un plan cartésien, et décrire les déplacements d’une coordonnée à l’autre à l’aide de translations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-e/e1#e1-3"
+  },
+  "m6E1.4": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E1.4",
+   "strand": "E",
+   "en": "describe and perform combinations of translations, reflections, and rotations up to 360° on a grid, and predict the results of these transformations",
+   "fr": "décrire et effectuer des combinaisons de translations, de réflexions et de rotations jusqu’à 360° dans une grille, et prédire les résultats de ces transformations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-e/e1#e1-4"
   },
   "m6E2.4": {
    "subj": "math",
    "grade": 6,
    "course": "",
    "code": "E2.4",
+   "strand": "E",
    "en": "determine the areas of trapezoids, rhombuses, kites, and composite polygons by decomposing them into shapes with known areas",
-   "fr": "déterminer l'aire de trapèzes, de losanges, de cerfs-volants et de polygones composés en les décomposant en figures dont l'aire est connue",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "fr": "déterminer l’aire de trapèzes, de losanges, de cerfs-volants ainsi que de polygones complexes en les décomposant en figures planes avec des aires connues",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-e/e2#e2-4"
+  },
+  "m6E2.5": {
+   "subj": "math",
+   "grade": 6,
+   "course": "",
+   "code": "E2.5",
+   "strand": "E",
+   "en": "create and use nets to demonstrate the relationship between the faces of prisms and pyramids and their surface areas",
+   "fr": "créer et utiliser les développements de solides pour déterminer les relations entre les faces de prismes et de pyramides et leur aire totale",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g6-math/strand-e/e2#e2-5"
+  },
+  "m7B1.3": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "B1.3",
+   "strand": "B",
+   "en": "read, represent, compare, and order rational numbers, including positive and negative fractions and decimal numbers to thousandths, in various contexts",
+   "fr": "lire, représenter, comparer et ordonner des nombres rationnels, y compris des fractions positives et négatives et des nombres décimaux jusqu’aux millièmes, dans divers contextes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-b/b1#b1-3"
+  },
+  "m7D1.6": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "D1.6",
+   "strand": "D",
+   "en": "analyse different sets of data presented in various ways, including in circle graphs and in misleading graphs, by asking and answering questions about the data, challenging preconceived notions, and drawing conclusions, then make convincing arguments and informed decisions",
+   "fr": "examiner divers ensembles de données présentées de différentes façons, y compris à l’aide de diagrammes circulaires et de diagrammes trompeurs, en se posant des questions au sujet des données, en y répondant, en remettant en question des idées reçues et en tirant des conclusions, et ensuite formuler des arguments persuasifs et prendre des décisions éclairées",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-d/d1#d1-6"
+  },
+  "m7E1.1": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "E1.1",
+   "strand": "E",
+   "en": "describe and classify cylinders, pyramids, and prisms according to their geometric properties, including plane and rotational symmetry",
+   "fr": "décrire et classer des cylindres, des pyramides et des prismes en fonction de leurs propriétés géométriques, y compris la symétrie de rotation et le plan de symétrie",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-e/e1#e1-1"
+  },
+  "m7E1.2": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "E1.2",
+   "strand": "E",
+   "en": "draw top, front, and side views, as well as perspective views, of objects and physical spaces, using appropriate scales",
+   "fr": "tracer les vues de face, de côté et de dessus, ainsi que de diverses perspectives, d’objets et d’espaces physiques, selon des échelles appropriées",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-e/e1#e1-2"
   },
   "m7E1.4": {
    "subj": "math",
    "grade": 7,
    "course": "",
    "code": "E1.4",
+   "strand": "E",
    "en": "describe and perform translations, reflections, and rotations on a Cartesian plane, and predict the results of these transformations",
-   "fr": "décrire et effectuer des translations, des réflexions et des rotations dans un plan cartésien, et prédire le résultat",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "fr": "décrire et effectuer des translations, des réflexions et des rotations dans un plan cartésien, et prédire les résultats de ces transformations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-e/e1#e1-4"
+  },
+  "m7E2.3": {
+   "subj": "math",
+   "grade": 7,
+   "course": "",
+   "code": "E2.3",
+   "strand": "E",
+   "en": "use the relationships between the radius, diameter, and circumference of a circle to explain the formula for finding the circumference and to solve related problems",
+   "fr": "utiliser les relations entre le rayon, le diamètre et la circonférence d’un cercle pour expliquer la formule de calcul de la circonférence d’un cercle et pour résoudre des problèmes connexes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-e/e2#e2-3"
   },
   "m7E2.4": {
    "subj": "math",
    "grade": 7,
    "course": "",
    "code": "E2.4",
+   "strand": "E",
    "en": "construct circles when given the radius, diameter, or circumference",
-   "fr": "construire des cercles à partir du rayon, du diamètre ou de la circonférence",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "fr": "construire des cercles à partir d’un rayon, d’un diamètre ou d’une circonférence donnés",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-e/e2#e2-4"
   },
   "m7E2.6": {
    "subj": "math",
    "grade": 7,
    "course": "",
    "code": "E2.6",
+   "strand": "E",
    "en": "represent cylinders as nets and determine their surface area by adding the areas of their parts",
-   "fr": "représenter des cylindres par des développements et déterminer leur aire totale en additionnant l'aire de leurs parties",
-   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics"
+   "fr": "représenter des cylindres sous forme de développements et déterminer leur aire totale en faisant la somme des aires de leurs faces",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g7-math/strand-e/e2#e2-6"
+  },
+  "m8B1.2": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "B1.2",
+   "strand": "B",
+   "en": "describe, compare, and order numbers in the real number system (rational and irrational numbers), separately and in combination, in various contexts",
+   "fr": "décrire, comparer et ordonner des nombres de l’ensemble des nombres réels (rationnels et irrationnels), séparément et en les combinant, dans divers contextes",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g8-math/strand-b/b1#b1-2"
+  },
+  "m8D1.6": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "D1.6",
+   "strand": "D",
+   "en": "analyse different sets of data presented in various ways, including in scatter plots and in misleading graphs, by asking and answering questions about the data, challenging preconceived notions, and drawing conclusions, then make convincing arguments and informed decisions",
+   "fr": "examiner divers ensembles de données présentées de différentes façons, y compris à l’aide de diagrammes de dispersion et de diagrammes trompeurs, en se posant des questions au sujet des données, en y répondant, en remettant en question des idées reçues et en tirant des conclusions, et ensuite formuler des arguments persuasifs et prendre des décisions éclairées",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g8-math/strand-d/d1#d1-6"
+  },
+  "m8E1.2": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E1.2",
+   "strand": "E",
+   "en": "make objects and models using appropriate scales, given their top, front, and side views or their perspective views",
+   "fr": "construire des objets et des modèles selon des échelles appropriées, à partir de leurs vues de face, de côté et de dessus, ou de diverses perspectives",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g8-math/strand-e/e1#e1-2"
+  },
+  "m8E1.3": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E1.3",
+   "strand": "E",
+   "en": "use scale drawings to calculate actual lengths and areas, and reproduce scale drawings at different ratios",
+   "fr": "utiliser des dessins à l’échelle pour calculer des longueurs et des aires réelles, et reproduire un dessin à une échelle différente",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g8-math/strand-e/e1#e1-3"
+  },
+  "m8E1.4": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E1.4",
+   "strand": "E",
+   "en": "describe and perform translations, reflections, rotations, and dilations on a Cartesian plane, and predict the results of these transformations",
+   "fr": "décrire et effectuer des translations, des réflexions, des rotations et des homothéties dans un plan cartésien, et prédire les résultats de ces transformations",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g8-math/strand-e/e1#e1-4"
+  },
+  "m8E2.4": {
+   "subj": "math",
+   "grade": 8,
+   "course": "",
+   "code": "E2.4",
+   "strand": "E",
+   "en": "describe the Pythagorean relationship using various geometric models, and apply the theorem to solve problems involving an unknown side length for a given right triangle",
+   "fr": "expliquer le théorème de Pythagore en utilisant divers modèles géométriques et se servir du théorème pour calculer la mesure de longueur manquante d’un côté d’un triangle rectangle donné",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/elementary-mathematics/grades/g8-math/strand-e/e2#e2-4"
+  },
+  "m9B3.5": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "B3.5",
+   "strand": "B",
+   "en": "pose and solve problems involving rates, percentages, and proportions in various contexts, including contexts connected to real-life applications of data, measurement, geometry, linear relations, and financial literacy",
+   "fr": "formuler et résoudre des problèmes mathématiques comportant des taux, des pourcentages et des proportions, dans divers contextes, y compris des contextes reliés à l’application dans la vie quotidienne des données, des mesures, de la géométrie, des relations linéaires et de la littératie financière",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9C3.1": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "C3.1",
+   "strand": "C",
+   "en": "compare the shapes of graphs of linear and non-linear relations to describe their rates of change, to make connections to growing and shrinking patterns, and to make predictions",
+   "fr": "comparer les formes des représentations graphiques de relations linéaires et non linéaires afin de décrire leurs taux de variation, établir des liens avec des suites croissantes et avec des suites décroissantes, et pour faire des prédictions",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9C3.2": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "C3.2",
+   "strand": "C",
+   "en": "represent linear relations using concrete materials, tables of values, graphs, and equations, and make connections between the various representations to demonstrate an understanding of rates of change and initial values",
+   "fr": "représenter des relations linéaires à l’aide des matériaux concrets, des tables de valeurs, des graphiques et des équations, et établir des liens entre les diverses représentations afin de démontrer sa compréhension des taux de variation et des valeurs initiales",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9C4.3": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "C4.3",
+   "strand": "C",
+   "en": "translate, reflect, and rotate lines defined by y = a x, where a is a constant, and describe how each transformation affects the graphs and equations of the defined lines",
+   "fr": "effectuer des translations, des réflexions et des rotations de droites définies par l’équation y = a x, où a est une constante, et décrire l’effet des transformations sur le graphique et sur l’équation qui définit la droite",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9E1.2": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.2",
+   "strand": "E",
+   "en": "create and analyse designs involving geometric relationships and circle and triangle properties, using various tools",
+   "fr": "créer et analyser des conceptions graphiques comportant des relations géométriques et des propriétés de cercles et de triangles, à l’aide de divers outils",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9E1.4": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.4",
+   "strand": "E",
+   "en": "show how changing one or more dimensions of a two-dimensional shape and a three-dimensional object affects perimeter/circumference, area, surface area, and volume, using technology when appropriate",
+   "fr": "démontrer les façons dont la modification d’une ou plusieurs dimensions d’une figure plane et d’un solide influence leur périmètre ou leur circonférence, leur surface ou leur volume, à l’aide d’outils technologiques, le cas échéant",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9E1.5": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.5",
+   "strand": "E",
+   "en": "solve problems involving the side-length relationship for right triangles in real-life situations, including problems that involve composite shapes",
+   "fr": "résoudre des problèmes comportant la relation de longueur des côtés des triangles rectangles dans des situations de la vie quotidienne, incluant des problèmes comportant des figures composées",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m9E1.6": {
+   "subj": "math",
+   "grade": 9,
+   "course": "MTH1W",
+   "code": "E1.6",
+   "strand": "E",
+   "en": "solve problems using the relationships between the volume of prisms and pyramids and between the volume of cylinders and cones, involving various units of measure",
+   "fr": "résoudre des problèmes en utilisant la relation entre le volume de prismes et de pyramides et entre le volume de cylindres et de cônes, comportant diverses unités de mesure",
+   "url": "https://www.dcp.edu.gov.on.ca/en/curriculum/secondary-mathematics/courses/mth1w/strands"
+  },
+  "m10T2": {
+   "subj": "math",
+   "grade": 10,
+   "course": "MPM2D",
+   "code": "T2",
+   "strand": "T",
+   "en": "solve problems involving right triangles, using the primary trigonometric ratios and the Pythagorean theorem",
+   "fr": "résoudre des problèmes portant sur des triangles rectangles à l'aide des rapports trigonométriques de base et du théorème de Pythagore",
+   "url": "https://www.edu.gov.on.ca/eng/curriculum/secondary/math910curr.pdf",
+   "overall": true
   }
  },
  "processes": {
@@ -808,7 +904,8 @@
    "grades": [
     5,
     6,
-    7
+    7,
+    8
    ],
    "type": "puzzle",
    "subject": "math",
@@ -847,9 +944,10 @@
     "en"
    ],
    "expectations": [
-    "m5E1.2",
+    "m5E1.3",
     "m6E1.2",
-    "m7E1.2"
+    "m7E1.2",
+    "m8E1.2"
    ],
    "processes": {
     "sci": [],
@@ -1043,7 +1141,8 @@
    "grades": [
     5,
     6,
-    7
+    7,
+    8
    ],
    "type": "puzzle",
    "subject": "math",
@@ -1080,9 +1179,10 @@
     "en"
    ],
    "expectations": [
-    "m5E1.2",
+    "m5E1.3",
     "m6E1.2",
-    "m7E1.2"
+    "m7E1.2",
+    "m8E1.2"
    ],
    "processes": {
     "sci": [],
@@ -1757,7 +1857,7 @@
     "en"
    ],
    "expectations": [
-    "m10Trig",
+    "m10T2",
     "m9E1.2"
    ],
    "processes": {
@@ -1891,7 +1991,7 @@
    "expectations": [
     "m8E2.4",
     "m9E1.5",
-    "m10Trig"
+    "m10T2"
    ],
    "processes": {
     "sci": [],
@@ -2538,7 +2638,7 @@
     "en"
    ],
    "expectations": [
-    "m10Trig",
+    "m10T2",
     "m9E1.5"
    ],
    "processes": {

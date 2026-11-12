@@ -32,6 +32,8 @@ label.f small{font-weight:400;color:var(--muted)}
 .linktbl{display:grid;gap:8px}
 .linkrow-ed{display:grid;grid-template-columns:1fr 1fr 1.6fr 80px auto;gap:6px;align-items:center}
 .exp-pick{max-height:300px;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.exp-filters{display:grid;grid-template-columns:1fr auto auto;gap:8px}
+.exp-pick{max-height:420px}
 .exp-pick label{display:grid;grid-template-columns:auto auto 1fr;gap:8px;align-items:baseline;padding:4px 0;font-size:.88rem;border-bottom:1px dashed var(--line)}
 .exp-pick .code{font:700 .75rem/1.2 var(--body);background:var(--soft);padding:2px 6px;border-radius:4px;white-space:nowrap}
 details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--surface)}
@@ -117,11 +119,13 @@ function renderForm(){
   const a=cur, F=$("#form");
   if(!a){ F.innerHTML='<p class="note">Choose an activity to edit.</p>'; return; }
   const P=DB.processes;
-  const expRows=Object.entries(DB.expectations).sort((x,y)=>(x[1].subj+x[1].grade+x[1].code).localeCompare(y[1].subj+y[1].grade+y[1].code,undefined,{numeric:true}));
   F.innerHTML=`
   ${a.issue?`<div class="callout"><strong>Note to fix:</strong> ${esc(a.issue)}</div>`:""}
   <div class="card-sec"><h2>Basics</h2>
     ${pair("title","Title",a.title)}
+    <div class="pair"><label class="f">Link name <small>the part after # in this activity's web address</small><input type="text" id="idfield" value="${esc(a.id)}" autocomplete="off"></label>
+      <div style="align-self:end"><button class="btn" type="button" id="idfromtitle">Make from title</button></div></div>
+    <p class="note">${PUBLISHED.has(a.id)?"This activity is already on the site. Changing its link name breaks links people have already shared or bookmarked.":"New activity: the link name follows the English title automatically."}</p>
     ${pair("summary","Short summary",a.summary,{area:true})}
     ${pair("objectives","Objectives",a.objectives,{area:true})}
     <fieldset><legend>Grades <small style="text-transform:none;letter-spacing:0;font-weight:400">(set automatically from the curriculum expectations below)</small></legend><div class="chips">${[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>`<label class="chip" for="g${g}"><input type="checkbox" id="g${g}" data-grade="${g}" ${a.grades.includes(g)?"checked":""}><span>${g}</span></label>`).join("")}</div></fieldset>
@@ -156,8 +160,15 @@ function renderForm(){
   </div>
 
   <div class="card-sec"><h2>Ontario curriculum expectations</h2>
-    <input type="search" id="expq" placeholder="Filter by code, grade or words (e.g., SNC1W, E2.5, circuit)" aria-label="Filter expectations">
-    <div class="exp-pick" id="exppick">${expRows.map(([k,e])=>`<label data-hay="${esc((expLabel(e,"en")+" "+e.en+" "+e.subj).toLowerCase())}"><input type="checkbox" data-exp="${esc(k)}" ${a.expectations.includes(k)?"checked":""}><span class="code">${e.subj==="sci"?"Sci":"Math"} · ${esc(expLabel(e,"en"))}</span><span>${esc(e.en)}</span></label>`).join("")}</div>
+    <div><p class="flabel" style="margin-bottom:6px">Linked to this activity</p><div class="chips" id="expsel"></div></div>
+    <p class="note">Search all ${Object.keys(CUR).length||"the"} Ontario expectations for Grades 5–10 math and science (official Ministry wording). Ticking one links it and sets the activity's grades.</p>
+    <div class="exp-filters">
+      <input type="search" id="expq" placeholder="Search words or codes, e.g. circuit, E2.5, SNC1W, fractions" aria-label="Search expectations">
+      <select id="expsubj" aria-label="Subject"><option value="">Math and science</option><option value="sci">Science</option><option value="math">Math</option></select>
+      <select id="expgrade" aria-label="Grade"><option value="">All grades</option>${[5,6,7,8,9,10].map(g=>`<option value="${g}">Grade ${g}</option>`).join("")}</select>
+    </div>
+    <p class="note" id="expcount" aria-live="polite"></p>
+    <div class="exp-pick" id="exppick"></div>
     <details><summary>Add an expectation that isn't listed</summary>
       <div class="pair" style="margin-top:10px">
         <label class="f">Subject<select id="nx-subj"><option value="sci">Science</option><option value="math">Math</option></select></label>
@@ -183,26 +194,55 @@ function renderForm(){
     <div style="display:flex;gap:8px;flex-wrap:wrap">
       <button class="btn" type="button" id="dup">Duplicate activity</button>
       <button class="btn danger" type="button" id="del">Delete activity</button>
-      <a class="btn" href="index.html#${esc(a.id)}" target="_blank" rel="noopener">Preview on site ↗</a>
+      <a class="btn" id="prevlink" href="index.html#${esc(a.id)}" target="_blank" rel="noopener">Preview on site ↗</a>
     </div>
     <p class="note">Preview shows the version that is live now, not unsaved changes.</p>
   </div>`;
   delArm=false;
+  renderExp(); renderSel();
+}
+// ---- Curriculum picker (full Ontario list from data/curriculum.json) ----
+let CUR={};
+const ALLEXP=()=>({...CUR,...DB.expectations});
+const ordKey=e=>(e.subj==="sci"?"0":"1")+String(e.grade).padStart(2,"0")+e.code.replace(/\d+/g,n=>n.padStart(3,"0"));
+function renderExp(){
+  const box=$("#exppick"); if(!box||!cur) return;
+  const q=($("#expq").value||"").trim().toLowerCase(), sj=$("#expsubj").value, g=$("#expgrade").value;
+  const all=Object.entries(ALLEXP()).filter(([k,e])=>(!sj||e.subj===sj)&&(!g||String(e.grade)===g));
+  const words=q.split(/\s+/).filter(Boolean);
+  const rows=all.filter(([k,e])=>{ if(!words.length) return true; const h=(expLabel(e,"en")+" "+e.code+" "+(e.course||"")+" "+e.en+" "+(e.fr||"")+" "+(e.strandTitle?.en||"")).toLowerCase(); return words.every(w=>h.includes(w)); })
+    .sort((x,y)=>(cur.expectations.includes(y[0])-cur.expectations.includes(x[0]))||ordKey(x[1]).localeCompare(ordKey(y[1])));
+  const shown=rows.slice(0,300);
+  $("#expcount").textContent=`Showing ${shown.length} of ${rows.length} matching (${Object.keys(ALLEXP()).length} in total)${rows.length>300?". Narrow the search to see more":""}.`;
+  if(!rows.length){ box.innerHTML='<p class="note" style="padding:8px 0">No expectations match. Try fewer or shorter words: "circuit" instead of "circuit diagram", or just a code like "E2.5".</p>'; return; }
+  box.innerHTML=shown.map(([k,e])=>`<label><input type="checkbox" data-exp="${esc(k)}" ${cur.expectations.includes(k)?"checked":""}><span class="code">${e.subj==="sci"?"Sci":"Math"} · ${esc(expLabel(e,"en"))}</span><span>${e.strandTitle?`<small class="note">${esc(e.strandTitle.en)} · </small>`:""}${esc(e.en)}</span></label>`).join("");
+}
+function renderSel(){
+  const box=$("#expsel"); if(!box||!cur) return; const A=ALLEXP();
+  box.innerHTML=cur.expectations.length?cur.expectations.map(k=>{const e=A[k]; return `<span class="tag" title="${esc(e?e.en:k)}">${esc(e?(e.subj==="sci"?"Sci ":"Math ")+expLabel(e,"en"):k)} <button type="button" class="btn" style="padding:0 6px;font-size:.8rem" data-unexp="${esc(k)}" aria-label="Remove ${esc(k)}">×</button></span>`}).join(""):'<span class="note">None yet.</span>';
+}
+function linkExp(a,k,on){
+  if(on && !DB.expectations[k] && CUR[k]){ const {strandTitle,...e}=CUR[k]; DB.expectations[k]=e; }
+  a.expectations=on?[...new Set([...a.expectations,k])]:a.expectations.filter(x=>x!==k);
+  a.subject=subjectOf(a); syncGrades(a); renderSel();
 }
 
 function setPath(o,path,val){ const ks=path.split("."); let x=o; while(ks.length>1){const k=ks.shift(); x[k]=x[k]||{}; x=x[k];} x[ks[0]]=val; }
 function onInput(e){
   const el=e.target, a=cur; if(!a) return;
-  if(el.dataset.p){ setPath(a,el.dataset.p,el.value); if(el.dataset.p==="title.en") renderList(); }
+  if(el.type==="checkbox" && e.type==="input") return; // checkboxes: handle the change event only
+  const tog=(arr,v,on)=>on?[...new Set([...arr,v])]:arr.filter(x=>x!==v);
+  if(el.id==="idfield"){ if(e.type==="change") setId(a,uniqueId(slug(el.value),a)); else return; }
+  else if(el.dataset.p){ setPath(a,el.dataset.p,el.value); if(el.dataset.p==="title.en"){ if(!PUBLISHED.has(a.id)) setId(a,uniqueId(slug(a.title.en),a)); else renderList(); } }
   else if(el.dataset.list){ setPath(a,el.dataset.list,el.value.split("\n").map(s=>s.trim()).filter(Boolean)); }
   else if(el.dataset.semi){ a[el.dataset.semi]=el.value.split(";").map(s=>s.trim()).filter(Boolean); }
   else if(el.dataset.link!==undefined){ a.links[+el.dataset.link][el.dataset.k]=el.value; }
   else if(el.dataset.grade){ const g=+el.dataset.grade; a.grades=el.checked?[...new Set([...a.grades,g])].sort((x,y)=>x-y):a.grades.filter(x=>x!==g); }
-  else if(el.dataset.skill){ const s=el.dataset.skill; a.skills=el.checked?[...a.skills,s]:a.skills.filter(x=>x!==s); }
-  else if(el.dataset.exp){ const k=el.dataset.exp; a.expectations=el.checked?[...a.expectations,k]:a.expectations.filter(x=>x!==k); a.subject=subjectOf(a); syncGrades(a); }
-  else if(el.dataset.proc){ const g=el.dataset.proc; a.processes[g]=el.checked?[...a.processes[g],el.value]:a.processes[g].filter(x=>x!==el.value); }
+  else if(el.dataset.skill){ const s=el.dataset.skill; a.skills=tog(a.skills,s,el.checked); }
+  else if(el.dataset.exp){ linkExp(a,el.dataset.exp,el.checked); }
+  else if(el.dataset.proc){ const g=el.dataset.proc; a.processes[g]=tog(a.processes[g],el.value,el.checked); }
   else if(el.id==="hasfr"){ a.languages=el.checked?["en","fr"]:["en"]; }
-  else if(el.id==="expq"){ const q=el.value.trim().toLowerCase(); document.querySelectorAll("#exppick label").forEach(l=>l.hidden=q&&!l.dataset.hay.includes(q)); return; }
+  else if(el.id==="expq"||el.id==="expsubj"||el.id==="expgrade"){ renderExp(); return; }
   else return;
   if(el.dataset.p==="issue") renderList();
   markDirty();
@@ -211,7 +251,9 @@ function onClick(e){
   const el=e.target.closest("button"); if(!el||!cur) return;
   if(el.id==="addlink"){ cur.links.push({en:"",fr:"",url:"",lang:"en"}); markDirty(); renderForm(); }
   else if(el.dataset.dellink!==undefined){ cur.links.splice(+el.dataset.dellink,1); markDirty(); renderForm(); }
-  else if(el.id==="dup"){ const c=JSON.parse(JSON.stringify(cur)); c.title.en+=" (copy)"; c.id=uniqueId(slug(c.title.en)); DB.activities.splice(DB.activities.indexOf(cur)+1,0,c); select(c); markDirty(); }
+  else if(el.id==="idfromtitle"){ setId(cur,uniqueId(slug(cur.title.en),cur)); markDirty(); }
+  else if(el.dataset.unexp){ linkExp(cur,el.dataset.unexp,false); renderExp(); markDirty(); }
+  else if(el.id==="dup"){ const c=JSON.parse(JSON.stringify(cur)); c.title.en+=" (copy)"; c.id=uniqueId(slug(c.title.en),c); DB.activities.splice(DB.activities.indexOf(cur)+1,0,c); select(c); markDirty(); }
   else if(el.id==="del"){ if(!delArm){ delArm=true; el.textContent="Click again to delete permanently"; return; }
     const i=DB.activities.indexOf(cur); DB.activities.splice(i,1); cur=DB.activities[Math.min(i,DB.activities.length-1)]||null; markDirty(); renderList(); renderForm(); }
   else if(el.id==="nx-add"){
@@ -219,30 +261,38 @@ function onClick(e){
     if(!grade||!code||!en){ $("#nx-msg").textContent="Grade, code and English wording are needed."; return; }
     const key=(subj==="sci"?"s":"m")+grade+(course||"")+code;
     DB.expectations[key]={subj,grade,course,code,en,fr:$("#nx-fr").value.trim(),url:$("#nx-url").value.trim()||"https://www.dcp.edu.gov.on.ca/en/curriculum"};
-    if(!cur.expectations.includes(key)) cur.expectations.push(key); cur.subject=subjectOf(cur); markDirty(); renderForm();
+    linkExp(cur,key,true); markDirty(); renderForm();
   }
 }
 // Grades follow the linked Ontario expectations (Grades 5–10 only)
 function expGrades(a){ return [...new Set(a.expectations.map(k=>DB.expectations[k]?.grade).filter(g=>g>=5&&g<=10))].sort((x,y)=>x-y); }
 function syncGrades(a){ const g=expGrades(a); if(!g.length) return; a.grades=g;
   document.querySelectorAll("[data-grade]").forEach(cb=>cb.checked=g.includes(+cb.dataset.grade)); }
-function uniqueId(base){ let id=base||"activity", n=2; while(DB.activities.some(a=>a.id===id)) id=`${base}-${n++}`; return id; }
+function uniqueId(base,self){ base=base||"activity"; let id=base, n=2; while(DB.activities.some(a=>a!==self&&a.id===id)) id=`${base}-${n++}`; return id; }
+let PUBLISHED=new Set(); // link names already live on the site
+function setId(a,id){ a.id=id; const f=$("#idfield"); if(f&&a===cur){ f.value=id; } const l=$("#prevlink"); if(l) l.href="index.html#"+id; renderList(); }
 function select(a){ cur=a; renderList(); renderForm(); window.scrollTo({top:0}); }
 
 function validate(){
   const probs=[]; const ids=new Set();
   DB.activities.forEach(a=>{
+    const u=x=>[...new Set(x||[])];
+    a.skills=u(a.skills); a.expectations=u(a.expectations); a.grades=u(a.grades); a.languages=u(a.languages);
+    a.processes={sci:u(a.processes?.sci),math:u(a.processes?.math)};
     if(!a.title.en) probs.push("An activity has no English title.");
     if(!a.grades.length) probs.push(`"${a.title.en}" has no grade.`);
     if(!a.skills.length) probs.push(`"${a.title.en}" has no spatial skill.`);
     const eg=expGrades(a); if(eg.length && eg.join()!==a.grades.join()) probs.push(`"${a.title.en}" is listed for grades ${a.grades.join(", ")||"none"} but its expectations are for grades ${eg.join(", ")}.`);
     a.links.forEach(l=>{ if(l.url && !/^https?:\/\//.test(l.url)) probs.push(`"${a.title.en}" has a link that doesn't start with https://`); });
-    if(!a.id) a.id=uniqueId(slug(a.title.en)); if(ids.has(a.id)) a.id=uniqueId(a.id); ids.add(a.id);
+    if(!a.id) a.id=uniqueId(slug(a.title.en),a); if(ids.has(a.id)) a.id=uniqueId(a.id,a); ids.add(a.id);
     a.subject=subjectOf(a);
   });
   return probs;
 }
-function serialize(){ DB.updated=new Date().toISOString().slice(0,10); return JSON.stringify(DB,null,1); }
+function serialize(){ DB.updated=new Date().toISOString().slice(0,10);
+  const used=new Set(DB.activities.flatMap(a=>a.expectations)); const A=ALLEXP(); const ex={};
+  [...used].forEach(k=>{ if(A[k]){ const {strandTitle,...e}=A[k]; ex[k]=e; } }); DB.expectations=ex;
+  return JSON.stringify(DB,null,1); }
 
 $("#form").addEventListener("input",onInput);
 $("#form").addEventListener("change",onInput);
@@ -282,14 +332,15 @@ $("#publish").onclick=async()=>{
     if(g.ok) sha=(await g.json()).sha; else if(g.status!==404){ throw new Error(g.status===401?"GitHub didn't accept the token. Check it hasn't expired.":g.status===403?"The token doesn't have permission to write to this repository.":`GitHub answered ${g.status} when reading the file.`); }
     const p=await fetch(api,{method:"PUT",headers:{...H,"Content-Type":"application/json"},body:JSON.stringify({message:v("msg")||"Update activities",content:b64(serialize()),branch,...(sha?{sha}:{})})});
     if(!p.ok){ const j=await p.json().catch(()=>({})); throw new Error(p.status===404?"Repository or branch not found. Check the owner, repository and branch names.":p.status===409?"The file changed on GitHub since you loaded it. Reload this page and redo your edit.":(j.message||`GitHub answered ${p.status}.`)); }
-    dirty=false; try{localStorage.removeItem(DRAFT)}catch(e){}
+    dirty=false; PUBLISHED=new Set(DB.activities.map(a=>a.id)); try{localStorage.removeItem(DRAFT)}catch(e){}
     setStatus("Published. The site updates within a minute or two.",false); say("Published to GitHub. The live site will update within a minute or two.",true);
   }catch(err){ say(err.message||"Publishing failed. Check your connection and try again.",false); }
 };
 window.addEventListener("beforeunload",e=>{ if(dirty){ e.preventDefault(); e.returnValue=""; } });
 
+fetch("data/curriculum.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(c=>{ if(c){ CUR=c.expectations; if(cur) renderForm(); } }).catch(()=>{});
 fetch("data/activities.json",{cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
-  DB=d; let draft=null; try{ draft=JSON.parse(localStorage.getItem(DRAFT)||"null"); }catch(e){}
+  DB=d; PUBLISHED=new Set(d.activities.map(a=>a.id)); let draft=null; try{ draft=JSON.parse(localStorage.getItem(DRAFT)||"null"); }catch(e){}
   if(draft && Array.isArray(draft.activities) && JSON.stringify(draft)!==JSON.stringify(d)){
     DB=draft; dirty=true; setStatus("Restored your unsaved changes from last time. Download or publish to keep them.",true);
   } else setStatus(`${DB.activities.length} activities loaded.`,false);
