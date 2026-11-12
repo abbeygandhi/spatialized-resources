@@ -1,6 +1,6 @@
 {
  "version": 2,
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "expectations": {
   "s6C2.6": {
    "subj": "sci",
@@ -733,6 +733,64 @@
   }
  },
  "activities": [
+  {
+   "id": "new-activity",
+   "title": {
+    "en": "Eight Lettered Squares",
+    "fr": ""
+   },
+   "summary": {
+    "en": "The premise is simple. Take a rectangular piece of paper including eight letters. Fold the paper so that the letters end up in alphabetical order, one on top of the other.  No cutting allowed!",
+    "fr": ""
+   },
+   "objectives": {
+    "en": "",
+    "fr": ""
+   },
+   "grades": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "type": "puzzle",
+   "subject": "math",
+   "skills": [
+    "Mental Rotation",
+    "Mental Rotation"
+   ],
+   "materials": {
+    "en": [
+     "Printed activity sheet"
+    ],
+    "fr": []
+   },
+   "prep": {
+    "en": "",
+    "fr": ""
+   },
+   "links": [
+    {
+     "en": "",
+     "fr": "",
+     "url": "https://mathequalslove.net/eight-lettered-squares-puzzle/",
+     "lang": "en"
+    }
+   ],
+   "languages": [
+    "en"
+   ],
+   "expectations": [],
+   "processes": {
+    "sci": [],
+    "math": []
+   },
+   "adaptedFrom": "Math = love",
+   "concepts": [],
+   "issue": ""
+  },
   {
    "id": "skyscrapers",
    "title": {
