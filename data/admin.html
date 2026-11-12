@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Spatialized Library Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* Editor layout: toolbar, then list rail + form */
+.ed-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:20px 0 16px;border-bottom:1px solid var(--line)}
+.ed-top h1{font-size:1.6rem}
+.ed-top .actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.status{font-size:.88rem;color:var(--muted)}
+.status.dirty{color:var(--warn)}
+.ed{display:grid;grid-template-columns:300px minmax(0,1fr);gap:28px;padding:24px 0 60px}
+.rail{position:sticky;top:16px;align-self:start;display:flex;flex-direction:column;gap:10px;max-height:calc(100vh - 32px)}
+.rail ul{list-style:none;margin:0;padding:0;overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.rail li button{all:unset;box-sizing:border-box;display:flex;gap:8px;width:100%;padding:9px 12px;border-bottom:1px solid var(--line);cursor:pointer;font-size:.92rem}
+.rail li button[aria-current="true"]{background:var(--soft);font-weight:700}
+.rail li button:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.rail .warn{color:var(--warn)}
+form{display:grid;gap:22px}
+.card-sec{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:grid;gap:14px}
+.card-sec h2{font-size:1.05rem}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label.f{display:grid;gap:5px;font-size:.88rem;font-weight:700}
+label.f small{font-weight:400;color:var(--muted)}
+.linktbl{display:grid;gap:8px}
+.linkrow-ed{display:grid;grid-template-columns:1fr 1fr 1.6fr 80px auto;gap:6px;align-items:center}
+.exp-pick{max-height:300px;overflow:auto;border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+.exp-pick label{display:grid;grid-template-columns:auto auto 1fr;gap:8px;align-items:baseline;padding:4px 0;font-size:.88rem;border-bottom:1px dashed var(--line)}
+.exp-pick .code{font:700 .75rem/1.2 var(--body);background:var(--soft);padding:2px 6px;border-radius:4px;white-space:nowrap}
+details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:var(--surface)}
+details summary{cursor:pointer;font-weight:700}
+.help ol{margin:8px 0 0;padding-left:20px;display:grid;gap:6px;font-size:.92rem}
+.msg{font-size:.9rem;padding:10px 12px;border-radius:8px}
+.msg.ok{background:var(--ok-bg);color:var(--ok)} .msg.err{background:#fde8e6;color:#b42318}
+@media (max-width:900px){ .ed{grid-template-columns:1fr} .rail{position:static;max-height:none} .rail ul{max-height:260px} .pair{grid-template-columns:1fr} .linkrow-ed{grid-template-columns:1fr 1fr} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="ed-top">
+    <div>
+      <h1>Library editor</h1>
+      <p class="status" id="status" aria-live="polite">Loading…</p>
+    </div>
+    <div class="actions">
+      <a class="btn" href="index.html">View site</a>
+      <label class="btn" for="openfile">Open a file…</label>
+      <input type="file" id="openfile" accept=".json,application/json" class="sr">
+      <button class="btn" type="button" id="download">Download activities.json</button>
+      <button class="btn primary" type="button" id="pubopen">Publish to GitHub</button>
+    </div>
+  </div>
+
+  <details class="help" style="margin-top:16px">
+    <summary>How updating works</summary>
+    <ol>
+      <li>Pick an activity on the left, or click <strong>New activity</strong>. Changes save in this browser as you type.</li>
+      <li>Fill in English and French side by side. French can be left blank: the site shows the English text until it's added.</li>
+      <li>When you're done, either <strong>Download activities.json</strong> and upload it to the <code>data</code> folder of your GitHub repository, or use <strong>Publish to GitHub</strong> to save it there directly. The live site updates within a minute or two.</li>
+    </ol>
+  </details>
+
+  <div id="pubpanel" class="card-sec" hidden style="margin-top:16px">
+    <h2>Publish to GitHub</h2>
+    <p class="note">This saves <code>data/activities.json</code> straight to your repository. You need a GitHub fine-grained personal access token with <em>Contents: Read and write</em> permission for this repository only (GitHub → Settings → Developer settings → Personal access tokens). The token is sent only to GitHub.</p>
+    <div class="pair">
+      <label class="f">Owner (your GitHub username)<input type="text" id="gh-owner" autocomplete="off"></label>
+      <label class="f">Repository<input type="text" id="gh-repo" value="spatialize-activities" autocomplete="off"></label>
+      <label class="f">Branch<input type="text" id="gh-branch" value="main" autocomplete="off"></label>
+      <label class="f">File path<input type="text" id="gh-path" value="data/activities.json" autocomplete="off"></label>
+      <label class="f">Access token<input type="password" id="gh-token" autocomplete="off"></label>
+      <label class="f">Change note <small>(shows in the repository history)</small><input type="text" id="gh-msg" value="Update activities"></label>
+    </div>
+    <label class="chip" for="gh-remember" style="justify-self:start"><input type="checkbox" id="gh-remember"><span>Remember these settings in this browser (including the token)</span></label>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn primary" type="button" id="publish">Publish now</button><button class="btn" type="button" id="pubclose">Cancel</button></div>
+    <div id="pubmsg"></div>
+  </div>
+
+  <div class="ed">
+    <aside class="rail" aria-label="Activities">
+      <button class="btn primary" type="button" id="new">+ New activity</button>
+      <input type="search" id="lsearch" placeholder="Find an activity" aria-label="Find an activity">
+      <ul id="list"></ul>
+      <p class="note"><span class="warn">⚠</span> = has a note to fix</p>
+    </aside>
+    <section aria-label="Activity details"><form id="form" novalidate></form></section>
+  </div>
+</div>
+
+<script src="assets/shared.js"></script>
+<script>
+const {SKILLS, icon, expLabel, esc, slug} = SPZ;
+const $ = s => document.querySelector(s);
+let DB = null, cur = null, dirty = false, delArm = false;
+const DRAFT = "spz-editor-draft";
+
+function setStatus(msg, isDirty){ const s=$("#status"); s.textContent=msg; s.classList.toggle("dirty",!!isDirty); }
+function markDirty(){ dirty=true; setStatus("Unsaved changes: download or publish when you're ready.",true); try{localStorage.setItem(DRAFT,JSON.stringify(DB))}catch(e){} }
+function subjectOf(a){ const s=new Set(a.expectations.map(k=>DB.expectations[k]?.subj).filter(Boolean)); return s.size===2?"both":(s.has("sci")?"sci":"math"); }
+
+function renderList(){
+  const q=$("#lsearch").value.trim().toLowerCase();
+  $("#list").innerHTML=DB.activities.map((a,i)=>({a,i})).filter(({a})=>!q||(a.title.en+" "+(a.title.fr||"")).toLowerCase().includes(q))
+    .map(({a,i})=>`<li><button type="button" data-i="${i}" aria-current="${a===cur}">${a.issue?'<span class="warn" title="Has a note">⚠</span>':""}<span>${esc(a.title.en||"(untitled)")}</span></button></li>`).join("");
+}
+const field=(path,label,val,{area=false,hint=""}={})=>`<label class="f">${label}${hint?` <small>${hint}</small>`:""}${area?`<textarea data-p="${path}" rows="3">${esc(val)}</textarea>`:`<input type="text" data-p="${path}" value="${esc(val)}">`}</label>`;
+const pair=(key,label,o,opts)=>`<div class="pair">${field(key+".en",label+" (English)",o.en||"",opts)}${field(key+".fr",label+" (French)",o.fr||"",opts)}</div>`;
+
+function renderForm(){
+  const a=cur, F=$("#form");
+  if(!a){ F.innerHTML='<p class="note">Choose an activity to edit.</p>'; return; }
+  const P=DB.processes;
+  const expRows=Object.entries(DB.expectations).sort((x,y)=>(x[1].subj+x[1].grade+x[1].code).localeCompare(y[1].subj+y[1].grade+y[1].code,undefined,{numeric:true}));
+  F.innerHTML=`
+  ${a.issue?`<div class="callout"><strong>Note to fix:</strong> ${esc(a.issue)}</div>`:""}
+  <div class="card-sec"><h2>Basics</h2>
+    ${pair("title","Title",a.title)}
+    ${pair("summary","Short summary",a.summary,{area:true})}
+    ${pair("objectives","Objectives",a.objectives,{area:true})}
+    <fieldset><legend>Grades <small style="text-transform:none;letter-spacing:0;font-weight:400">(set automatically from the curriculum expectations below)</small></legend><div class="chips">${[1,2,3,4,5,6,7,8,9,10,11,12].map(g=>`<label class="chip" for="g${g}"><input type="checkbox" id="g${g}" data-grade="${g}" ${a.grades.includes(g)?"checked":""}><span>${g}</span></label>`).join("")}</div></fieldset>
+    <div class="pair">
+      <label class="f">Type<select data-p="type"><option value="general" ${a.type==="general"?"selected":""}>For all grades (general)</option><option value="specific" ${a.type==="specific"?"selected":""}>Curriculum specific</option></select></label>
+      <label class="f">Adapted from <small>(leave blank if original)</small><input type="text" data-p="adaptedFrom" value="${esc(a.adaptedFrom||"")}"></label>
+    </div>
+    <label class="chip" for="hasfr" style="justify-self:start"><input type="checkbox" id="hasfr" ${a.languages.includes("fr")?"checked":""}><span>A French version of this activity exists</span></label>
+  </div>
+
+  <div class="card-sec"><h2>Spatial skills</h2>
+    <div class="chips">${Object.keys(SKILLS).map((s,i)=>`<label class="chip" for="sk${i}"><input type="checkbox" id="sk${i}" data-skill="${esc(s)}" ${a.skills.includes(s)?"checked":""}><span>${icon(s,15)}${esc(s)}</span></label>`).join("")}</div>
+  </div>
+
+  <div class="card-sec"><h2>Materials and teacher notes</h2>
+    <div class="pair">
+      <label class="f">Materials (English) <small>one item per line</small><textarea data-list="materials.en" rows="6">${esc((a.materials.en||[]).join("\n"))}</textarea></label>
+      <label class="f">Materials (French) <small>one item per line</small><textarea data-list="materials.fr" rows="6">${esc((a.materials.fr||[]).join("\n"))}</textarea></label>
+    </div>
+    ${pair("prep","Teacher notes",a.prep||{en:"",fr:""},{area:true})}
+  </div>
+
+  <div class="card-sec"><h2>Lesson plan and resource links</h2>
+    <p class="note">The first link is shown as the main button. Mark French documents as FR.</p>
+    <div class="linktbl" id="links">${a.links.map((l,i)=>`<div class="linkrow-ed">
+      <input type="text" aria-label="Label (English)" placeholder="Label (English)" data-link="${i}" data-k="en" value="${esc(l.en)}">
+      <input type="text" aria-label="Label (French)" placeholder="Label (French)" data-link="${i}" data-k="fr" value="${esc(l.fr)}">
+      <input type="url" aria-label="Web address" placeholder="https://…" data-link="${i}" data-k="url" value="${esc(l.url)}">
+      <select aria-label="Document language" data-link="${i}" data-k="lang"><option value="en" ${l.lang==="en"?"selected":""}>EN</option><option value="fr" ${l.lang==="fr"?"selected":""}>FR</option></select>
+      <button class="btn" type="button" data-dellink="${i}" aria-label="Remove link">Remove</button></div>`).join("")}</div>
+    <button class="btn" type="button" id="addlink" style="justify-self:start">+ Add link</button>
+  </div>
+
+  <div class="card-sec"><h2>Ontario curriculum expectations</h2>
+    <input type="search" id="expq" placeholder="Filter by code, grade or words (e.g., SNC1W, E2.5, circuit)" aria-label="Filter expectations">
+    <div class="exp-pick" id="exppick">${expRows.map(([k,e])=>`<label data-hay="${esc((expLabel(e,"en")+" "+e.en+" "+e.subj).toLowerCase())}"><input type="checkbox" data-exp="${esc(k)}" ${a.expectations.includes(k)?"checked":""}><span class="code">${e.subj==="sci"?"Sci":"Math"} · ${esc(expLabel(e,"en"))}</span><span>${esc(e.en)}</span></label>`).join("")}</div>
+    <details><summary>Add an expectation that isn't listed</summary>
+      <div class="pair" style="margin-top:10px">
+        <label class="f">Subject<select id="nx-subj"><option value="sci">Science</option><option value="math">Math</option></select></label>
+        <label class="f">Grade<input type="text" id="nx-grade" placeholder="e.g., 7"></label>
+        <label class="f">Course code <small>(Gr 9–12 only, e.g., SNC1W)</small><input type="text" id="nx-course"></label>
+        <label class="f">Expectation code<input type="text" id="nx-code" placeholder="e.g., B2.3"></label>
+      </div>
+      ${`<div class="pair"><label class="f">Wording (English)<textarea id="nx-en" rows="2"></textarea></label><label class="f">Wording (French)<textarea id="nx-fr" rows="2"></textarea></label></div>`}
+      <label class="f">Link to the curriculum page <small>(optional)</small><input type="url" id="nx-url"></label>
+      <button class="btn" type="button" id="nx-add" style="justify-self:start;margin-top:8px">Add and tick this expectation</button>
+      <p class="note" id="nx-msg"></p>
+    </details>
+  </div>
+
+  <div class="card-sec"><h2>Thinking processes</h2>
+    <fieldset><legend>Science (Strand A)</legend><div class="chips">${Object.entries(P.sci).map(([k,v])=>`<label class="chip" for="ps-${k}"><input type="checkbox" id="ps-${k}" data-proc="sci" value="${k}" ${a.processes.sci.includes(k)?"checked":""}><span>${esc(v.en)}</span></label>`).join("")}</div></fieldset>
+    <fieldset><legend>Math (mathematical processes)</legend><div class="chips">${Object.entries(P.math).map(([k,v])=>`<label class="chip" for="pm-${k}"><input type="checkbox" id="pm-${k}" data-proc="math" value="${k}" ${a.processes.math.includes(k)?"checked":""}><span>${esc(v.en)}</span></label>`).join("")}</div></fieldset>
+  </div>
+
+  <div class="card-sec"><h2>Other</h2>
+    <label class="f">Science contexts and concepts <small>separate with semicolons</small><input type="text" data-semi="concepts" value="${esc(a.concepts.join("; "))}"></label>
+    <label class="f">Note to fix <small>(only shown here, never on the public site)</small><input type="text" data-p="issue" value="${esc(a.issue||"")}"></label>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn" type="button" id="dup">Duplicate activity</button>
+      <button class="btn danger" type="button" id="del">Delete activity</button>
+      <a class="btn" href="index.html#${esc(a.id)}" target="_blank" rel="noopener">Preview on site ↗</a>
+    </div>
+    <p class="note">Preview shows the version that is live now, not unsaved changes.</p>
+  </div>`;
+  delArm=false;
+}
+
+function setPath(o,path,val){ const ks=path.split("."); let x=o; while(ks.length>1){const k=ks.shift(); x[k]=x[k]||{}; x=x[k];} x[ks[0]]=val; }
+function onInput(e){
+  const el=e.target, a=cur; if(!a) return;
+  if(el.dataset.p){ setPath(a,el.dataset.p,el.value); if(el.dataset.p==="title.en") renderList(); }
+  else if(el.dataset.list){ setPath(a,el.dataset.list,el.value.split("\n").map(s=>s.trim()).filter(Boolean)); }
+  else if(el.dataset.semi){ a[el.dataset.semi]=el.value.split(";").map(s=>s.trim()).filter(Boolean); }
+  else if(el.dataset.link!==undefined){ a.links[+el.dataset.link][el.dataset.k]=el.value; }
+  else if(el.dataset.grade){ const g=+el.dataset.grade; a.grades=el.checked?[...new Set([...a.grades,g])].sort((x,y)=>x-y):a.grades.filter(x=>x!==g); }
+  else if(el.dataset.skill){ const s=el.dataset.skill; a.skills=el.checked?[...a.skills,s]:a.skills.filter(x=>x!==s); }
+  else if(el.dataset.exp){ const k=el.dataset.exp; a.expectations=el.checked?[...a.expectations,k]:a.expectations.filter(x=>x!==k); a.subject=subjectOf(a); syncGrades(a); }
+  else if(el.dataset.proc){ const g=el.dataset.proc; a.processes[g]=el.checked?[...a.processes[g],el.value]:a.processes[g].filter(x=>x!==el.value); }
+  else if(el.id==="hasfr"){ a.languages=el.checked?["en","fr"]:["en"]; }
+  else if(el.id==="expq"){ const q=el.value.trim().toLowerCase(); document.querySelectorAll("#exppick label").forEach(l=>l.hidden=q&&!l.dataset.hay.includes(q)); return; }
+  else return;
+  if(el.dataset.p==="issue") renderList();
+  markDirty();
+}
+function onClick(e){
+  const el=e.target.closest("button"); if(!el||!cur) return;
+  if(el.id==="addlink"){ cur.links.push({en:"",fr:"",url:"",lang:"en"}); markDirty(); renderForm(); }
+  else if(el.dataset.dellink!==undefined){ cur.links.splice(+el.dataset.dellink,1); markDirty(); renderForm(); }
+  else if(el.id==="dup"){ const c=JSON.parse(JSON.stringify(cur)); c.title.en+=" (copy)"; c.id=uniqueId(slug(c.title.en)); DB.activities.splice(DB.activities.indexOf(cur)+1,0,c); select(c); markDirty(); }
+  else if(el.id==="del"){ if(!delArm){ delArm=true; el.textContent="Click again to delete permanently"; return; }
+    const i=DB.activities.indexOf(cur); DB.activities.splice(i,1); cur=DB.activities[Math.min(i,DB.activities.length-1)]||null; markDirty(); renderList(); renderForm(); }
+  else if(el.id==="nx-add"){
+    const subj=$("#nx-subj").value, grade=parseInt($("#nx-grade").value,10), course=$("#nx-course").value.trim(), code=$("#nx-code").value.trim(), en=$("#nx-en").value.trim();
+    if(!grade||!code||!en){ $("#nx-msg").textContent="Grade, code and English wording are needed."; return; }
+    const key=(subj==="sci"?"s":"m")+grade+(course||"")+code;
+    DB.expectations[key]={subj,grade,course,code,en,fr:$("#nx-fr").value.trim(),url:$("#nx-url").value.trim()||"https://www.dcp.edu.gov.on.ca/en/curriculum"};
+    if(!cur.expectations.includes(key)) cur.expectations.push(key); cur.subject=subjectOf(cur); markDirty(); renderForm();
+  }
+}
+// Grades follow the linked Ontario expectations (Grades 5–10 only)
+function expGrades(a){ return [...new Set(a.expectations.map(k=>DB.expectations[k]?.grade).filter(g=>g>=5&&g<=10))].sort((x,y)=>x-y); }
+function syncGrades(a){ const g=expGrades(a); if(!g.length) return; a.grades=g;
+  document.querySelectorAll("[data-grade]").forEach(cb=>cb.checked=g.includes(+cb.dataset.grade)); }
+function uniqueId(base){ let id=base||"activity", n=2; while(DB.activities.some(a=>a.id===id)) id=`${base}-${n++}`; return id; }
+function select(a){ cur=a; renderList(); renderForm(); window.scrollTo({top:0}); }
+
+function validate(){
+  const probs=[]; const ids=new Set();
+  DB.activities.forEach(a=>{
+    if(!a.title.en) probs.push("An activity has no English title.");
+    if(!a.grades.length) probs.push(`"${a.title.en}" has no grade.`);
+    if(!a.skills.length) probs.push(`"${a.title.en}" has no spatial skill.`);
+    const eg=expGrades(a); if(eg.length && eg.join()!==a.grades.join()) probs.push(`"${a.title.en}" is listed for grades ${a.grades.join(", ")||"none"} but its expectations are for grades ${eg.join(", ")}.`);
+    a.links.forEach(l=>{ if(l.url && !/^https?:\/\//.test(l.url)) probs.push(`"${a.title.en}" has a link that doesn't start with https://`); });
+    if(!a.id) a.id=uniqueId(slug(a.title.en)); if(ids.has(a.id)) a.id=uniqueId(a.id); ids.add(a.id);
+    a.subject=subjectOf(a);
+  });
+  return probs;
+}
+function serialize(){ DB.updated=new Date().toISOString().slice(0,10); return JSON.stringify(DB,null,1); }
+
+$("#form").addEventListener("input",onInput);
+$("#form").addEventListener("change",onInput);
+$("#form").addEventListener("click",onClick);
+$("#list").addEventListener("click",e=>{ const b=e.target.closest("[data-i]"); if(b) select(DB.activities[+b.dataset.i]); });
+$("#lsearch").addEventListener("input",renderList);
+$("#new").onclick=()=>{ const a={id:uniqueId("new-activity"),title:{en:"New activity",fr:""},summary:{en:"",fr:""},objectives:{en:"",fr:""},grades:[],type:"general",subject:"math",skills:[],materials:{en:[],fr:[]},prep:{en:"",fr:""},links:[],languages:["en"],expectations:[],processes:{sci:[],math:[]},adaptedFrom:"",concepts:[],issue:""}; DB.activities.unshift(a); select(a); markDirty(); };
+
+$("#download").onclick=()=>{
+  const probs=validate(); if(probs.length){ setStatus("Check before saving: "+probs.slice(0,3).join(" "),true); }
+  const blob=new Blob([serialize()],{type:"application/json"}); const url=URL.createObjectURL(blob);
+  const a=document.createElement("a"); a.href=url; a.download="activities.json"; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),2000);
+  if(!probs.length) setStatus("Downloaded. Upload it to the data folder of your repository to update the site.",false);
+};
+$("#openfile").onchange=async e=>{ const f=e.target.files[0]; if(!f) return;
+  try{ const d=JSON.parse(await f.text()); if(!Array.isArray(d.activities)) throw 0; DB=d; cur=DB.activities[0]; renderList(); renderForm(); markDirty(); setStatus(`Opened ${f.name}.`,true);}
+  catch(_){ setStatus("That file isn't a library data file (activities.json).",true); } };
+
+// GitHub publishing
+const GHK="spz-gh";
+try{ const s=JSON.parse(localStorage.getItem(GHK)||"null"); if(s){ ["owner","repo","branch","path","token"].forEach(k=>{ if(s[k]) $("#gh-"+k).value=s[k]; }); $("#gh-remember").checked=true; } }catch(e){}
+if(!$("#gh-owner").value && /github\.io$/.test(location.hostname)){ $("#gh-owner").value=location.hostname.split(".")[0]; const seg=location.pathname.split("/").filter(Boolean)[0]; if(seg && !seg.endsWith(".html")) $("#gh-repo").value=seg; }
+$("#pubopen").onclick=()=>{ $("#pubpanel").hidden=false; $("#gh-owner").focus(); };
+$("#pubclose").onclick=()=>{ $("#pubpanel").hidden=true; };
+function b64(str){ const bytes=new TextEncoder().encode(str); let bin=""; for(let i=0;i<bytes.length;i+=0x8000) bin+=String.fromCharCode.apply(null,bytes.subarray(i,i+0x8000)); return btoa(bin); }
+$("#publish").onclick=async()=>{
+  const v=k=>$("#gh-"+k).value.trim(); const owner=v("owner"),repo=v("repo"),branch=v("branch")||"main",path=v("path")||"data/activities.json",token=v("token");
+  const out=$("#pubmsg"); const say=(m,ok)=>out.innerHTML=`<p class="msg ${ok?"ok":"err"}">${esc(m)}</p>`;
+  if(!owner||!repo||!token){ say("Fill in owner, repository and access token.",false); return; }
+  const probs=validate(); if(probs.length){ say("Fix these first: "+probs.join(" "),false); return; }
+  try{ if($("#gh-remember").checked) localStorage.setItem(GHK,JSON.stringify({owner,repo,branch,path,token})); else localStorage.removeItem(GHK);}catch(e){}
+  const api=`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/${path.split("/").map(encodeURIComponent).join("/")}`;
+  const H={Authorization:`Bearer ${token}`,Accept:"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28"};
+  out.innerHTML='<p class="note">Publishing…</p>';
+  try{
+    let sha; const g=await fetch(`${api}?ref=${encodeURIComponent(branch)}`,{headers:H});
+    if(g.ok) sha=(await g.json()).sha; else if(g.status!==404){ throw new Error(g.status===401?"GitHub didn't accept the token. Check it hasn't expired.":g.status===403?"The token doesn't have permission to write to this repository.":`GitHub answered ${g.status} when reading the file.`); }
+    const p=await fetch(api,{method:"PUT",headers:{...H,"Content-Type":"application/json"},body:JSON.stringify({message:v("msg")||"Update activities",content:b64(serialize()),branch,...(sha?{sha}:{})})});
+    if(!p.ok){ const j=await p.json().catch(()=>({})); throw new Error(p.status===404?"Repository or branch not found. Check the owner, repository and branch names.":p.status===409?"The file changed on GitHub since you loaded it. Reload this page and redo your edit.":(j.message||`GitHub answered ${p.status}.`)); }
+    dirty=false; try{localStorage.removeItem(DRAFT)}catch(e){}
+    setStatus("Published. The site updates within a minute or two.",false); say("Published to GitHub. The live site will update within a minute or two.",true);
+  }catch(err){ say(err.message||"Publishing failed. Check your connection and try again.",false); }
+};
+window.addEventListener("beforeunload",e=>{ if(dirty){ e.preventDefault(); e.returnValue=""; } });
+
+fetch("data/activities.json",{cache:"no-cache"}).then(r=>{ if(!r.ok) throw 0; return r.json(); }).then(d=>{
+  DB=d; let draft=null; try{ draft=JSON.parse(localStorage.getItem(DRAFT)||"null"); }catch(e){}
+  if(draft && Array.isArray(draft.activities) && JSON.stringify(draft)!==JSON.stringify(d)){
+    DB=draft; dirty=true; setStatus("Restored your unsaved changes from last time. Download or publish to keep them.",true);
+  } else setStatus(`${DB.activities.length} activities loaded.`,false);
+  cur=DB.activities.find(a=>a.issue)||DB.activities[0]; renderList(); renderForm();
+}).catch(()=>{ setStatus("Couldn't load data/activities.json. Use “Open a file…” to load it.",true); DB={version:2,expectations:{},processes:{sci:{},math:{}},activities:[]}; renderList(); renderForm(); });
+</script>
+</body>
+</html>
