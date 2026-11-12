@@ -1068,7 +1068,14 @@
     "en": "",
     "fr": ""
    },
-   "links": [],
+   "links": [
+    {
+     "en": "Lesson plan",
+     "fr": "",
+     "url": "https://www.oise.utoronto.ca/site/robertson/lesson-plans/build-structure-3-different-views",
+     "lang": "en"
+    }
+   ],
    "languages": [
     "en"
    ],
@@ -1085,7 +1092,7 @@
      "communicating"
     ]
    },
-   "adaptedFrom": "",
+   "adaptedFrom": "The Robertson Program, OISE",
    "concepts": [],
    "issue": "Lesson link pointed to the Skyscrapers doc. Add the correct link."
   },
