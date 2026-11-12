@@ -836,8 +836,8 @@
     "fr": "Labyrinthe ferroviaire"
    },
    "summary": {
-    "en": "In these puzzles (they are available in levels from beginner to expert) students identify missing train track pieces that connect the entrance and exit from the grid. The track cannot fork nor cross itself. Each piece connects 2 edges of a tile (either going straight, or curving to the left or right). Some of the tiles are empty. The numbers above the puzzle tell you how many track pieces are in each column. The numbers to the right tell you how many track pieces are in each row. Those numbers are your key to solving the puzzle.",
-    "fr": "Dans ces casse-têtes, les étudiants doivent identifier les morceaux de voie ferrée manquants qui relient l'entrée et la sortie de la grille. La voie ne peut ni bifurquer ni se croiser. Chaque morceau relie deux bords d'une case (soit en ligne droite, soit en courbe vers la gauche ou vers la droite). Certaines cases sont vides. Les chiffres situés au-dessus du casse-tête indiquent le nombre de morceaux de voie ferrée présents dans chaque colonne. Les chiffres situés à droite indiquent le nombre de morceaux de voie ferrée présents dans chaque ligne. Ces chiffres sont la clé qui vous permettra de résoudre le casse-tête."
+    "en": "In these puzzles (they are available in levels from beginner to expert) students identify missing train track pieces that connect the entrance and exit from the grid. The numbers in the column and rows outside the puzzle tell you how many track pieces are in each column and row. Those numbers are your key to solving the puzzle!",
+    "fr": "Dans ces labyrinthes (disponibles en différents niveaux, de débutant à expert), les élèves doivent identifier les morceaux de voie ferrée manquants qui relient l'entrée et la sortie de la grille. Les chiffres figurant dans les colonnes et les lignes à l'extérieur du puzzle indiquent le nombre de morceaux de voie ferrée présents dans chaque colonne et chaque ligne. Ces chiffres sont la clé qui vous permettra de résoudre le labyrinthe!"
    },
    "objectives": {
     "en": "",
